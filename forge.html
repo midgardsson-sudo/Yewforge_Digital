@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>What We Forge — Yewforge Digital</title>
+
+<style>
+:root {
+  --bg: #050706;
+  --panel: #0b1110;
+  --line: #20332f;
+  --text: #f4f7f2;
+  --muted: #b8c5bd;
+  --cyan: #5ee7ff;
+  --green: #88d9a5;
+  --ember: #f0a45a;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at top left, rgba(94,231,255,.12), transparent 34%),
+    radial-gradient(circle at top right, rgba(136,217,165,.10), transparent 30%),
+    var(--bg);
+  color: var(--text);
+  font-family: Arial, sans-serif;
+}
+
+.wrap {
+  max-width: 1180px;
+  margin: auto;
+  padding: 24px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+}
+
+.logo {
+  font-weight: 900;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo span { color: var(--cyan); }
+
+.navlinks {
+  display: flex;
+  gap: 20px;
+  font-size: 14px;
+}
+
+.navlinks a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.hero {
+  padding: 80px 0 50px;
+  max-width: 850px;
+}
+
+.badge, .kicker {
+  color: var(--ember);
+  text-transform: uppercase;
+  letter-spacing: .16em;
+  font-size: 12px;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: clamp(48px, 8vw, 92px);
+  line-height: .9;
+  margin: 16px 0;
+}
+
+h2 {
+  color: var(--cyan);
+  font-size: clamp(30px, 5vw, 52px);
+  line-height: 1;
+  margin: 0 0 18px;
+}
+
+p {
+  color: var(--muted);
+  font-size: 19px;
+  line-height: 1.55;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+  padding: 30px 0 70px;
+}
+
+.card {
+  min-height: 260px;
+  background: rgba(11,17,16,.88);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 30px;
+}
+
+.card strong {
+  display: block;
+  font-size: 28px;
+  margin-bottom: 14px;
+}
+
+.card span {
+  display: block;
+  color: var(--muted);
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+.card.featured {
+  grid-column: span 2;
+  background:
+    linear-gradient(135deg, rgba(94,231,255,.12), transparent 38%),
+    linear-gradient(315deg, rgba(136,217,165,.08), transparent 38%),
+    rgba(11,17,16,.92);
+  border-color: rgba(94,231,255,.45);
+}
+
+.button {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 14px 22px;
+  border-radius: 999px;
+  background: var(--cyan);
+  color: #031014;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+footer {
+  border-top: 1px solid var(--line);
+  padding: 26px 0;
+  color: #81918a;
+  font-size: 14px;
+}
+
+@media (max-width: 850px) {
+  .navlinks { display: none; }
+  .grid { grid-template-columns: 1fr; }
+  .card.featured { grid-column: span 1; }
+}
+</style>
+</head>
+
+<body>
+<div class="wrap">
+
+<nav>
+  <a class="logo" href="index.html">Yewforge <span>Digital</span></a>
+  <div class="navlinks">
+    <a href="forge.html">What We Forge</a>
+    <a href="labs.html">Labs</a>
+    <a href="starter.html">Starter</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="badge">What We Forge</div>
+  <h1>Digital tools with a practical purpose.</h1>
+  <p>
+    We build websites, AI assistants, apps, support systems and business tools
+    that help local businesses look more professional, capture more enquiries,
+    save time, and move forward with confidence.
+  </p>
+</header>
+
+<section class="grid">
+
+  <div class="card featured">
+    <div class="kicker">The simple promise</div>
+    <strong>Start small. Solve something real. Build from there.</strong>
+    <span>
+      Yewforge does not start by trying to sell you a huge system.
+      We look for the most useful first improvement: the thing that saves time,
+      reduces friction, improves trust, or helps customers reach you more easily.
+    </span>
+  </div>
+
+  <div class="card">
+    <strong>Websites</strong>
+    <span>
+      Modern, mobile-friendly websites that make your business look credible,
+      explain what you do clearly, and help customers take the next step.
+    </span>
+  </div>
+
+  <div class="card">
+    <strong>AI Customer Assistants</strong>
+    <span>
+      Assistants that can answer common questions, collect enquiries,
+      support bookings, and help customers when staff are busy.
+    </span>
+  </div>
+
+  <div class="card">
+    <strong>Apps & Software</strong>
+    <span>
+      Simple tools built around your workflow: not bloated platforms,
+      not generic templates, but practical systems shaped around your business.
+    </span>
+  </div>
+
+  <div class="card">
+    <strong>Technology Support</strong>
+    <span>
+      Help with software, hardware, setup, troubleshooting, upgrades,
+      and making sense of the tools your business depends on.
+    </span>
+  </div>
+
+  <div class="card">
+    <strong>Business Systems</strong>
+    <span>
+      Better ways to organise information, reduce repetitive admin,
+      improve customer handling, and make everyday work smoother.
+    </span>
+  </div>
+
+</section>
+
+<section class="card featured">
+  <div class="kicker">Ready to begin?</div>
+  <strong>You found us. Let’s forge what comes next.</strong>
+  <span>
+    Start with a quick conversation. We’ll identify one practical improvement
+    that could help your business move forward.
+  </span>
+  <br />
+  <a class="button" href="contact.html">Contact Yewforge Digital</a>
+</section>
+
+<footer>
+  © 2026 Yewforge Digital — Helping you forge your future business.
+</footer>
+
+</div>
+</body>
+</html>
