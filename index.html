@@ -1,197 +1,274 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nex Technologies</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #05070a;
-      color: #f4f7fb;
-      line-height: 1.6;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nex Technologies</title>
 
-    .wrap {
-      max-width: 1040px;
-      margin: auto;
-      padding: 32px 22px;
-    }
+<style>
+body {
+    margin: 0;
+    background: #05070a;
+    color: #f4f7fb;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
 
-    header {
-      min-height: 78vh;
-      display: flex;
-      align-items: center;
-    }
+.wrap {
+    max-width: 1100px;
+    margin: auto;
+    padding: 32px 24px;
+}
 
-    .badge {
-      color: #5ee7ff;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      font-size: 13px;
-      font-weight: 700;
-    }
+header {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
 
-    h1 {
-      font-size: clamp(38px, 7vw, 76px);
-      line-height: 0.98;
-      margin: 18px 0;
-    }
+.badge {
+    color: #5ee7ff;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    font-size: 13px;
+    font-weight: bold;
+}
 
-    h2 {
-      color: #5ee7ff;
-      font-size: 28px;
-      margin-top: 0;
-    }
+h1 {
+    font-size: clamp(42px, 8vw, 80px);
+    line-height: .95;
+    margin: 16px 0;
+}
 
-    p {
-      color: #c6ceda;
-      font-size: 18px;
-      max-width: 760px;
-    }
+h2 {
+    color: #5ee7ff;
+    margin-top: 0;
+}
 
-    .button {
-      display: inline-block;
-      margin-top: 22px;
-      padding: 14px 22px;
-      border-radius: 999px;
-      background: #5ee7ff;
-      color: #031014;
-      text-decoration: none;
-      font-weight: 800;
-    }
+p {
+    color: #c6ceda;
+    font-size: 18px;
+}
 
-    section {
-      padding: 46px 0;
-      border-top: 1px solid #14202a;
-    }
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 14px 22px;
+    border-radius: 999px;
+    background: #5ee7ff;
+    color: #051014;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(245px, 1fr));
-      gap: 18px;
-      margin-top: 20px;
-    }
+section {
+    border-top: 1px solid #17212b;
+    padding: 50px 0;
+}
 
-    .card {
-      background: #0b1118;
-      border: 1px solid #1e3442;
-      border-radius: 22px;
-      padding: 24px;
-    }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
 
-    .card strong {
-      color: #ffffff;
-      font-size: 18px;
-    }
+.card {
+    background: #0b1118;
+    border: 1px solid #203241;
+    border-radius: 20px;
+    padding: 24px;
+}
 
-    .small {
-      color: #8f9aaa;
-      font-size: 15px;
-    }
+.card strong {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
 
-    footer {
-      border-top: 1px solid #14202a;
-      color: #7f8997;
-      font-size: 14px;
-      padding: 28px 0;
-    }
-  </style>
+footer {
+    border-top: 1px solid #17212b;
+    padding: 30px 0;
+    color: #7d8795;
+}
+</style>
 </head>
 
 <body>
-  <main class="wrap">
-    <header>
-      <div>
-        <div class="badge">Nex Technologies</div>
-        <h1>Practical technology solutions for local businesses.</h1>
-        <p>
-          Websites, AI customer assistants, app development, technical support,
-          and business process improvement — built to help small businesses save time,
-          capture more enquiries, and modernise without the agency price tag.
-        </p>
-        <a class="button" href="mailto:jakeevansyt@gmail.com">Book a 5-minute demo</a>
-      </div>
-    </header>
 
-    <section>
-      <h2>What Nex Technologies does</h2>
-      <div class="grid">
-        <div class="card">
-          <strong>AI Customer Assistants</strong>
-          <p>Answer customer questions, capture enquiries, and support bookings when staff are busy.</p>
-        </div>
-        <div class="card">
-          <strong>Website Design</strong>
-          <p>Clean, modern, mobile-friendly websites for restaurants, cafés, salons, trades, and local services.</p>
-        </div>
-        <div class="card">
-          <strong>App Development</strong>
-          <p>Simple custom tools and apps built around how your business actually works.</p>
-        </div>
-        <div class="card">
-          <strong>Technical Support</strong>
-          <p>Help with software, hardware, setup, troubleshooting, and everyday technology problems.</p>
-        </div>
-        <div class="card">
-          <strong>Business Support</strong>
-          <p>Practical improvements to reduce repetitive work, organise information, and make operations smoother.</p>
-        </div>
-      </div>
-    </section>
+<div class="wrap">
 
-    <section>
-      <h2>Example solutions</h2>
-      <div class="grid">
-        <div class="card">
-          <strong>Restaurant Assistant</strong>
-          <p>Menu questions, allergy guidance, opening hours, booking enquiries, and manager handoff.</p>
-        </div>
-        <div class="card">
-          <strong>Salon Assistant</strong>
-          <p>Appointment requests, service questions, prices, availability, and customer follow-up.</p>
-        </div>
-        <div class="card">
-          <strong>Trade Enquiry Assistant</strong>
-          <p>Capture quote requests, job details, photos, availability, and contact information.</p>
-        </div>
-      </div>
-    </section>
+<header>
+<div>
+<div class="badge">Nex Technologies</div>
 
-    <section>
-      <h2>Why choose Nex?</h2>
-      <div class="grid">
-        <div class="card">
-          <strong>Fast delivery</strong>
-          <p>Modern AI-assisted development helps build useful tools quickly and affordably.</p>
-        </div>
-        <div class="card">
-          <strong>Small-business focused</strong>
-          <p>No corporate jargon. No overcomplicated systems. Just practical tools that solve real problems.</p>
-        </div>
-        <div class="card">
-          <strong>Custom, not generic</strong>
-          <p>Solutions are shaped around your business, your customers, and your daily workflow.</p>
-        </div>
-      </div>
-    </section>
+<h1>Practical technology solutions for local businesses.</h1>
 
-    <section>
-      <h2>Start with a quick demo</h2>
-      <div class="card">
-        <p>
-          Want to see how a simple AI assistant, website upgrade, or custom tool could help your business?
-          Book a quick 5-minute demo and we’ll look at one practical improvement.
-        </p>
-        <a class="button" href="mailto:jakeevansyt@gmail.com">Email Nex Technologies</a>
-        <p class="small">Contact: jakeevansyt@gmail.com</p>
-      </div>
-    </section>
+<p>
+Websites, AI assistants, app development, technical support,
+and business improvements designed to help local businesses
+save time, capture more enquiries, and modernise without
+agency-level costs.
+</p>
 
-    <footer>
-      © 2026 Nex Technologies — Built by Jake Evans.
-    </footer>
-  </main>
+<a class="button" href="mailto:jakeevansyt@gmail.com">
+Book a 5-Minute Demo
+</a>
+
+</div>
+</header>
+
+<section>
+<h2>What We Do</h2>
+
+<div class="grid">
+
+<div class="card">
+<strong>AI Customer Assistants</strong>
+Answer customer questions, collect enquiries,
+support bookings, and reduce missed opportunities.
+</div>
+
+<div class="card">
+<strong>Website Design</strong>
+Modern, mobile-friendly websites designed to
+present your business professionally.
+</div>
+
+<div class="card">
+<strong>App Development</strong>
+Custom applications and tools built around
+your workflow.
+</div>
+
+<div class="card">
+<strong>Technical Support</strong>
+Help with software, hardware, setup,
+troubleshooting, and technology planning.
+</div>
+
+<div class="card">
+<strong>Business Support</strong>
+Improve efficiency, reduce repetitive work,
+and modernise processes.
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Example Solutions</h2>
+
+<div class="grid">
+
+<div class="card">
+<strong>Restaurant Assistant</strong>
+Menu questions, allergy information,
+booking requests, opening hours,
+and manager escalation.
+</div>
+
+<div class="card">
+<strong>Salon Assistant</strong>
+Appointment enquiries, availability,
+pricing information, and customer support.
+</div>
+
+<div class="card">
+<strong>Trade Assistant</strong>
+Quote requests, job details,
+lead capture, and customer follow-up.
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Starter Package</h2>
+
+<div class="card">
+
+<strong>Local Business Digital Starter</strong>
+
+<p>
+Perfect for businesses looking to take their first
+step into modern digital tools.
+</p>
+
+<p>
+Includes:
+</p>
+
+<ul>
+<li>Business technology review</li>
+<li>Improvement recommendations</li>
+<li>Website or AI assistant prototype</li>
+<li>5-minute consultation</li>
+</ul>
+
+<p>
+<strong>Starting from £199</strong>
+</p>
+
+</div>
+
+</section>
+
+<section>
+<h2>Why Choose Nex?</h2>
+
+<div class="grid">
+
+<div class="card">
+<strong>Fast Delivery</strong>
+Modern AI-assisted development allows rapid
+prototyping and implementation.
+</div>
+
+<div class="card">
+<strong>Small Business Focused</strong>
+Solutions designed for real-world businesses,
+not enterprise corporations.
+</div>
+
+<div class="card">
+<strong>Practical Approach</strong>
+Technology should solve problems,
+not create them.
+</div>
+
+</div>
+
+</section>
+
+<section>
+<h2>Start With A Demo</h2>
+
+<div class="card">
+
+<p>
+Want to see how a website, AI assistant,
+or custom business tool could help your business?
+</p>
+
+<p>
+Let's have a quick conversation and identify
+one practical improvement.
+</p>
+
+<a class="button" href="mailto:jakeevansyt@gmail.com">
+Contact Nex Technologies
+</a>
+
+</div>
+
+</section>
+
+<footer>
+© 2026 Nex Technologies — Built by Jake Evans.
+</footer>
+
+</div>
+
 </body>
 </html>
