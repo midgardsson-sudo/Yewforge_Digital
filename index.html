@@ -1,278 +1,101 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Yewforge Digital</title>
-
-<style>
-:root {
-  --bg: #050706;
-  --panel: #0b1110;
-  --line: #20332f;
-  --text: #f4f7f2;
-  --muted: #b8c5bd;
-  --cyan: #5ee7ff;
-  --green: #88d9a5;
-  --ember: #f0a45a;
-}
-
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  background:
-    radial-gradient(circle at top left, rgba(94,231,255,.13), transparent 34%),
-    radial-gradient(circle at top right, rgba(136,217,165,.10), transparent 30%),
-    var(--bg);
-  color: var(--text);
-  font-family: Arial, sans-serif;
-}
-
-.wrap {
-  max-width: 1180px;
-  margin: auto;
-  padding: 24px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 0;
-}
-
-.logo {
-  font-weight: 900;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-
-.logo span { color: var(--cyan); }
-
-.navlinks {
-  display: flex;
-  gap: 20px;
-  font-size: 14px;
-}
-
-.navlinks a {
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.hero {
-  min-height: 82vh;
-  display: grid;
-  grid-template-columns: 1.1fr .9fr;
-  gap: 40px;
-  align-items: center;
-}
-
-.badge {
-  color: var(--green);
-  text-transform: uppercase;
-  letter-spacing: .16em;
-  font-size: 12px;
-  font-weight: 900;
-}
-
-h1 {
-  font-size: clamp(54px, 9vw, 104px);
-  line-height: .88;
-  margin: 16px 0;
-}
-
-h2 {
-  font-size: clamp(30px, 5vw, 50px);
-  line-height: 1;
-  margin: 0 0 18px;
-  color: var(--cyan);
-}
-
-p {
-  color: var(--muted);
-  font-size: 19px;
-  line-height: 1.55;
-  max-width: 700px;
-}
-
-.button {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 14px 22px;
-  border-radius: 999px;
-  background: var(--cyan);
-  color: #031014;
-  text-decoration: none;
-  font-weight: 900;
-}
-
-.button.secondary {
-  background: transparent;
-  color: var(--text);
-  border: 1px solid var(--line);
-  margin-left: 8px;
-}
-
-.panel {
-  background: rgba(11,17,16,.88);
-  border: 1px solid var(--line);
-  border-radius: 30px;
-  padding: 30px;
-  box-shadow: 0 22px 70px rgba(0,0,0,.35);
-}
-
-.kicker {
-  color: var(--ember);
-  font-weight: 900;
-  text-transform: uppercase;
-  letter-spacing: .14em;
-  font-size: 12px;
-  margin-bottom: 12px;
-}
-
-.rooms {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  padding: 42px 0 70px;
-  border-top: 1px solid var(--line);
-}
-
-.room {
-  min-height: 170px;
-  padding: 24px;
-  background: rgba(11,17,16,.88);
-  border: 1px solid var(--line);
-  border-radius: 24px;
-  text-decoration: none;
-  color: var(--text);
-  transition: transform .2s ease, border-color .2s ease;
-}
-
-.room:hover {
-  transform: translateY(-4px);
-  border-color: var(--cyan);
-}
-
-.room strong {
-  display: block;
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-
-.room span {
-  display: block;
-  color: var(--muted);
-  line-height: 1.45;
-}
-
-footer {
-  border-top: 1px solid var(--line);
-  padding: 26px 0;
-  color: #81918a;
-  font-size: 14px;
-}
-
-@media (max-width: 900px) {
-  .hero {
-    grid-template-columns: 1fr;
-    min-height: auto;
-    padding: 50px 0;
-  }
-
-  .navlinks {
-    display: none;
-  }
-
-  .rooms {
-    grid-template-columns: 1fr;
-  }
-
-  .button,
-  .button.secondary {
-    display: block;
-    text-align: center;
-    margin-left: 0;
-  }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrance | Yewforge Digital</title>
+  <meta name="description" content="Enter the Yewforge Campus: a practical digital headquarters for local business websites, AI assistants, apps, support and systems." />
+  <link rel="stylesheet" href="css/campus.css" />
+  <script src="js/campus.js" defer></script>
 </head>
+<body data-room="entrance">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Yewforge Digital Entrance">
+        <span>Yewforge</span>
+        <strong>Digital</strong>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Campus rooms">
+        <a href="index.html" aria-current="page">Entrance</a>
+        <a href="forge.html">The Forge</a>
+        <a href="forge-stack.html">Partners</a>
+        <a href="workshop.html">Workshop</a>
+        <a href="laboratory.html">Laboratory</a>
+        <a href="story.html">Story</a>
+        <a href="begin.html">Begin</a>
+      </nav>
+    </header>
+    <section class="build-notice" aria-label="Building in public notice">
+      <p><strong><span class="build-notice-dot" aria-hidden="true"></span>BUILDING IN PUBLIC</strong><span aria-hidden="true"> — </span><span>Yewforge Digital is under active development. In five weeks, we have gone from an idea to working software, AI training experiments, local models, companion-app foundations, and now this website. Keep coming back — there is much more to come.</span></p>
+    </section>
+    <main>
+      <section class="room-hero entrance-hero">
+        <div>
+          <p class="eyebrow">Yewforge Campus</p>
+          <h1>Enter a practical digital headquarters.</h1>
+          <p class="lead">
+            Yewforge Digital builds useful websites, AI assistants, apps and technology support for local businesses ready to modernise without agency noise.
+          </p>
+          <div class="doorway-row">
+            <a class="button" href="forge.html">Enter The Forge</a>
+            <a class="button button-quiet" href="begin.html">Begin a conversation</a>
+          </div>
+        </div>
+        <aside class="purpose-panel">
+          <span class="object-label">Campus sign</span>
+          <p class="eyebrow ember">Orientation</p>
+          <h2>Choose the room that matches your question.</h2>
+          <p>
+            This site is arranged like a small campus: services in the forge, process in the workshop, future ideas in the laboratory, background in the story, and a clear place to begin.
+          </p>
+        </aside>
+      </section>
 
-<body>
-<div class="wrap">
+      <section class="room-grid" aria-label="Campus rooms">
+        <a class="room-card" href="forge.html">
+          <span class="object-label">Door plaque</span>
+          <span class="room-marker">01</span>
+          <strong>The Forge</strong>
+          <span>Websites, assistants, apps, support and business systems.</span>
+        </a>
+        <a class="room-card" href="workshop.html">
+          <span class="object-label">Door plaque</span>
+          <span class="room-marker">02</span>
+          <strong>Workshop</strong>
+          <span>The calm, practical process for shaping and building the right thing first.</span>
+        </a>
+        <a class="room-card" href="forge-stack.html">
+          <span class="object-label">Door plaque</span>
+          <span class="room-marker">03</span>
+          <strong>Forge Stack</strong>
+          <span>The active build environment and partnership contact surface.</span>
+        </a>
+        <a class="room-card" href="laboratory.html">
+          <span class="object-label">Door plaque</span>
+          <span class="room-marker">04</span>
+          <strong>Laboratory</strong>
+          <span>Experiments, internal tools and careful future-facing technology.</span>
+        </a>
+        <a class="room-card" href="story.html">
+          <span class="object-label">Door plaque</span>
+          <span class="room-marker">05</span>
+          <strong>Story</strong>
+          <span>The philosophy behind Yewforge and why practical usefulness comes first.</span>
+        </a>
+        <a class="room-card room-card-wide" href="begin.html">
+          <span class="object-label">Door plaque</span>
+          <span class="room-marker">06</span>
+          <strong>Begin</strong>
+          <span>Bring one real problem, bottleneck or idea. We will find the first useful step.</span>
+        </a>
+      </section>
+    </main>
 
-<nav>
-  <a class="logo" href="index.html" style="color:inherit;text-decoration:none;">Yewforge <span>Digital</span></a>
-  <div class="navlinks">
-    <a href="forge.html">What We Forge</a>
-    <a href="labs.html">Labs</a>
-    <a href="starter.html">Starter</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+    <footer class="site-footer">
+      <span>Â© 2026 Yewforge Digital.</span>
+      <span>Helping you forge your future business.</span>
+    </footer>
   </div>
-</nav>
-
-<header class="hero">
-  <div>
-    <div class="badge">Local business technology</div>
-    <h1>You found us.</h1>
-    <p>
-      Now let’s forge the future of your business. Yewforge Digital builds practical
-      websites, AI assistants, apps and technology support for local businesses ready
-      to modernise without the agency nonsense.
-    </p>
-    <a class="button" href="contact.html">Start a Free Consultation</a>
-    <a class="button secondary" href="forge.html">Enter The Forge</a>
-  </div>
-
-  <aside class="panel">
-    <div class="kicker">Crafted, not mass-produced</div>
-    <h2>Useful tech. Built around your business.</h2>
-    <p>
-      We turn messy workflows, missed enquiries and outdated digital systems into
-      practical tools your business can actually use.
-    </p>
-  </aside>
-</header>
-
-<section class="rooms">
-  <a class="room" href="forge.html">
-    <strong>What We Forge</strong>
-    <span>Websites, AI assistants, apps, support and business systems.</span>
-  </a>
-
-  <a class="room" href="labs.html">
-    <strong>Yewforge Labs</strong>
-    <span>Our own technology, frameworks and internal tools under development.</span>
-  </a>
-
-  <a class="room" href="starter.html">
-    <strong>Starter Package</strong>
-    <span>A practical first step for local businesses from £199.</span>
-  </a>
-
-  <a class="room" href="about.html">
-    <strong>About Yewforge</strong>
-    <span>The story, the philosophy, and the person behind the forge.</span>
-  </a>
-
-  <a class="room" href="contact.html">
-    <strong>Contact</strong>
-    <span>You found us. Let’s forge what comes next.</span>
-  </a>
-
-  <a class="room" href="labs.html">
-    <strong>Future Technologies</strong>
-    <span>AI-assisted business support, workflow intelligence and client-focused systems.</span>
-  </a>
-</section>
-
-<footer>
-  © 2026 Yewforge Digital — Helping you forge your future business.
-</footer>
-
-</div>
 </body>
 </html>

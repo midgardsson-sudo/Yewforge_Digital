@@ -1,140 +1,126 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>The Workshop — Yewforge Digital</title>
-
-<style>
-:root {
-  --bg:#050706;
-  --panel:#0b1110;
-  --line:#20332f;
-  --text:#f4f7f2;
-  --muted:#b8c5bd;
-  --cyan:#5ee7ff;
-  --green:#88d9a5;
-  --ember:#f0a45a;
-}
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:
-    radial-gradient(circle at top left,rgba(94,231,255,.12),transparent 34%),
-    radial-gradient(circle at top right,rgba(136,217,165,.10),transparent 30%),
-    var(--bg);
-  color:var(--text);
-  font-family:Arial,sans-serif;
-}
-.wrap{max-width:1180px;margin:auto;padding:24px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
-.logo{font-weight:900;letter-spacing:.08em;text-transform:uppercase;color:inherit;text-decoration:none}
-.logo span{color:var(--cyan)}
-.navlinks{display:flex;gap:20px;font-size:14px}
-.navlinks a{color:var(--muted);text-decoration:none}
-.hero{padding:80px 0 50px;max-width:900px}
-.badge,.kicker{color:var(--ember);text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:900}
-h1{font-size:clamp(48px,8vw,92px);line-height:.9;margin:16px 0}
-h2{color:var(--cyan);font-size:clamp(30px,5vw,52px);line-height:1;margin:0 0 18px}
-p{color:var(--muted);font-size:19px;line-height:1.55}
-.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:14px;padding:30px 0 60px}
-.step{
-  min-height:220px;
-  background:rgba(11,17,16,.88);
-  border:1px solid var(--line);
-  border-radius:28px;
-  padding:26px;
-}
-.number{color:var(--cyan);font-weight:900;font-size:14px;margin-bottom:20px}
-.step strong{display:block;font-size:24px;margin-bottom:12px}
-.step span{display:block;color:var(--muted);line-height:1.5}
-.panel{
-  background:
-    linear-gradient(135deg,rgba(94,231,255,.12),transparent 38%),
-    rgba(11,17,16,.92);
-  border:1px solid rgba(94,231,255,.45);
-  border-radius:30px;
-  padding:30px;
-  margin-bottom:50px;
-}
-.button{display:inline-block;margin-top:18px;padding:14px 22px;border-radius:999px;background:var(--cyan);color:#031014;text-decoration:none;font-weight:900}
-footer{border-top:1px solid var(--line);padding:26px 0;color:#81918a;font-size:14px}
-@media(max-width:900px){
-  .navlinks{display:none}
-  .flow{grid-template-columns:1fr}
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workshop | Yewforge Digital</title>
+  <meta name="description" content="The Yewforge Workshop explains the practical process for discovering, shaping, building, refining and supporting useful technology." />
+  <link rel="stylesheet" href="css/campus.css" />
+  <script src="js/campus.js" defer></script>
 </head>
+<body data-room="workshop">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span>Yewforge</span><strong>Digital</strong></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Campus rooms">
+        <a href="index.html">Entrance</a>
+        <a href="forge.html">The Forge</a>
+        <a href="forge-stack.html">Partners</a>
+        <a href="workshop.html" aria-current="page">Workshop</a>
+        <a href="laboratory.html">Laboratory</a>
+        <a href="story.html">Story</a>
+        <a href="begin.html">Begin</a>
+      </nav>
+    </header>
+    <section class="build-notice" aria-label="Building in public notice">
+      <p><strong><span class="build-notice-dot" aria-hidden="true"></span>BUILDING IN PUBLIC</strong><span aria-hidden="true"> — </span><span>Yewforge Digital is under active development. In five weeks, we have gone from an idea to working software, AI training experiments, local models, companion-app foundations, and now this website. Keep coming back — there is much more to come.</span></p>
+    </section>
+    <main class="room-layout">
+      <section class="room-hero compact">
+        <div>
+          <p class="eyebrow">Workshop</p>
+          <h1>How useful technology gets forged.</h1>
+          <p class="lead">
+            The Workshop is the process: calm, practical, collaborative and focused on building the right thing first.
+          </p>
+        </div>
+        <aside class="purpose-panel">
+          <span class="object-label">Blueprint strip</span>
+          <p class="eyebrow ember">Room purpose</p>
+          <h2>Turn a messy need into a sensible first build.</h2>
+          <p>
+            Every step is designed to keep the project understandable, maintainable and tied to a real business outcome.
+          </p>
+        </aside>
+      </section>
 
-<body>
-<div class="wrap">
+      <section class="process-rail" aria-label="Workshop process">
+        <article class="reveal-object step-object">
+          <button class="object-face" type="button" aria-expanded="false">
+            <span class="object-label">Measure mark</span>
+            <span class="room-marker">01</span>
+            <strong>Discover</strong>
+            <span>Understand the business, customers and problem worth solving.</span>
+          </button>
+          <div class="object-reveal">
+            <p>We look for the actual friction: missed enquiries, confusing handovers, outdated pages, repetitive admin or tools that no longer fit.</p>
+          </div>
+        </article>
 
-<nav>
-  <a class="logo" href="index.html">Yewforge <span>Digital</span></a>
-  <div class="navlinks">
-    <a href="forge.html">The Forge</a>
-    <a href="workshop.html">Workshop</a>
-    <a href="labs.html">Laboratory</a>
-    <a href="about.html">Story</a>
-    <a href="contact.html">Begin</a>
+        <article class="reveal-object step-object">
+          <button class="object-face" type="button" aria-expanded="false">
+            <span class="object-label">Tool label</span>
+            <span class="room-marker">02</span>
+            <strong>Shape</strong>
+            <span>Plan a practical solution that fits your workflow and goals.</span>
+          </button>
+          <div class="object-reveal">
+            <p>This is where scope stays sane. We choose the first build that is clear enough to finish and useful enough to matter.</p>
+          </div>
+        </article>
+
+        <article class="reveal-object step-object">
+          <button class="object-face" type="button" aria-expanded="false">
+            <span class="object-label">Process block</span>
+            <span class="room-marker">03</span>
+            <strong>Forge</strong>
+            <span>Build the website, assistant, app, support system or tool.</span>
+          </button>
+          <div class="object-reveal">
+            <p>The build stays beginner-maintainable where possible, with straightforward content, structure and handover notes.</p>
+          </div>
+        </article>
+
+        <article class="reveal-object step-object">
+          <button class="object-face" type="button" aria-expanded="false">
+            <span class="object-label">Bench note</span>
+            <span class="room-marker">04</span>
+            <strong>Refine</strong>
+            <span>Test, improve, simplify and make sure it works clearly.</span>
+          </button>
+          <div class="object-reveal">
+            <p>Refinement is not polish for its own sake. It is removing confusion before customers or staff run into it.</p>
+          </div>
+        </article>
+
+        <article class="reveal-object step-object">
+          <button class="object-face" type="button" aria-expanded="false">
+            <span class="object-label">Handover tag</span>
+            <span class="room-marker">05</span>
+            <strong>Support</strong>
+            <span>Stay available for improvements, updates and future growth.</span>
+          </button>
+          <div class="object-reveal">
+            <p>Support can be light-touch or ongoing, depending on what the business needs after the first useful step is live.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="next-door">
+        <div>
+          <span class="object-label">Workshop exit</span>
+          <p class="eyebrow ember">Next doorway</p>
+          <h2>Visit the future-facing room.</h2>
+        </div>
+        <a class="button" href="laboratory.html">Enter the Laboratory</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Â© 2026 Yewforge Digital.</span>
+      <span>Helping you forge your future business.</span>
+    </footer>
   </div>
-</nav>
-
-<header class="hero">
-  <div class="badge">The Workshop</div>
-  <h1>How we forge useful technology.</h1>
-  <p>
-    Good technology starts with understanding the business. The Workshop is our process:
-    calm, practical, collaborative, and focused on building the right thing first.
-  </p>
-</header>
-
-<section class="flow">
-  <div class="step">
-    <div class="number">01</div>
-    <strong>Discover</strong>
-    <span>We understand your business, your customers, and the problem worth solving.</span>
-  </div>
-
-  <div class="step">
-    <div class="number">02</div>
-    <strong>Shape</strong>
-    <span>We plan a practical solution that fits your workflow, budget, and goals.</span>
-  </div>
-
-  <div class="step">
-    <div class="number">03</div>
-    <strong>Forge</strong>
-    <span>We build the website, assistant, app, support system, or digital tool.</span>
-  </div>
-
-  <div class="step">
-    <div class="number">04</div>
-    <strong>Refine</strong>
-    <span>We test, improve, simplify, and make sure it works clearly.</span>
-  </div>
-
-  <div class="step">
-    <div class="number">05</div>
-    <strong>Support</strong>
-    <span>We stay available for improvements, updates, and future growth.</span>
-  </div>
-</section>
-
-<section class="panel">
-  <div class="kicker">The principle</div>
-  <h2>Technology should remove friction, not create it.</h2>
-  <p>
-    We do not begin by selling a huge package. We begin by finding the next useful step:
-    the improvement that saves time, captures enquiries, builds trust, or makes daily work easier.
-  </p>
-  <a class="button" href="contact.html">Begin Your Project</a>
-</section>
-
-<footer>
-  © 2026 Yewforge Digital — Helping you forge your future business.
-</footer>
-
-</div>
 </body>
 </html>

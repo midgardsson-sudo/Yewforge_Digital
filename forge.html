@@ -1,256 +1,126 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>What We Forge — Yewforge Digital</title>
-
-<style>
-:root {
-  --bg: #050706;
-  --panel: #0b1110;
-  --line: #20332f;
-  --text: #f4f7f2;
-  --muted: #b8c5bd;
-  --cyan: #5ee7ff;
-  --green: #88d9a5;
-  --ember: #f0a45a;
-}
-
-* { box-sizing: border-box; }
-
-body {
-  margin: 0;
-  background:
-    radial-gradient(circle at top left, rgba(94,231,255,.12), transparent 34%),
-    radial-gradient(circle at top right, rgba(136,217,165,.10), transparent 30%),
-    var(--bg);
-  color: var(--text);
-  font-family: Arial, sans-serif;
-}
-
-.wrap {
-  max-width: 1180px;
-  margin: auto;
-  padding: 24px;
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 0;
-}
-
-.logo {
-  font-weight: 900;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-  color: inherit;
-  text-decoration: none;
-}
-
-.logo span { color: var(--cyan); }
-
-.navlinks {
-  display: flex;
-  gap: 20px;
-  font-size: 14px;
-}
-
-.navlinks a {
-  color: var(--muted);
-  text-decoration: none;
-}
-
-.hero {
-  padding: 80px 0 50px;
-  max-width: 850px;
-}
-
-.badge, .kicker {
-  color: var(--ember);
-  text-transform: uppercase;
-  letter-spacing: .16em;
-  font-size: 12px;
-  font-weight: 900;
-}
-
-h1 {
-  font-size: clamp(48px, 8vw, 92px);
-  line-height: .9;
-  margin: 16px 0;
-}
-
-h2 {
-  color: var(--cyan);
-  font-size: clamp(30px, 5vw, 52px);
-  line-height: 1;
-  margin: 0 0 18px;
-}
-
-p {
-  color: var(--muted);
-  font-size: 19px;
-  line-height: 1.55;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 22px;
-  padding: 30px 0 70px;
-}
-
-.card {
-  min-height: 260px;
-  background: rgba(11,17,16,.88);
-  border: 1px solid var(--line);
-  border-radius: 28px;
-  padding: 30px;
-}
-
-.card strong {
-  display: block;
-  font-size: 28px;
-  margin-bottom: 14px;
-}
-
-.card span {
-  display: block;
-  color: var(--muted);
-  font-size: 17px;
-  line-height: 1.5;
-}
-
-.card.featured {
-  grid-column: span 2;
-  background:
-    linear-gradient(135deg, rgba(94,231,255,.12), transparent 38%),
-    linear-gradient(315deg, rgba(136,217,165,.08), transparent 38%),
-    rgba(11,17,16,.92);
-  border-color: rgba(94,231,255,.45);
-}
-
-.button {
-  display: inline-block;
-  margin-top: 18px;
-  padding: 14px 22px;
-  border-radius: 999px;
-  background: var(--cyan);
-  color: #031014;
-  text-decoration: none;
-  font-weight: 900;
-}
-
-footer {
-  border-top: 1px solid var(--line);
-  padding: 26px 0;
-  color: #81918a;
-  font-size: 14px;
-}
-
-@media (max-width: 850px) {
-  .navlinks { display: none; }
-  .grid { grid-template-columns: 1fr; }
-  .card.featured { grid-column: span 1; }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Forge | Yewforge Digital</title>
+  <meta name="description" content="The Forge: practical digital services from Yewforge Digital, including websites, AI assistants, apps, support and business systems." />
+  <link rel="stylesheet" href="css/campus.css" />
+  <script src="js/campus.js" defer></script>
 </head>
+<body data-room="forge">
+  <div class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="index.html"><span>Yewforge</span><strong>Digital</strong></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+      <nav class="site-nav" id="site-nav" aria-label="Campus rooms">
+        <a href="index.html">Entrance</a>
+        <a href="forge.html" aria-current="page">The Forge</a>
+        <a href="forge-stack.html">Partners</a>
+        <a href="workshop.html">Workshop</a>
+        <a href="laboratory.html">Laboratory</a>
+        <a href="story.html">Story</a>
+        <a href="begin.html">Begin</a>
+      </nav>
+    </header>
+    <section class="build-notice" aria-label="Building in public notice">
+      <p><strong><span class="build-notice-dot" aria-hidden="true"></span>BUILDING IN PUBLIC</strong><span aria-hidden="true"> — </span><span>Yewforge Digital is under active development. In five weeks, we have gone from an idea to working software, AI training experiments, local models, companion-app foundations, and now this website. Keep coming back — there is much more to come.</span></p>
+    </section>
+    <main class="room-layout">
+      <section class="room-hero compact">
+        <div>
+          <p class="eyebrow">The Forge</p>
+          <h1>Digital tools with a practical purpose.</h1>
+          <p class="lead">
+            Websites, AI assistants, apps, support systems and business tools that help local businesses look credible, capture enquiries, save time and move with confidence.
+          </p>
+        </div>
+        <aside class="purpose-panel">
+          <span class="object-label">Forged offer block</span>
+          <p class="eyebrow ember">Simple promise</p>
+          <h2>Start small. Solve something real. Build from there.</h2>
+          <p>
+            The first improvement should save time, reduce friction, improve trust or help customers reach you more easily.
+          </p>
+        </aside>
+      </section>
 
-<body>
-<div class="wrap">
+      <section class="object-grid" aria-label="Forge objects">
+        <article class="reveal-object">
+          <button class="object-face" type="button" aria-expanded="false">
+            <span class="object-label">Service ingot</span>
+            <span class="object-icon">Web</span>
+            <strong>Websites</strong>
+            <span>Credible, mobile-friendly pages that explain what you do.</span>
+          </button>
+          <div class="object-reveal">
+            <p>Useful when your current site is dated, unclear, slow to update or missing the next step customers need.</p>
+          </div>
+        </article>
 
-<nav>
-  <a class="logo" href="index.html">Yewforge <span>Digital</span></a>
-  <div class="navlinks">
-    <a href="forge.html">What We Forge</a>
-    <a href="labs.html">Labs</a>
-    <a href="starter.html">Starter</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+        <article class="reveal-object">
+          <button class="object-face" type="button" aria-expanded="false">
+            <span class="object-label">Spark marker</span>
+            <span class="object-icon">AI</span>
+            <strong>AI Customer Assistants</strong>
+            <span>Helpers for common questions, enquiries and booking support.</span>
+          </button>
+          <div class="object-reveal">
+            <p>Built around real customer questions and simple handover points, so the assistant supports the business instead of pretending to replace it.</p>
+          </div>
+        </article>
+
+        <article class="reveal-object">
+          <button class="object-face" type="button" aria-expanded="false">
+            <span class="object-label">Offer block</span>
+            <span class="object-icon">App</span>
+            <strong>Apps & Software</strong>
+            <span>Small tools shaped around the way your work actually happens.</span>
+          </button>
+          <div class="object-reveal">
+            <p>For workflows that do not fit a spreadsheet, a generic template or a platform with more features than you need.</p>
+          </div>
+        </article>
+
+        <article class="reveal-object">
+          <button class="object-face" type="button" aria-expanded="false">
+            <span class="object-label">Metal tag</span>
+            <span class="object-icon">Ops</span>
+            <strong>Technology Support</strong>
+            <span>Setup, troubleshooting, upgrades and practical guidance.</span>
+          </button>
+          <div class="object-reveal">
+            <p>Support can cover the everyday tools your business depends on, from choosing software to making current systems less painful.</p>
+          </div>
+        </article>
+
+        <article class="reveal-object featured-object">
+          <button class="object-face" type="button" aria-expanded="false">
+            <span class="object-label">System billet</span>
+            <span class="object-icon">Sys</span>
+            <strong>Business Systems</strong>
+            <span>Better ways to organise information, reduce admin and handle customers.</span>
+          </button>
+          <div class="object-reveal">
+            <p>Often the best result is not one big platform. It is a few connected improvements that make daily work clearer and calmer.</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="next-door">
+        <div>
+          <span class="object-label">Controlled spark</span>
+          <p class="eyebrow ember">Next doorway</p>
+          <h2>See how the work is shaped.</h2>
+        </div>
+        <a class="button" href="workshop.html">Go to the Workshop</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Â© 2026 Yewforge Digital.</span>
+      <span>Helping you forge your future business.</span>
+    </footer>
   </div>
-</nav>
-
-<header class="hero">
-  <div class="badge">What We Forge</div>
-  <h1>Digital tools with a practical purpose.</h1>
-  <p>
-    We build websites, AI assistants, apps, support systems and business tools
-    that help local businesses look more professional, capture more enquiries,
-    save time, and move forward with confidence.
-  </p>
-</header>
-
-<section class="grid">
-
-  <div class="card featured">
-    <div class="kicker">The simple promise</div>
-    <strong>Start small. Solve something real. Build from there.</strong>
-    <span>
-      Yewforge does not start by trying to sell you a huge system.
-      We look for the most useful first improvement: the thing that saves time,
-      reduces friction, improves trust, or helps customers reach you more easily.
-    </span>
-  </div>
-
-  <div class="card">
-    <strong>Websites</strong>
-    <span>
-      Modern, mobile-friendly websites that make your business look credible,
-      explain what you do clearly, and help customers take the next step.
-    </span>
-  </div>
-
-  <div class="card">
-    <strong>AI Customer Assistants</strong>
-    <span>
-      Assistants that can answer common questions, collect enquiries,
-      support bookings, and help customers when staff are busy.
-    </span>
-  </div>
-
-  <div class="card">
-    <strong>Apps & Software</strong>
-    <span>
-      Simple tools built around your workflow: not bloated platforms,
-      not generic templates, but practical systems shaped around your business.
-    </span>
-  </div>
-
-  <div class="card">
-    <strong>Technology Support</strong>
-    <span>
-      Help with software, hardware, setup, troubleshooting, upgrades,
-      and making sense of the tools your business depends on.
-    </span>
-  </div>
-
-  <div class="card">
-    <strong>Business Systems</strong>
-    <span>
-      Better ways to organise information, reduce repetitive admin,
-      improve customer handling, and make everyday work smoother.
-    </span>
-  </div>
-
-</section>
-
-<section class="card featured">
-  <div class="kicker">Ready to begin?</div>
-  <strong>You found us. Let’s forge what comes next.</strong>
-  <span>
-    Start with a quick conversation. We’ll identify one practical improvement
-    that could help your business move forward.
-  </span>
-  <br />
-  <a class="button" href="contact.html">Contact Yewforge Digital</a>
-</section>
-
-<footer>
-  © 2026 Yewforge Digital — Helping you forge your future business.
-</footer>
-
-</div>
 </body>
 </html>
