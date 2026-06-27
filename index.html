@@ -1,15 +1,14 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yewforge Digital â€” Websites for local businesses</title>
-  <meta name="description" content="Modern websites for local businesses, built by Jake at Yewforge Digital. No jargon, no pressure â€” practical technology that helps your business grow." />
+  <title>Yewforge Digital - Websites for local businesses</title>
+  <meta name="description" content="Modern websites for local businesses, built by Jake at Yewforge Digital. No jargon, no pressure - practical technology that helps your business grow." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet" />
   <style>
-    /* â”€â”€ Reset â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
@@ -20,12 +19,10 @@
       -moz-osx-font-smoothing: grayscale;
     }
 
-    /* â”€â”€ Layout â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .container { max-width: 1200px; margin: 0 auto; padding: 0 48px; }
     .section    { padding: 120px 0; border-top: 1px solid rgba(255,255,255,0.06); }
     .section--sm { padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.06); }
 
-    /* â”€â”€ Nav â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 200;
       height: 64px; display: flex; align-items: center; justify-content: space-between;
@@ -53,7 +50,6 @@
     .btn-primary:hover { background: #67e8f9; }
     .btn-primary--lg { font-size: 16px; padding: 14px 28px; }
 
-    /* â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .hero { min-height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; }
     .hero-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
     .hero-bg-cyan   { position: absolute; width: 900px; height: 700px; top: -160px; left: -200px; background: radial-gradient(ellipse, rgba(34,211,238,0.065) 0%, transparent 68%); }
@@ -64,22 +60,19 @@
     .hero-lead      { font-family: 'Plus Jakarta Sans', sans-serif; font-size: clamp(16px,1.6vw,19px); line-height: 1.8; color: rgba(255,255,255,0.58); max-width: 500px; margin: 0 0 48px; }
     .hero-ctas      { display: flex; gap: 14px; align-items: center; flex-wrap: wrap; }
     .btn-ghost      { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; color: rgba(255,255,255,0.45); text-decoration: none; display: flex; align-items: center; gap: 6px; transition: color 0.2s; }
-    .btn-ghost:hover{ color: #fff; }
-    .hero-sub       { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,0.2); margin-top: 88px; letter-spacing: 0.06em; text-wrap: pretty; }
+    .btn-ghost:hover { color: #fff; }
+    .hero-sub       { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,0.2); margin-top: 88px; letter-spacing: 0.06em; }
 
-    /* â”€â”€ Typography helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .eyebrow        { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 12px; font-weight: 500; letter-spacing: 0.10em; text-transform: uppercase; color: #22d3ee; margin-bottom: 16px; }
     .eyebrow--amber { color: #f59e0b; }
-    .section-h2     { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px,3.8vw,52px); letter-spacing: -0.015em; color: #fff; line-height: 1.1; text-wrap: pretty; }
+    .section-h2     { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(30px,3.8vw,52px); letter-spacing: -0.015em; color: #fff; line-height: 1.1; }
     .section-h2--sm { font-size: clamp(28px,3.2vw,44px); }
 
-    /* â”€â”€ Grid helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .grid-2       { display: grid; grid-template-columns: 1fr 1fr; gap: 2px; }
     .grid-3       { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; }
     .grid-2col    { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
     .grid-2col--center { align-items: center; gap: 96px; }
 
-    /* â”€â”€ Service cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .card         { background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07); border-radius: 6px; padding: 40px; transition: border-color 0.25s, background 0.25s; }
     .card:hover   { border-color: rgba(34,211,238,0.28); background: rgba(34,211,238,0.025); }
     .card--amber:hover { border-color: rgba(245,158,11,0.28); background: rgba(245,158,11,0.02); }
@@ -92,21 +85,18 @@
     .card-h3      { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 19px; letter-spacing: -0.01em; color: #fff; margin: 0 0 12px; }
     .card-body    { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; line-height: 1.7; color: rgba(255,255,255,0.48); margin: 0; }
 
-    /* â”€â”€ Trust strip â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .trust-row  { display: flex; align-items: stretch; }
     .trust-cell { flex: 1; padding: 48px 40px; border-right: 1px solid rgba(255,255,255,0.06); }
     .trust-cell:last-child { border-right: none; }
     .trust-title { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 17px; color: #fff; margin: 0 0 10px; }
     .trust-body  { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; line-height: 1.7; color: rgba(255,255,255,0.42); margin: 0; }
 
-    /* â”€â”€ Process â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .process-grid  { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 56px; }
     .process-card  { padding: 40px; border: 1px solid rgba(255,255,255,0.07); border-radius: 6px; background: rgba(255,255,255,0.02); }
     .process-num   { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 48px; color: rgba(34,211,238,0.1); line-height: 1; margin-bottom: 20px; letter-spacing: -0.02em; }
     .process-title { font-family: 'Space Grotesk', sans-serif; font-weight: 600; font-size: 18px; color: #fff; margin: 0 0 10px; }
     .process-body  { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; line-height: 1.7; color: rgba(255,255,255,0.45); margin: 0; }
 
-    /* â”€â”€ Pricing â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .pricing-grid  { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 56px; }
     .pricing-card  { padding: 40px; border: 1px solid rgba(255,255,255,0.07); border-radius: 6px; background: rgba(255,255,255,0.025); display: flex; flex-direction: column; gap: 16px; transition: border-color 0.25s, background 0.25s; }
     .pricing-card:hover { border-color: rgba(34,211,238,0.28); background: rgba(34,211,238,0.025); }
@@ -115,12 +105,11 @@
     .pricing-price { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 36px; color: #22d3ee; letter-spacing: -0.02em; line-height: 1; }
     .pricing-price--chat { font-size: 24px; color: rgba(255,255,255,0.5); }
     .pricing-body  { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; line-height: 1.65; color: rgba(255,255,255,0.5); margin: 0; flex: 1; }
-    .pricing-cta   { display: inline-block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 500; color: #070707; background: #22d3ee; padding: 10px 20px; border-radius: 4px; text-decoration: none; transition: background 0.2s; align-self: flex-start; margin-top: 8px; }
+    .pricing-cta   { display: inline-block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 500; color: #070707; background: #22d3ee; padding: 10px 20px; border-radius: 4px; text-decoration: none; transition: background 0.2s; align-self: flex-start; margin-top: 8px; cursor: pointer; border: none; }
     .pricing-cta:hover { background: #67e8f9; }
     .pricing-cta--ghost { background: transparent; color: rgba(255,255,255,0.6); border: 1px solid rgba(255,255,255,0.15); }
     .pricing-cta--ghost:hover { background: rgba(255,255,255,0.06); color: #fff; }
 
-    /* â”€â”€ Jake section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .jake-photo-wrap  { aspect-ratio: 4/5; max-height: 560px; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.07); border-radius: 8px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 14px; position: relative; overflow: hidden; }
     .jake-monogram    { width: 72px; height: 72px; border-radius: 50%; background: rgba(245,158,11,0.1); border: 1px solid rgba(245,158,11,0.2); display: flex; align-items: center; justify-content: center; }
     .jake-monogram span { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 28px; color: rgba(245,158,11,0.5); }
@@ -131,7 +120,6 @@
     .jake-link        { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 500; color: #22d3ee; text-decoration: none; border-bottom: 1px solid rgba(34,211,238,0.28); padding-bottom: 2px; transition: border-color 0.2s; }
     .jake-link:hover  { border-color: rgba(34,211,238,0.7); }
 
-    /* â”€â”€ Work cards â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .work-card        { background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07); border-radius: 6px; padding: 32px; display: flex; flex-direction: column; gap: 20px; transition: border-color 0.25s; }
     .work-card--cyan:hover   { border-color: rgba(34,211,238,0.3); }
     .work-card--banana:hover { border-color: rgba(253,224,71,0.3); }
@@ -149,53 +137,19 @@
     .work-glyph       { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 56px; letter-spacing: -0.02em; }
     .work-body        { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; line-height: 1.65; color: rgba(255,255,255,0.42); margin: 0; }
 
-    /* â”€â”€ Campus CTA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .campus-card         { background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.08); border-radius: 8px; padding: 72px 64px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: space-between; gap: 48px; flex-wrap: wrap; }
     .campus-card-glow    { position: absolute; inset: 0; background: radial-gradient(ellipse 50% 100% at 85% 50%, rgba(34,211,238,0.05) 0%, transparent 70%); pointer-events: none; }
     .campus-card-content { position: relative; z-index: 1; max-width: 560px; }
 
-    /* â”€â”€ Contact â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .contact-email       { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(17px,2vw,26px); color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.18); padding-bottom: 4px; display: inline-block; transition: color 0.2s, border-color 0.2s; }
     .contact-email:hover { color: #22d3ee; border-color: rgba(34,211,238,0.45); }
-    .contact-chip        { display: block; padding: 18px 20px; background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07); border-radius: 4px; text-decoration: none; transition: border-color 0.2s, background 0.2s; }
-    .contact-chip:hover  { border-color: rgba(34,211,238,0.25); background: rgba(34,211,238,0.025); }
-    .contact-chip--amber:hover { border-color: rgba(245,158,11,0.25); background: rgba(245,158,11,0.015); }
-    .contact-chip-title  { display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 500; color: rgba(255,255,255,0.82); }
-    .contact-chip-sub    { display: block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,0.3); margin-top: 3px; }
 
-    /* â”€â”€ Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
     .footer       { border-top: 1px solid rgba(255,255,255,0.06); }
     .footer-inner { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 32px 48px; max-width: 1200px; margin: 0 auto; }
     .footer-brand { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: 14px; color: rgba(255,255,255,0.25); }
     .footer-copy  { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; color: rgba(255,255,255,0.18); }
 
-    /* â”€â”€ Responsive â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
-    @media (max-width: 960px) {
-      .nav-links          { display: none; }
-      .grid-2             { grid-template-columns: 1fr; }
-      .grid-3             { grid-template-columns: 1fr; }
-      .grid-2col          { grid-template-columns: 1fr; gap: 48px; }
-      .grid-2col--center  { gap: 48px; }
-      .process-grid       { grid-template-columns: 1fr; }
-      .pricing-grid       { grid-template-columns: 1fr; }
-      .trust-row          { flex-direction: column; }
-      .trust-cell         { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
-      .trust-cell:last-child { border-bottom: none; }
-      .campus-card        { flex-direction: column; padding: 48px 32px; }
-      .jake-photo-wrap    { max-height: 320px; }
-      .footer-inner       { flex-direction: column; align-items: flex-start; }
-      /* service card spanning two columns falls back to single */
-      .card[style*="grid-column"] { grid-column: auto !important; }
-    }
-    @media (max-width: 640px) {
-      .container    { padding: 0 24px; }
-      .hero-h1      { font-size: 44px; }
-      .nav          { padding: 0 24px; }
-      .footer-inner { padding: 28px 24px; }
-      .campus-card  { padding: 36px 24px; }
-    }
-
-    /* â”€â”€ Pricing modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* Pricing modal */
     #yw-modal { display: none; position: fixed; inset: 0; z-index: 500; padding: 20px; align-items: center; justify-content: center; }
     #yw-modal.open { display: flex; }
     #yw-modal-bg { position: absolute; inset: 0; background: rgba(0,0,0,0.78); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); cursor: pointer; }
@@ -208,13 +162,13 @@
     .modal-section { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin: 0 0 10px; }
     .modal-list { list-style: none; margin: 0 0 24px; padding: 0; display: flex; flex-direction: column; gap: 7px; }
     .modal-list li { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; color: rgba(255,255,255,0.68); display: flex; gap: 10px; line-height: 1.5; }
-    .modal-list li::before { content: 'â€”'; color: #22d3ee; flex-shrink: 0; }
+    .modal-list li::before { content: '--'; color: #22d3ee; flex-shrink: 0; }
     .modal-text { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; line-height: 1.7; color: rgba(255,255,255,0.58); margin: 0 0 24px; }
     .modal-rule { border: none; border-top: 1px solid rgba(255,255,255,0.06); margin: 24px 0; }
-    .modal-cta { display: inline-block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 500; color: #070707; background: #22d3ee; padding: 13px 24px; border-radius: 4px; text-decoration: none; margin-top: 8px; transition: background 0.2s; cursor: pointer; border: none; }
+    .modal-cta { display: inline-block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 500; color: #070707; background: #22d3ee; padding: 13px 24px; border-radius: 4px; text-decoration: none; margin-top: 8px; transition: background 0.2s; }
     .modal-cta:hover { background: #67e8f9; }
 
-    /* â”€â”€ Expandable contact chips â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
+    /* Expandable contact chips */
     .exp-chip { cursor: pointer; background: rgba(255,255,255,0.025); border: 1px solid rgba(255,255,255,0.07); border-radius: 4px; overflow: hidden; transition: border-color 0.2s; }
     .exp-chip:hover, .exp-chip:focus-within { border-color: rgba(34,211,238,0.25); }
     .exp-chip--amber:hover, .exp-chip--amber:focus-within { border-color: rgba(245,158,11,0.25); }
@@ -230,6 +184,29 @@
     .exp-chip--amber .exp-chip-cta { color: #f59e0b; border-color: rgba(245,158,11,0.25); }
     .exp-chip--amber .exp-chip-cta:hover { border-color: rgba(245,158,11,0.7); }
 
+    @media (max-width: 960px) {
+      .nav-links          { display: none; }
+      .grid-2             { grid-template-columns: 1fr; }
+      .grid-3             { grid-template-columns: 1fr; }
+      .grid-2col          { grid-template-columns: 1fr; gap: 48px; }
+      .grid-2col--center  { gap: 48px; }
+      .process-grid       { grid-template-columns: 1fr; }
+      .pricing-grid       { grid-template-columns: 1fr; }
+      .trust-row          { flex-direction: column; }
+      .trust-cell         { border-right: none; border-bottom: 1px solid rgba(255,255,255,0.06); }
+      .trust-cell:last-child { border-bottom: none; }
+      .campus-card        { flex-direction: column; padding: 48px 32px; }
+      .jake-photo-wrap    { max-height: 320px; }
+      .footer-inner       { flex-direction: column; align-items: flex-start; }
+      .card[style*="grid-column"] { grid-column: auto !important; }
+    }
+    @media (max-width: 640px) {
+      .container    { padding: 0 24px; }
+      .hero-h1      { font-size: 44px; }
+      .nav          { padding: 0 24px; }
+      .footer-inner { padding: 28px 24px; }
+      .campus-card  { padding: 36px 24px; }
+    }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after { transition-duration: 0ms !important; animation-duration: 0ms !important; }
     }
@@ -237,7 +214,6 @@
 </head>
 <body>
 
-<!-- â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <nav class="nav" id="yw-nav">
   <a class="nav-brand" href="#">
     <span class="nav-brand-name">Yewforge</span>
@@ -252,7 +228,6 @@
   <a class="btn-primary" href="#contact">Get in touch</a>
 </nav>
 
-<!-- â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="hero">
   <div class="hero-bg">
     <div class="hero-bg-cyan"></div>
@@ -265,19 +240,18 @@
       as hard as you do.
     </h1>
     <p class="hero-lead" data-hero="160">
-      Modern websites for local businesses, built by one developer who cares about getting it right. No jargon, no pressure â€” just thoughtful technology that helps your business grow.
+      Modern websites for local businesses, built by one developer who cares about getting it right. No jargon, no pressure - just thoughtful technology that helps your business grow.
     </p>
     <div class="hero-ctas" data-hero="240">
       <a class="btn-primary btn-primary--lg" href="#contact">Start a conversation</a>
-      <a class="btn-ghost" href="#services">See what I build <span>â†“</span></a>
+      <a class="btn-ghost" href="#services">See what I build &darr;</a>
     </div>
     <p class="hero-sub" data-hero="400">
-      CafÃ©s Â· Restaurants Â· Barbers Â· Tradespeople Â· Independent shops Â· Consultants Â· Sole traders
+      Caf&eacute;s &middot; Restaurants &middot; Barbers &middot; Tradespeople &middot; Independent shops &middot; Consultants &middot; Sole traders
     </p>
   </div>
 </section>
 
-<!-- â”€â”€ SERVICES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="section" id="services">
   <div class="container">
     <div class="reveal" style="margin-bottom:56px;">
@@ -304,27 +278,25 @@
   </div>
 </section>
 
-<!-- â”€â”€ TRUST STRIP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section style="border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);">
   <div class="container">
     <div class="trust-row reveal">
       <div class="trust-cell">
         <p class="trust-title">Independent</p>
-        <p class="trust-body">No agency overhead. No account managers. Just Jake â€” accountable for everything that gets built.</p>
+        <p class="trust-body">No agency overhead. No account managers. Just Jake - accountable for everything that gets built.</p>
       </div>
       <div class="trust-cell">
         <p class="trust-title">Honest</p>
-        <p class="trust-body">I'll tell you when something wonâ€™t work, when it isnâ€™t worth the cost, and when you donâ€™t need to spend anything at all.</p>
+        <p class="trust-body">I'll tell you when something won't work, when it isn't worth the cost, and when you don't need to spend anything at all.</p>
       </div>
       <div class="trust-cell">
         <p class="trust-title">No lock-in</p>
-        <p class="trust-body">Everything I build is yours. No proprietary platforms you canâ€™t leave, no recurring fees for things you can run yourself.</p>
+        <p class="trust-body">Everything I build is yours. No proprietary platforms you can't leave, no recurring fees for things you can run yourself.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- â”€â”€ PROCESS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="section" id="process">
   <div class="container">
     <div class="reveal">
@@ -335,12 +307,12 @@
       <div class="process-card reveal" data-delay="0">
         <div class="process-num">01</div>
         <p class="process-title">Start with one real thing</p>
-        <p class="process-body">Tell me what's frustrating, slow or missing. No forms, no spec documents â€” just a conversation about your business.</p>
+        <p class="process-body">Tell me what's frustrating, slow or missing. No forms, no spec documents - just a conversation about your business.</p>
       </div>
       <div class="process-card reveal" data-delay="80">
         <div class="process-num">02</div>
-        <p class="process-title">We shape the right solution</p>
-        <p class="process-body">I'll be honest about what will help and what wonâ€™t. Then I'll give you a clear plan before anything gets built.</p>
+        <p class="process-title">I'll shape the right solution</p>
+        <p class="process-body">I'll be honest about what will help and what won't. Then I'll give you a clear plan before anything gets built.</p>
       </div>
       <div class="process-card reveal" data-delay="160">
         <div class="process-num">03</div>
@@ -351,7 +323,6 @@
   </div>
 </section>
 
-<!-- â”€â”€ PRICING â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="section" id="pricing">
   <div class="container">
     <div class="reveal">
@@ -361,19 +332,19 @@
     <div class="pricing-grid">
       <div class="pricing-card reveal" data-delay="0">
         <p class="pricing-label">Website Starter</p>
-        <p class="pricing-price">From Â£199</p>
+        <p class="pricing-price">From &pound;199</p>
         <p class="pricing-body">Perfect for getting online fast. A clean, mobile-friendly site with everything a new business needs to look credible and capture enquiries.</p>
         <button class="pricing-cta" type="button" onclick="openModal('starter')">Find out more</button>
       </div>
       <div class="pricing-card pricing-card--featured reveal" data-delay="80">
         <p class="pricing-label">Business Website</p>
-        <p class="pricing-price">From Â£399</p>
+        <p class="pricing-price">From &pound;399</p>
         <p class="pricing-body">A fuller site with more pages, more detail, and more room to grow. Designed around your specific business, not a template.</p>
         <button class="pricing-cta" type="button" onclick="openModal('business')">Find out more</button>
       </div>
       <div class="pricing-card reveal" data-delay="160">
         <p class="pricing-label">Something different?</p>
-        <p class="pricing-price pricing-price--chat">Let's chat</p>
+        <p class="pricing-price pricing-price--chat">Let's talk</p>
         <p class="pricing-body">Need a booking system, an AI assistant, software advice or something more specific? Start with one real problem and we'll work out the right next step.</p>
         <button class="pricing-cta pricing-cta--ghost" type="button" onclick="openModal('custom')">Find out more</button>
       </div>
@@ -381,7 +352,6 @@
   </div>
 </section>
 
-<!-- â”€â”€ MEET JAKE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="section" id="jake">
   <div class="container">
     <div class="grid-2col grid-2col--center">
@@ -389,20 +359,20 @@
         <p class="eyebrow eyebrow--amber reveal">Meet Jake</p>
         <h2 class="section-h2 section-h2--sm reveal" style="margin-bottom:28px;">A developer who builds things that actually help.</h2>
         <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;line-height:1.8;color:rgba(255,255,255,0.55);margin:0 0 18px;" class="reveal">
-          I started YewForge because local businesses deserve the same quality of digital work that large companies get â€” without the inflated cost, the jargon, or the oversized proposal.
+          I started Yewforge because local businesses deserve the same quality of digital work that large companies get - without the inflated cost, the jargon, or the oversized proposal.
         </p>
         <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;line-height:1.8;color:rgba(255,255,255,0.55);margin:0 0 36px;" class="reveal">
-          The best first project is almost always the smallest one that solves a real problem. If something wonâ€™t genuinely help your business, I wonâ€™t build it.
+          The best first project is almost always the smallest one that solves a real problem. If something won't genuinely help your business, I won't build it.
         </p>
         <blockquote class="jake-blockquote reveal">
           <p>"Build the right thing first. Then build it well."</p>
         </blockquote>
-        <a class="jake-link reveal" href="#" data-mail="hello">Say hello â†’</a>
+        <a class="jake-link reveal" href="#" data-mail="hello">Say hello &rarr;</a>
       </div>
       <div class="reveal">
         <div class="jake-photo-wrap">
           <div class="jake-monogram"><span>J</span></div>
-          <p class="jake-photo-label">â† Add a photo of Jake here</p>
+          <p class="jake-photo-label">Add a photo of Jake here</p>
           <div class="jake-amber-glow"></div>
         </div>
       </div>
@@ -410,7 +380,6 @@
   </div>
 </section>
 
-<!-- â”€â”€ SELECTED WORK â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="section" id="work">
   <div class="container">
     <div class="reveal" style="margin-bottom:56px;display:flex;align-items:flex-end;justify-content:space-between;gap:32px;flex-wrap:wrap;">
@@ -418,7 +387,7 @@
         <p class="eyebrow">Selected work</p>
         <h2 class="section-h2 section-h2--sm">Craft over portfolio.</h2>
       </div>
-      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;color:rgba(255,255,255,0.35);max-width:340px;line-height:1.65;margin:0;text-wrap:pretty;">These aren't client case studies. They're real systems â€” built to show how I think, design and solve problems.</p>
+      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;color:rgba(255,255,255,0.35);max-width:340px;line-height:1.65;margin:0;">These aren't client case studies. They're real systems - built to show how I think, design and solve problems.</p>
     </div>
     <div class="grid-3">
       <div class="work-card work-card--cyan reveal" data-delay="0">
@@ -449,32 +418,30 @@
         <div class="work-preview work-preview--white">
           <span class="work-glyph" style="color:rgba(255,255,255,0.07);">C</span>
         </div>
-        <p class="work-body">The immersive studio you're already in â€” built to show how YewForge thinks and works.</p>
+        <p class="work-body">The immersive studio you're already in - built to show how Yewforge thinks and works.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- â”€â”€ CAMPUS INVITE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="section--sm">
   <div class="container">
     <div class="campus-card reveal">
       <div class="campus-card-glow"></div>
       <div class="campus-card-content">
         <p class="eyebrow">The bigger picture</p>
-        <h2 class="section-h2 section-h2--sm" style="margin-bottom:16px;">Curious how YewForge is built?</h2>
+        <h2 class="section-h2 section-h2--sm" style="margin-bottom:16px;">Curious how Yewforge is built?</h2>
         <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;line-height:1.7;color:rgba(255,255,255,0.48);margin:0;">
           The Campus is a separate, immersive environment where you can explore the forge, the laboratory, the process and the story behind the work.
         </p>
       </div>
       <a class="btn-primary btn-primary--lg" href="campus.html" style="position:relative;z-index:1;flex-shrink:0;">
-        Explore the Campus â†’
+        Explore the Campus &rarr;
       </a>
     </div>
   </div>
 </section>
 
-<!-- â”€â”€ CONTACT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <section class="section" id="contact">
   <div class="container">
     <div class="grid-2col">
@@ -482,55 +449,55 @@
         <p class="eyebrow reveal">Get in touch</p>
         <h2 class="section-h2 section-h2--sm reveal" style="margin-bottom:24px;">Start with one real problem.</h2>
         <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;line-height:1.8;color:rgba(255,255,255,0.52);margin:0 0 48px;" class="reveal">
-          You donâ€™t need a perfect brief. Tell me what's not working, what's slow, or what you wish your business could do. I usually respond within a day.
+          You don't need a perfect brief. Tell me what's not working, what's slow, or what you wish your business could do. I usually respond within a day.
         </p>
-        <a class="contact-email reveal" href="#" data-mail="display"><span data-mail-text="1">&#8203;</span></a>
+        <a class="contact-email reveal" href="#" data-mail="display"><span data-mail-text="1"></span></a>
       </div>
       <div class="reveal">
-        <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;color:rgba(255,255,255,0.25);margin-bottom:16px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;">Common starting points</p>
+        <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:12px;color:rgba(255,255,255,0.25);margin-bottom:16px;letter-spacing:0.08em;text-transform:uppercase;font-weight:500;">Where would you like to start?</p>
         <div style="display:flex;flex-direction:column;gap:2px;">
 
           <div class="exp-chip" role="button" tabindex="0" onclick="toggleChip(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleChip(this)">
             <div class="exp-chip-hd">
               <span class="exp-chip-title">I need a new website</span>
-              <span class="exp-chip-arrow">â†“</span>
+              <span class="exp-chip-arrow">&darr;</span>
             </div>
             <div class="exp-chip-bd">
-              <p class="exp-chip-desc">Best if you're starting from scratch â€” no existing site, or launching a new venture. I'll build something clean and fast from the ground up.</p>
-              <a class="exp-chip-cta" href="#" data-mail="new-site">Email Jake about this â†’</a>
+              <p class="exp-chip-desc">Best if you're starting from scratch - no existing site, or a brand new venture. I'll build something clean, fast and professional.</p>
+              <a class="exp-chip-cta" href="#" data-mail="new-site">Start this project &rarr;</a>
             </div>
           </div>
 
           <div class="exp-chip" role="button" tabindex="0" onclick="toggleChip(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleChip(this)">
             <div class="exp-chip-hd">
               <span class="exp-chip-title">My website is outdated</span>
-              <span class="exp-chip-arrow">â†“</span>
+              <span class="exp-chip-arrow">&darr;</span>
             </div>
             <div class="exp-chip-bd">
-              <p class="exp-chip-desc">Best if you already have a site but it feels old, slow, unclear or hard to update. We'll work out what needs fixing and what doesn't.</p>
-              <a class="exp-chip-cta" href="#" data-mail="update">Email Jake about this â†’</a>
+              <p class="exp-chip-desc">Best if you already have a site but it feels old, slow, unclear or hard to update. I'll work out what needs fixing - and what doesn't.</p>
+              <a class="exp-chip-cta" href="#" data-mail="update">Start this project &rarr;</a>
             </div>
           </div>
 
           <div class="exp-chip" role="button" tabindex="0" onclick="toggleChip(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleChip(this)">
             <div class="exp-chip-hd">
               <span class="exp-chip-title">I have a technology question</span>
-              <span class="exp-chip-arrow">â†“</span>
+              <span class="exp-chip-arrow">&darr;</span>
             </div>
             <div class="exp-chip-bd">
-              <p class="exp-chip-desc">Best for practical advice before spending money. Whether it's choosing tools, understanding options, or avoiding a bad decision â€” start here.</p>
-              <a class="exp-chip-cta" href="#" data-mail="advice">Email Jake about this â†’</a>
+              <p class="exp-chip-desc">Best for practical advice before spending money. Whether it's choosing tools, understanding options, or avoiding a bad decision - start here.</p>
+              <a class="exp-chip-cta" href="#" data-mail="advice">Start the conversation &rarr;</a>
             </div>
           </div>
 
           <div class="exp-chip exp-chip--amber" role="button" tabindex="0" onclick="toggleChip(this)" onkeydown="if(event.key==='Enter'||event.key===' ')toggleChip(this)">
             <div class="exp-chip-hd">
               <span class="exp-chip-title">I'm curious about AI for my business</span>
-              <span class="exp-chip-arrow">â†“</span>
+              <span class="exp-chip-arrow">&darr;</span>
             </div>
             <div class="exp-chip-bd">
-              <p class="exp-chip-desc">No hype, no gimmicks. This is about practical AI â€” assistants that answer real questions, tools that save real time. Exploratory and low-pressure.</p>
-              <a class="exp-chip-cta" href="#" data-mail="ai">Email Jake about this â†’</a>
+              <p class="exp-chip-desc">No hype, no gimmicks. This is about practical AI - assistants that answer real questions, tools that save real time. Exploratory and low-pressure.</p>
+              <a class="exp-chip-cta" href="#" data-mail="ai">Start the conversation &rarr;</a>
             </div>
           </div>
 
@@ -540,174 +507,167 @@
   </div>
 </section>
 
-<!-- â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <footer class="footer">
   <div class="footer-inner">
     <span class="footer-brand">Yewforge Digital</span>
-    <span class="footer-copy">&copy; <span id="yr"></span> &middot; <span data-mail-footer="1">&#8203;</span></span>
+    <span class="footer-copy">&copy; <span id="yr"></span> &middot; <span data-mail-footer="1"></span></span>
   </div>
 </footer>
 
+<div id="yw-modal" role="dialog" aria-modal="true" aria-labelledby="yw-modal-label">
+  <div id="yw-modal-bg" onclick="closeModal()"></div>
+  <div id="yw-modal-panel">
+    <button id="yw-modal-close" onclick="closeModal()" aria-label="Close">&times;</button>
+    <div id="yw-modal-body"></div>
+  </div>
+</div>
+
 <script>
-
-
-  // â”€â”€ Pricing modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   var modalData = {
     starter: {
-      label: 'Website Starter', price: 'From Â£199',
-      includes: ['One-page website','Mobile-friendly design','Clear contact section','Basic SEO setup','Help connecting your domain and hosting'],
-      forWho: 'New businesses, or anyone who needs a credible online presence quickly.',
-      timeline: 'Usually 3â€“5 working days once your content is ready.',
-      next: 'Email Jake with your business name and a brief description of what you need. Heâ€™ll reply within a day.',
-      mailKey: 'starter'
+      label: "Website Starter",
+      price: "From &pound;199",
+      includes: ["One-page website", "Mobile-friendly design", "Clear contact section", "Basic SEO setup", "Help connecting your domain and hosting"],
+      forWho: "New businesses, or anyone who needs a credible online presence quickly.",
+      timeline: "Usually 3-5 working days once your content is ready.",
+      next: "Email Jake with your business name and a brief description of what you need. He'll reply within a day.",
+      mailKey: "starter"
     },
     business: {
-      label: 'Business Website', price: 'From Â£399',
-      includes: ['Multiple pages','Stronger structure and copy','Service sections','Clear contact flow','Basic SEO setup','Launch support'],
-      forWho: 'Businesses that need more detail, trust-building, or room to grow.',
-      timeline: 'Usually 1â€“2 weeks depending on scope.',
-      next: 'Email Jake with a brief overview of your business and what the site needs to do. Heâ€™ll come back with a simple plan.',
-      mailKey: 'business'
+      label: "Business Website",
+      price: "From &pound;399",
+      includes: ["Multiple pages", "Stronger structure and copy", "Service sections", "Clear contact flow", "Basic SEO setup", "Launch support"],
+      forWho: "Businesses that need more detail, trust-building, or room to grow.",
+      timeline: "Usually 1-2 weeks depending on scope.",
+      next: "Email Jake with a brief overview of your business and what the site needs to do. He'll come back with a simple plan.",
+      mailKey: "business"
     },
     custom: {
-      label: 'Something different?', price: 'Letâ€™s talk',
-      includes: ['Advice on websites, tools, AI, booking systems, workflows, or small software ideas'],
-      forWho: 'Anyone who knows something needs improving but isnâ€™t sure what the right solution is yet.',
-      timeline: 'Start with a short conversation â€” no commitment required.',
-      next: 'Email Jake with a brief description of the problem. Heâ€™ll respond with honest thoughts and, if it makes sense, a suggested next step.',
-      mailKey: 'custom'
+      label: "Something different?",
+      price: "Let's talk",
+      includes: ["Advice on websites, tools, AI, booking systems, workflows, or small software ideas"],
+      forWho: "Anyone who knows something needs improving but isn't sure what the right solution is yet.",
+      timeline: "Start with a short conversation - no commitment required.",
+      next: "Email Jake with a brief description of the problem. He'll respond with honest thoughts and, if it makes sense, a suggested next step.",
+      mailKey: "custom"
     }
   };
 
   function openModal(key) {
     var d = modalData[key];
     if (!d) return;
-    var u = 'yewforge.partnerships'; var dm = 'gmail.com';
-    var href = 'mail' + 'to:' + u + '@' + dm + (key === 'starter' ? '?subject=Website%20Starter%20enquiry' : key === 'business' ? '?subject=Business%20Website%20enquiry' : '?subject=Custom%20project%20enquiry');
-    var items = d.includes.map(function(i){ return '<li>' + i + '</li>'; }).join('');
-    document.getElementById('yw-modal-body').innerHTML =
-      '<p class="modal-label" id="yw-modal-label">' + d.label + '</p>' +
-      '<p class="modal-price">' + d.price + '</p>' +
-      '<p class="modal-section">Whatâ€™s included</p>' +
-      '<ul class="modal-list">' + items + '</ul>' +
-      '<p class="modal-section">Who itâ€™s for</p>' +
-      '<p class="modal-text">' + d.forWho + '</p>' +
-      '<p class="modal-section">Typical timeline</p>' +
-      '<p class="modal-text">' + d.timeline + '</p>' +
-      '<hr class="modal-rule">' +
-      '<p class="modal-section">What happens next</p>' +
-      '<p class="modal-text">' + d.next + '</p>' +
-      '<a class="modal-cta" href="' + href + '">Email Jake about this â†’</a>';
-    var modal = document.getElementById('yw-modal');
-    modal.classList.add('open');
-    document.body.style.overflow = 'hidden';
-    setTimeout(function(){ document.getElementById('yw-modal-close').focus(); }, 50);
+    var u = "yewforge.partnerships";
+    var dm = "gmail.com";
+    var subj = key === "starter" ? "?subject=Website%20Starter%20enquiry" : key === "business" ? "?subject=Business%20Website%20enquiry" : "?subject=Custom%20project%20enquiry";
+    var href = "mail" + "to:" + u + "@" + dm + subj;
+    var items = d.includes.map(function(i) { return "<li>" + i + "</li>"; }).join("");
+    document.getElementById("yw-modal-body").innerHTML =
+      "<p class='modal-label' id='yw-modal-label'>" + d.label + "</p>" +
+      "<p class='modal-price'>" + d.price + "</p>" +
+      "<p class='modal-section'>What's included</p>" +
+      "<ul class='modal-list'>" + items + "</ul>" +
+      "<p class='modal-section'>Who it's for</p>" +
+      "<p class='modal-text'>" + d.forWho + "</p>" +
+      "<p class='modal-section'>Typical timeline</p>" +
+      "<p class='modal-text'>" + d.timeline + "</p>" +
+      "<hr class='modal-rule'>" +
+      "<p class='modal-section'>What happens next</p>" +
+      "<p class='modal-text'>" + d.next + "</p>" +
+      "<a class='modal-cta' href='" + href + "'>Start this project &rarr;</a>";
+    var modal = document.getElementById("yw-modal");
+    modal.classList.add("open");
+    document.body.style.overflow = "hidden";
+    setTimeout(function() { document.getElementById("yw-modal-close").focus(); }, 50);
   }
 
   function closeModal() {
-    document.getElementById('yw-modal').classList.remove('open');
-    document.body.style.overflow = '';
+    document.getElementById("yw-modal").classList.remove("open");
+    document.body.style.overflow = "";
   }
 
-  document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape') closeModal();
+  document.addEventListener("keydown", function(e) {
+    if (e.key === "Escape") closeModal();
   });
 
-  // â”€â”€ Expandable chips â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   function toggleChip(el) {
-    var isOpen = el.classList.contains('open');
-    document.querySelectorAll('.exp-chip.open').forEach(function(c){ c.classList.remove('open'); });
-    if (!isOpen) el.classList.add('open');
+    var isOpen = el.classList.contains("open");
+    document.querySelectorAll(".exp-chip.open").forEach(function(c) { c.classList.remove("open"); });
+    if (!isOpen) el.classList.add("open");
   }
 
-  // â”€â”€ Email reconstruction (CF-safe) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
   (function() {
-    var u = 'yewforge.partnerships';
-    var d = 'gmail.com';
-    var e = u + '@' + d;
+    var u = "yewforge.partnerships";
+    var d = "gmail.com";
+    var e = u + "@" + d;
     var map = {
-      'starter':  '?subject=Website%20Starter%20enquiry',
-      'business': '?subject=Business%20Website%20enquiry',
-      'custom':   '?subject=Custom%20project%20enquiry',
-      'hello':    '?subject=Hello%20Jake',
-      'display':  '',
-      'new-site': '?subject=New%20website%20for%20my%20business',
-      'update':   '?subject=My%20website%20needs%20updating',
-      'advice':   '?subject=Technology%20advice',
-      'ai':       '?subject=AI%20tools%20for%20my%20business'
+      "starter":  "?subject=Website%20Starter%20enquiry",
+      "business": "?subject=Business%20Website%20enquiry",
+      "custom":   "?subject=Custom%20project%20enquiry",
+      "hello":    "?subject=Hello%20Jake",
+      "display":  "",
+      "new-site": "?subject=New%20website%20for%20my%20business",
+      "update":   "?subject=My%20website%20needs%20updating",
+      "advice":   "?subject=Technology%20advice",
+      "ai":       "?subject=AI%20tools%20for%20my%20business"
     };
-    document.querySelectorAll('[data-mail]').forEach(function(el) {
-      var key = el.getAttribute('data-mail');
-      el.href = 'mail' + 'to:' + e + (map[key] || '');
-      if (key === 'display') {
-        var span = el.querySelector('[data-mail-text]');
+    document.querySelectorAll("[data-mail]").forEach(function(el) {
+      var key = el.getAttribute("data-mail");
+      el.href = "mail" + "to:" + e + (map[key] || "");
+      if (key === "display") {
+        var span = el.querySelector("[data-mail-text]");
         if (span) span.textContent = e;
       }
     });
-    document.querySelectorAll('[data-mail-footer]').forEach(function(el) {
+    document.querySelectorAll("[data-mail-footer]").forEach(function(el) {
       el.textContent = e;
     });
-    document.querySelectorAll('[data-mail-text]').forEach(function(el) {
+    document.querySelectorAll("[data-mail-text]").forEach(function(el) {
       el.textContent = e;
     });
   })();
-  
-  // â”€â”€ Year â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  document.getElementById('yr').textContent = new Date().getFullYear();
 
-  // â”€â”€ Nav scroll blur â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  var nav = document.getElementById('yw-nav');
-  window.addEventListener('scroll', function() {
+  document.getElementById("yr").textContent = new Date().getFullYear();
+
+  var nav = document.getElementById("yw-nav");
+  window.addEventListener("scroll", function() {
     if (window.scrollY > 48) {
-      nav.classList.add('scrolled');
+      nav.classList.add("scrolled");
     } else {
-      nav.classList.remove('scrolled');
+      nav.classList.remove("scrolled");
     }
   }, { passive: true });
 
-  // â”€â”€ Hero entrance (JS-driven, survives re-renders) â”€â”€â”€â”€â”€â”€â”€â”€
-  document.querySelectorAll('[data-hero]').forEach(function(el) {
-    var delay = parseInt(el.getAttribute('data-hero') || '0');
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(28px)';
-    el.style.transition = 'opacity 0.75s cubic-bezier(0.16,1,0.3,1), transform 0.75s cubic-bezier(0.16,1,0.3,1)';
+  document.querySelectorAll("[data-hero]").forEach(function(el) {
+    var delay = parseInt(el.getAttribute("data-hero") || "0");
+    el.style.opacity = "0";
+    el.style.transform = "translateY(28px)";
+    el.style.transition = "opacity 0.75s cubic-bezier(0.16,1,0.3,1), transform 0.75s cubic-bezier(0.16,1,0.3,1)";
     setTimeout(function() {
-      el.style.opacity = '1';
-      el.style.transform = 'translateY(0)';
+      el.style.opacity = "1";
+      el.style.transform = "translateY(0)";
     }, delay + 80);
   });
 
-  // â”€â”€ Scroll reveals â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
-  var reveals = document.querySelectorAll('.reveal');
+  var reveals = document.querySelectorAll(".reveal");
   var observer = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (!entry.isIntersecting) return;
       var el = entry.target;
-      var delay = parseInt(el.getAttribute('data-delay') || '0');
+      var delay = parseInt(el.getAttribute("data-delay") || "0");
       setTimeout(function() {
-        el.style.opacity = '1';
-        el.style.transform = 'translateY(0)';
+        el.style.opacity = "1";
+        el.style.transform = "translateY(0)";
       }, delay);
       observer.unobserve(el);
     });
-  }, { threshold: 0.1, rootMargin: '0px 0px -28px 0px' });
+  }, { threshold: 0.1, rootMargin: "0px 0px -28px 0px" });
 
   reveals.forEach(function(el) {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(22px)';
-    el.style.transition = 'opacity 0.65s cubic-bezier(0.16,1,0.3,1), transform 0.65s cubic-bezier(0.16,1,0.3,1)';
+    el.style.opacity = "0";
+    el.style.transform = "translateY(22px)";
+    el.style.transition = "opacity 0.65s cubic-bezier(0.16,1,0.3,1), transform 0.65s cubic-bezier(0.16,1,0.3,1)";
     observer.observe(el);
   });
 </script>
-
-<!-- â”€â”€ PRICING MODAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
-<div id="yw-modal" role="dialog" aria-modal="true" aria-labelledby="yw-modal-label">
-  <div id="yw-modal-bg" onclick="closeModal()"></div>
-  <div id="yw-modal-panel">
-    <button id="yw-modal-close" onclick="closeModal()" aria-label="Close">âœ•</button>
-    <div id="yw-modal-body"></div>
-  </div>
-</div>
 </body>
 </html>
-
