@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yewforge-digital.co.uk/sitemap.xml
