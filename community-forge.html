@@ -24,6 +24,40 @@
   <script src="js/campus.js" defer></script>
   <script src="js/pippup.js" defer></script>
   <style>
+    /* Community Forge mobile overflow hardening */
+    html,
+    body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    .site-shell,
+    .cf-shell,
+    .section,
+    .section--sm,
+    .cf-hero,
+    .cf-spotlight,
+    .cf-vote-grid,
+    .cf-form,
+    .cf-pippup-card,
+    .cf-wall-grid,
+    .cf-stats,
+    .cf-promise,
+    .cf-footer {
+      max-width: 100%;
+    }
+
+    .cf-spotlight > *,
+    .cf-vote-grid > *,
+    .cf-form > *,
+    .cf-pippup-card > *,
+    .cf-wall-grid > *,
+    .cf-stats > *,
+    .cf-footer > * {
+      min-width: 0;
+    }
+
 /* Room tag bar */
     .cf-room-bar {
       display: flex; align-items: center; gap: 10px;
@@ -404,7 +438,35 @@
       font-family: 'Plus Jakarta Sans', sans-serif; font-size: 11px;
       color: rgba(245,158,11,0.45); font-style: italic; margin-top: 2px;
     }
-    @media (max-width: 720px) { .cf-stats { grid-template-columns: repeat(2,1fr); } }
+    @media (max-width: 720px) {
+      .cf-hero::before {
+        width: min(700px, 140vw);
+        left: -36vw;
+      }
+      .cf-spotlight,
+      .cf-vote-grid,
+      .cf-form,
+      .cf-pippup-card,
+      .cf-wall-grid,
+      .cf-footer {
+        grid-template-columns: 1fr;
+      }
+      .cf-stats { grid-template-columns: repeat(2,1fr); }
+      .cf-spotlight-media,
+      .cf-spotlight-body,
+      .cf-pippup-card,
+      .cf-promise {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      .cf-spotlight-logo {
+        width: min(148px, calc(100% - 36px));
+      }
+      .cf-footer,
+      .cf-footer-links {
+        align-items: flex-start;
+      }
+    }
     @media (max-width: 400px) { .cf-stats { grid-template-columns: 1fr; } }
 
     /* ── NEXT-DOOR / PROMISE ── */

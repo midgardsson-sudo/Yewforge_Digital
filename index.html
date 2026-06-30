@@ -50,6 +50,21 @@
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
+    /* Index mobile overflow hardening */
+    html,
+    body {
+      width: 100%;
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    img,
+    svg,
+    video,
+    canvas {
+      max-width: 100%;
+    }
+
     html { scroll-behavior: smooth; }
 
     body {
@@ -66,9 +81,35 @@
 
     }
 
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 48px; }
+    .container { width: 100%; max-width: 1200px; margin: 0 auto; padding: 0 48px; }
 
-    .section    { padding: 120px 0; border-top: 1px solid rgba(255,255,255,0.06); }
+    .section    { max-width: 100%; padding: 120px 0; border-top: 1px solid rgba(255,255,255,0.06); }
+
+    .container,
+    .nav,
+    .hero,
+    .hero-inner,
+    .grid-2,
+    .grid-3,
+    .grid-2col,
+    .process-grid,
+    .pricing-grid,
+    .trust-row,
+    .campus-card,
+    .footer-inner {
+      max-width: 100%;
+    }
+
+    .grid-2 > *,
+    .grid-3 > *,
+    .grid-2col > *,
+    .process-grid > *,
+    .pricing-grid > *,
+    .trust-row > *,
+    .campus-card > *,
+    .footer-inner > * {
+      min-width: 0;
+    }
 
     .section--sm { padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.06); }
 
@@ -377,7 +418,7 @@
 
       .nav          { height: auto; min-height: 64px; align-items: flex-start; flex-wrap: wrap; padding-top: 10px; padding-bottom: 10px; }
 
-      .nav-links    { order: 2; display: flex; width: 100%; gap: 14px; overflow-x: auto; padding: 4px 0 2px; scrollbar-width: none; }
+      .nav-links    { order: 2; display: flex; width: 100%; max-width: 100%; gap: 14px; flex-wrap: wrap; overflow-x: hidden; padding: 4px 0 2px; scrollbar-width: none; }
 
       .nav-links::-webkit-scrollbar { display: none; }
 
@@ -417,13 +458,31 @@
 
       .hero-h1      { font-size: 44px; }
 
-      .nav          { padding: 0 24px; }
+      .nav          { padding: 10px 24px; }
 
       .nav-brand-mark { width: 23px; height: 23px; }
 
       .footer-inner { padding: 28px 24px; }
 
       .campus-card  { padding: 36px 24px; }
+
+      .hero-bg-cyan {
+        width: min(900px, 150vw);
+        left: -44vw;
+      }
+
+      .hero-bg-amber {
+        width: min(640px, 130vw);
+        right: -36vw;
+      }
+
+      .btn-primary,
+      .btn-secondary,
+      .button,
+      .modal-cta {
+        max-width: 100%;
+        white-space: normal;
+      }
 
     }
 

@@ -8,6 +8,21 @@
 
 /* Reset */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* Mobile overflow hardening */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
+}
 html { scroll-behavior: smooth; }
 a    { color: inherit; }
 
@@ -35,7 +50,39 @@ body {
   padding-top: 64px; /* offset for fixed nav */
 }
 
-main { flex: 1; }
+main { flex: 1; min-width: 0; }
+
+.site-shell,
+.forge-stack-shell,
+.site-header,
+.room-layout,
+.forge-stack-page,
+.section,
+.room-hero,
+.stack-hero,
+.stack-partner,
+.room-grid,
+.object-grid,
+.process-rail,
+.stack-grid,
+.stack-tracks,
+.next-door,
+.site-footer {
+  max-width: 100%;
+}
+
+.room-hero > *,
+.stack-hero > *,
+.stack-partner > *,
+.room-grid > *,
+.object-grid > *,
+.process-rail > *,
+.stack-grid > *,
+.stack-tracks > *,
+.next-door > *,
+.site-footer > * {
+  min-width: 0;
+}
 .room-layout  { padding-bottom: 80px; }
 .forge-stack-page { padding-bottom: 80px; }
 
@@ -1063,7 +1110,16 @@ code {
   .site-shell,
   .forge-stack-shell { width: calc(100% - 32px); }
 
-  .site-header { padding: 0 16px; }
+  .site-header {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 16px;
+  }
+
+  .room-hero::before {
+    width: min(700px, 140vw);
+    left: -36vw;
+  }
 
   .brand-mark { width: 23px; height: 23px; }
 
