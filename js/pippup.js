@@ -64,8 +64,17 @@
 
       scheduleSit();
 
+      function closeMobileMenu() {
+        var siteNav = document.querySelector(".site-nav");
+        var navToggle = document.querySelector(".nav-toggle");
+        if (siteNav) siteNav.classList.remove("is-open");
+        document.body.classList.remove("mobile-menu-open");
+        if (navToggle) navToggle.setAttribute("aria-expanded", "false");
+      }
+
       function setOpen(isOpen) {
         wakePipPup();
+        if (isOpen) closeMobileMenu();
         guide.classList.toggle("is-open", isOpen);
         toggle.setAttribute("aria-expanded", String(isOpen));
         toggle.setAttribute("aria-label", isOpen ? "Minimise PipPup guide" : "Open PipPup guide");

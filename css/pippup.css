@@ -460,6 +460,23 @@
         bottom: 14px;
       }
 
+      .pippup-panel {
+        position: fixed;
+        right: 14px;
+        bottom: calc(126px + env(safe-area-inset-bottom, 0px));
+        width: min(292px, calc(100vw - 28px));
+        max-height: calc(100dvh - 210px - env(safe-area-inset-bottom, 0px));
+        overflow-y: auto;
+        overscroll-behavior: contain;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      @supports not (height: 100dvh) {
+        .pippup-panel {
+          max-height: calc(100vh - 210px);
+        }
+      }
+
       .pippup-toggle {
         width: 72px;
         height: 72px;
