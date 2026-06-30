@@ -8,6 +8,8 @@
       var close = guide.querySelector("[data-pippup-close]");
       var title = guide.querySelector("#pippup-title");
       var status = guide.querySelector("[data-pippup-status]");
+      var actions = guide.querySelector(".pippup-actions");
+      var answerPanel = null;
       var actionLinks = guide.querySelectorAll(".pippup-actions a, .pippup-community-link");
       var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
       var canFollowCursor = window.matchMedia("(hover: hover) and (pointer: fine)");
@@ -36,6 +38,47 @@
 
       if (title && pippupConfig.page && pippupConfig.page !== "home" && pippupConfig.headings[pippupConfig.page]) {
         title.innerHTML = "<strong>" + pippupConfig.headings[pippupConfig.page][0] + "</strong><span>" + pippupConfig.headings[pippupConfig.page][1] + "</span>";
+      }
+
+      function buildQuickActions() {
+        if (!actions) return;
+        actions.innerHTML = [
+          "<a href=\"forge.html\">Getting a website</a>",
+          "<a href=\"index.html#pricing\">Pricing &amp; support</a>",
+          "<a href=\"#why-not-wix\" data-pippup-answer=\"why-not-wix\">Why not Wix?</a>",
+          "<a href=\"community-forge.html\">Community Forge</a>",
+          "<a href=\"workshop.html\">How projects work</a>",
+          "<a href=\"index.html#contact\">Start a project</a>"
+        ].join("");
+        answerPanel = document.createElement("section");
+        answerPanel.className = "pippup-answer";
+        answerPanel.setAttribute("aria-live", "polite");
+        answerPanel.hidden = true;
+        answerPanel.innerHTML = [
+          "<h3>Why not just use Wix?</h3>",
+          "<p>You absolutely can &mdash; and for some simple projects, that may be the right choice.</p>",
+          "<p>Builders like Wix give you templates and tools. YewForge helps with the harder bit: understanding your business, shaping the message, designing something people can actually use, setting it up properly, and being there when something needs changing later.</p>",
+          "<p>You are not paying us to click buttons for you. You are paying for a site that feels like your business, works toward a real goal, and does not leave you alone with twenty tabs open wondering why the contact form has vanished.</p>",
+          "<div class=\"pippup-answer-actions\">",
+          "<a href=\"forge.html\">Tell me what YewForge can build</a>",
+          "<a href=\"index.html#pricing\">Ask about pricing</a>",
+          "<a href=\"index.html#contact\">Start a project</a>",
+          "</div>"
+        ].join("");
+        actions.insertAdjacentElement("afterend", answerPanel);
+        actionLinks = guide.querySelectorAll(".pippup-actions a, .pippup-community-link, .pippup-answer-actions a");
+      }
+
+      buildQuickActions();
+
+      function showAnswer(key) {
+        if (key !== "why-not-wix" || !answerPanel) return;
+        setOpen(true);
+        answerPanel.hidden = false;
+        guide.classList.add("has-answer");
+        var trigger = guide.querySelector("[data-pippup-answer=\"why-not-wix\"]");
+        if (trigger) trigger.setAttribute("aria-current", "true");
+        answerPanel.scrollIntoView({ block: "nearest" });
       }
 
       function canUseIdleMotion() {
@@ -86,6 +129,23 @@
 
       close.addEventListener("click", function () {
         setOpen(false);
+        toggle.focus();
+      });
+
+      guide.addEventListener("click", function (event) {
+        var answerLink = event.target && event.target.closest ? event.target.closest("[data-pippup-answer]") : null;
+        if (!answerLink) return;
+        event.preventDefault();
+        showAnswer(answerLink.getAttribute("data-pippup-answer"));
+      });
+
+      document.addEventListener("click", function (event) {
+        var externalTrigger = event.target && event.target.closest ? event.target.closest("[data-pippup-open]") : null;
+        if (!externalTrigger) return;
+        var target = externalTrigger.getAttribute("data-pippup-open");
+        if (target !== "why-not-wix") return;
+        event.preventDefault();
+        showAnswer(target);
         toggle.focus();
       });
 

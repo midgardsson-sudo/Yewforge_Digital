@@ -213,11 +213,100 @@
     }
 
     .pippup-actions a:hover,
-    .pippup-actions a:focus-visible {
+    .pippup-actions a:focus-visible,
+    .pippup-actions a[aria-current="true"] {
       transform: translateX(2px);
       border-color: rgba(34, 211, 238, 0.32);
       background: rgba(245, 174, 91, 0.14);
       color: #fffaf0;
+      outline: none;
+    }
+
+    .pippup-answer {
+      margin-top: 10px;
+      padding: 12px;
+      border: 1px solid rgba(245, 174, 91, 0.22);
+      border-radius: 7px;
+      background: rgba(15, 11, 10, 0.54);
+      color: rgba(255, 238, 210, 0.88);
+    }
+
+    .pippup-answer[hidden] {
+      display: none;
+    }
+
+    .pippup-answer h3 {
+      margin: 0 0 8px;
+      color: rgba(255, 225, 180, 0.98);
+      font-size: 13px;
+      line-height: 1.25;
+    }
+
+    .pippup-answer p {
+      margin: 0 0 8px;
+      font-size: 11px;
+      font-weight: 500;
+      line-height: 1.45;
+    }
+
+    .pippup-answer p:last-of-type {
+      margin-bottom: 10px;
+    }
+
+    .pippup-answer-actions {
+      display: grid;
+      gap: 6px;
+    }
+
+    .pippup-answer-actions a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 32px;
+      padding: 7px 9px;
+      border: 1px solid rgba(34, 211, 238, 0.16);
+      border-radius: 6px;
+      background: rgba(34, 211, 238, 0.06);
+      color: rgba(255, 242, 215, 0.92);
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.15;
+      text-decoration: none;
+    }
+
+    .pippup-answer-actions a::after {
+      content: "";
+      width: 5px;
+      height: 5px;
+      border-top: 1px solid currentColor;
+      border-right: 1px solid currentColor;
+      transform: rotate(45deg);
+      opacity: 0.66;
+    }
+
+    .pippup-answer-actions a:hover,
+    .pippup-answer-actions a:focus-visible {
+      border-color: rgba(34, 211, 238, 0.34);
+      background: rgba(245, 174, 91, 0.12);
+      color: #fffaf0;
+      outline: none;
+    }
+
+    .pippup-inline-trigger {
+      display: inline-block;
+      margin-top: 12px;
+      color: rgba(255, 220, 167, 0.78);
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.5;
+      text-decoration: none;
+      border-bottom: 1px solid rgba(34, 211, 238, 0.28);
+    }
+
+    .pippup-inline-trigger:hover,
+    .pippup-inline-trigger:focus-visible {
+      color: #fff8ed;
+      border-bottom-color: rgba(34, 211, 238, 0.62);
       outline: none;
     }
 
