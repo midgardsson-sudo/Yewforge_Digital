@@ -435,16 +435,19 @@
     .cf-promise-sig-text strong { display: block; font-weight: 600; color: rgba(255,255,255,0.55); margin-bottom: 1px; }
 
     /* ── FOOTER ── */
-    .community-footer {
+    .community-footer, .cf-footer {
       border-top: 1px solid rgba(255,255,255,0.06);
       display: flex; align-items: center; justify-content: space-between;
       gap: 16px; padding: 28px 0;
       font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px;
       color: rgba(255,255,255,0.18); flex-wrap: wrap;
     }
-    .community-footer a { color: rgba(255,255,255,0.28); text-decoration: none; }
-    .community-footer a:hover { color: rgba(255,255,255,0.6); }
-    .community-footer-links { display: flex; gap: 20px; }
+    .community-footer a, .cf-footer a { color: rgba(255,255,255,0.28); text-decoration: none; }
+    .community-footer a:hover, .cf-footer a:hover { color: rgba(255,255,255,0.6); }
+    .community-footer-links, .cf-footer-links { display: flex; gap: 20px; }
+    .footer-socials { display: inline-flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+    .footer-socials a { color: rgba(255,255,255,0.28); text-decoration: none; }
+    .footer-socials a:hover, .footer-socials a:focus-visible { color: rgba(245,174,91,0.68); }
 
     /* ── PIPPUP WIDGET ── */
     
@@ -770,6 +773,11 @@
       <span>© 2026 YewForge Digital.</span>
       <span style="margin-left:16px;opacity:0.5;">Community Forge — Room 04</span>
     </div>
+    <nav class="footer-socials" aria-label="YewForge social links">
+      <a href="https://www.facebook.com/YewForgeDigital" target="_blank" rel="noopener" aria-label="Facebook">Facebook</a>
+      <a href="https://www.instagram.com/yewforgedigital/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
+      <a href="https://x.com/YewForgeDigital" target="_blank" rel="noopener" aria-label="X">X</a>
+    </nav>
     <div class="cf-footer-links">
       <a href="index.html">Back to Studio</a>
       <a href="campus.html">Campus</a>

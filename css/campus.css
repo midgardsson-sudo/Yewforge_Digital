@@ -555,6 +555,24 @@ code {
   font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
   font-size: 13px;
   color: rgba(255, 255, 255, 0.18);
+  flex-wrap: wrap;
+}
+
+.footer-socials {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.footer-socials a {
+  color: rgba(255, 255, 255, 0.28);
+  text-decoration: none;
+}
+
+.footer-socials a:hover,
+.footer-socials a:focus-visible {
+  color: rgba(245, 174, 91, 0.72);
 }
 
 /* Redirect forward pages */
@@ -1066,7 +1084,7 @@ code {
   .stack-ecosystem { padding: 28px 20px; }
   .stack-bullets { grid-template-columns: 1fr; }
 
-  .site-footer { flex-direction: column; gap: 6px; }
+  .site-footer { flex-direction: column; align-items: flex-start; gap: 8px; }
 
   .nav-toggle { display: inline-flex; }
 
