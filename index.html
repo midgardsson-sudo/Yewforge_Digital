@@ -111,6 +111,14 @@
       min-width: 0;
     }
 
+    .work-grid {
+      max-width: 100%;
+    }
+
+    .work-grid > * {
+      min-width: 0;
+    }
+
     .section--sm { padding: 80px 0; border-top: 1px solid rgba(255,255,255,0.06); }
 
     .nav {
@@ -171,7 +179,7 @@
 
     .hero { min-height: 100vh; position: relative; overflow: hidden; display: flex; align-items: center; }
 
-    .hero-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; pointer-events: none; overflow: hidden; contain: paint; max-width: 100%; }
 
     .hero-bg-cyan   { position: absolute; width: 900px; height: 700px; top: -160px; left: -200px; background: radial-gradient(ellipse, rgba(34,211,238,0.065) 0%, transparent 68%); }
 
@@ -474,6 +482,28 @@
       .hero-bg-amber {
         width: min(640px, 130vw);
         right: -36vw;
+      }
+
+      .work-grid {
+        grid-template-columns: 1fr !important;
+      }
+
+      .hero-bg {
+        overflow: clip;
+      }
+
+      .hero-bg-cyan {
+        width: 100%;
+        left: 0;
+        right: auto;
+        max-width: 100%;
+      }
+
+      .hero-bg-amber {
+        width: 100%;
+        left: auto;
+        right: 0;
+        max-width: 100%;
       }
 
       .btn-primary,
@@ -855,7 +885,7 @@
 
     </div>
 
-    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
+    <div class="work-grid" style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;">
 
 
 

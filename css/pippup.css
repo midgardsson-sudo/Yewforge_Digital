@@ -491,6 +491,13 @@
       .pippup-gaze {
         transform: none;
       }
+
+      body.mobile-menu-open .pippup-guide.is-open .pippup-panel {
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: translateY(8px) scale(0.98);
+      }
     }
 
     @media (prefers-reduced-motion: reduce) {
