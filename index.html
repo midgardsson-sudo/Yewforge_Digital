@@ -162,7 +162,19 @@
     .nav-link:hover { color: #fff; }
 
     .nav-link[aria-current="page"] { color: #fff; }
-
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 4px;
+      color: rgba(255,255,255,0.55);
+      padding: 8px 14px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      flex-shrink: 0;
+    }
     .btn-primary {
 
       font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 500;
@@ -424,13 +436,44 @@
 
     @media (max-width: 960px) {
 
-      .nav          { height: auto; min-height: 64px; align-items: flex-start; flex-wrap: wrap; padding-top: 10px; padding-bottom: 10px; }
+      .nav {
+        height: 64px;
+        min-height: 64px;
+        align-items: center;
+        flex-wrap: nowrap;
+        padding-top: 0;
+        padding-bottom: 0;
+      }
 
-      .nav-links    { order: 2; display: flex; width: 100%; max-width: 100%; gap: 14px; flex-wrap: wrap; overflow-x: hidden; padding: 4px 0 2px; scrollbar-width: none; }
+      .nav-toggle { display: inline-flex; }
 
-      .nav-links::-webkit-scrollbar { display: none; }
+      .nav-links {
+        position: fixed;
+        top: 64px;
+        left: 0;
+        right: 0;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        width: auto;
+        max-width: none;
+        background: rgba(7,7,7,0.98);
+        border-bottom: 1px solid rgba(255,255,255,0.07);
+        padding: 12px 24px 20px;
+        backdrop-filter: blur(18px);
+        -webkit-backdrop-filter: blur(18px);
+      }
 
-      .nav-link     { font-size: 13px; }
+      .nav-links.is-open { display: flex; }
+
+      .nav-link {
+        padding: 12px 0;
+        font-size: 15px;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+      }
+
+      .nav-link:last-child { border-bottom: none; }
 
       .grid-2             { grid-template-columns: 1fr; }
 
@@ -524,6 +567,7 @@
 
   </style>
   <link rel="stylesheet" href="css/pippup.css" />
+  <script src="js/campus.js" defer></script>
   <script src="js/pippup.js" defer></script>
 </head>
 
@@ -531,9 +575,9 @@
 
 
 
-<nav class="nav" id="yw-nav">
+<header class="nav site-header" id="yw-nav">
 
-  <a class="nav-brand" href="index.html">
+  <a class="nav-brand brand" href="index.html">
 
     <img class="nav-brand-mark" src="assets/yewforge_brand_icon.png" alt="YewForge Digital mark">
 
@@ -543,7 +587,9 @@
 
   </a>
 
-    <div class="nav-links" aria-label="Campus rooms">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+
+    <nav class="nav-links site-nav" id="site-nav" aria-label="Campus rooms">
 
     <a class="nav-link" href="index.html" aria-current="page">Entrance</a>
 
@@ -561,9 +607,9 @@
 
     <a class="nav-link" href="begin.html">Begin</a>
 
-  </div>
+  </nav>
 
-</nav>
+</header>
 
 
 
