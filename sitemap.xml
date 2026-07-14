@@ -63,4 +63,19 @@
   <url>
     <loc>https://yewforge-digital.co.uk/community-forge.html</loc>
   </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/the-inconvenience/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/the-inconvenience/issues/001/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/the-inconvenience/archive/</loc>
+    <lastmod>2026-07-14</lastmod>
+    <priority>0.5</priority>
+  </url>
 </urlset>
