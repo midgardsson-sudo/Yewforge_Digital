@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>The Inconvenience</title>
+    <link>https://yewforge-digital.co.uk/the-inconvenience/</link>
+    <description>A YewForge Digital publication: weekly issues and evidence-led experimental dispatches.</description>
+    <language>en-gb</language>
+    <lastBuildDate>Wed, 15 Jul 2026 12:00:00 +0100</lastBuildDate>
+    <item>
+      <title>The Digital Trinity</title>
+      <link>https://yewforge-digital.co.uk/the-inconvenience/experimental-dispatches/001-the-digital-trinity/</link>
+      <guid isPermaLink="true">https://yewforge-digital.co.uk/the-inconvenience/experimental-dispatches/001-the-digital-trinity/</guid>
+      <pubDate>Wed, 15 Jul 2026 12:00:00 +0100</pubDate>
+      <description>An exploratory comparison of fifteen hypothetical generated responses across awakening, horror and beauty, with timings and limitations.</description>
+    </item>
+    <item>
+      <title>How Not to Lose Your Head</title>
+      <link>https://yewforge-digital.co.uk/the-inconvenience/issues/001/</link>
+      <guid isPermaLink="true">https://yewforge-digital.co.uk/the-inconvenience/issues/001/</guid>
+      <pubDate>Tue, 14 Jul 2026 12:00:00 +0100</pubDate>
+      <description>Solo development as orchestration, external memory, AI agents and founder judgement.</description>
+    </item>
+  </channel>
+</rss>
