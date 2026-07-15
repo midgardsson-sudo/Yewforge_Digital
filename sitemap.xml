@@ -93,4 +93,39 @@
     <lastmod>2026-07-15</lastmod>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/engineering/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/engineering/koda/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/engineering/koda/objectives/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/engineering/koda/architecture/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/engineering/koda/current-state/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/engineering/koda/roadmap/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/engineering/koda/glossary/</loc>
+    <lastmod>2026-07-15</lastmod>
+    <priority>0.5</priority>
+  </url>
 </urlset>
