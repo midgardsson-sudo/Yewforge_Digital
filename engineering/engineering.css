@@ -90,6 +90,11 @@ td code,.ej-code { color:#c0ddd4; font: .76rem/1.4 var(--ej-mono); }
 .ej-system-flow small { display:block; margin-top:.4rem; color:var(--ej-muted); font-size:.72rem; line-height:1.4; }
 .ej-system-nav { display:flex; flex-wrap:wrap; gap:.45rem .8rem; margin:1rem 0 0; font-size:.82rem; }
 .ej-system-nav a { color:var(--ej-muted); }
+.ej-timeline { margin:1.5rem 0; border-left:2px solid var(--ej-rule); }
+.ej-era { position:relative; padding:0 0 1.6rem 1.4rem; }
+.ej-era::before { content:""; position:absolute; left:-.45rem; top:.25rem; width:.72rem; height:.72rem; border:2px solid var(--ej-cyan); background:var(--ej-bg); }
+.ej-era h3 { margin:0 0 .45rem; }
+.ej-era p { font-size:.9rem; }
 .ej-flow { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:0; margin:1.6rem 0; border:1px solid var(--ej-rule); }
 .ej-flow div { position:relative; min-height:6.5rem; padding:1rem; background:var(--ej-surface); border-right:1px solid var(--ej-rule); }
 .ej-flow div:last-child { border-right:0; }
