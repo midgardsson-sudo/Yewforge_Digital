@@ -1,6 +1,6 @@
 /**
  * Nivren daily build updates — renders Jake-approved published entries only.
- * Drafts under nivren-updates/drafts/ are never fetched by this script.
+ * Unpublished drafts are kept outside the published website tree and are never fetched by this script.
  */
 (function () {
   'use strict';

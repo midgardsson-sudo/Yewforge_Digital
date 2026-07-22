@@ -1,0 +1,39 @@
+# Internal review / audit / planning (keep outside Pages root)
+WEBSITE_NIVREN_*.md
+NIVREN_SCREENSHOT_REQUESTS.md
+*_REVIEW_PACK.md
+*_AUDIT.md
+*_PREDEPLOY_QA.md
+*_REPORT.md
+
+# QA captures and checklists
+qa/
+qa/**
+
+# Unpublished drafts (store under sibling website-internal/)
+nivren-updates/drafts/
+nivren-updates/drafts/**
+
+# Template / blueprint development (not deployed)
+YewForge Template Development/
+blueprints/
+
+# Social marketing packages (not site assets)
+social/
+*.zip
+
+# Local helper scripts
+START_YEWFORGE_SITE.bat
+*.bat
+
+# Image briefs and temporary capture notes
+**/IMAGE_BRIEF.md
+**/IMAGE_BRIEF*.md
+
+# Editor / agent scratch
+.agents/
+.DS_Store
+Thumbs.db
+*~
+*.tmp
+*.temp
