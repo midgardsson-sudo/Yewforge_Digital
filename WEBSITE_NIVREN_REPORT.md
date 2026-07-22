@@ -24,6 +24,7 @@ Public site source repositioned from services-first studio framing to **YewForge
 | `e89a055` | Add nivren-os.html to sitemap with fresh lastmod. |
 | `07134a0` | Rebrand engineering journal active naming to Nivren. |
 | `dc5b331` | Align Campus nav and hierarchy with Nivren OS. |
+| `b736ff8` | Record Nivren website repositioning validation report. |
 
 ---
 
