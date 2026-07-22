@@ -140,8 +140,8 @@ Everything on `main` after `52e9c12`, including:
 | `dc5b331` | Align Campus nav and hierarchy with Nivren OS. |
 | `b736ff8` | Record Nivren website repositioning validation report. |
 | `3551b9b` | Include report commit SHA in Nivren website report. |
-| *(new)* | Daily build updates + screenshot requests / placeholders |
-| *(new)* | This pre-deploy QA report (+ optional QA screenshots) |
+|  | Add Nivren daily build updates and honest screenshot placeholders. |
+|  | Record final Nivren website pre-deploy QA pack. |
 
 Exact new SHAs are recorded in the commit list section after creation.
 
