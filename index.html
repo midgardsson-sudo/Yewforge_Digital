@@ -373,6 +373,52 @@
 
     .campus-card-content { position: relative; z-index: 1; max-width: 560px; }
 
+    .campus-discord-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+      gap: 2px;
+      margin: 0 0 40px;
+    }
+
+    .campus-discord-item {
+      padding: 28px 22px;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 6px;
+      background: rgba(255,255,255,0.02);
+    }
+
+    .campus-discord-item strong {
+      display: block;
+      font-family: 'Space Grotesk', sans-serif;
+      font-weight: 600;
+      font-size: 15px;
+      color: #fff;
+      margin: 0 0 8px;
+      letter-spacing: -0.01em;
+    }
+
+    .campus-discord-item span {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px;
+      line-height: 1.65;
+      color: rgba(255,255,255,0.45);
+    }
+
+    .campus-discord-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 18px;
+    }
+
+    .campus-discord-note {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      color: rgba(255,255,255,0.35);
+      margin: 0;
+    }
+
     .contact-email       { font-family: 'Space Grotesk', sans-serif; font-weight: 700; font-size: clamp(17px,2vw,26px); color: #fff; text-decoration: none; border-bottom: 1px solid rgba(255,255,255,0.18); padding-bottom: 4px; display: inline-block; transition: color 0.2s, border-color 0.2s; }
 
     .contact-email:hover { color: #22d3ee; border-color: rgba(34,211,238,0.45); }
@@ -517,6 +563,8 @@
 
       .campus-card        { flex-direction: column; padding: 48px 32px; }
 
+      .campus-discord-list { grid-template-columns: 1fr 1fr; }
+
       .jake-photo-wrap    { max-height: 320px; }
 
       .footer-inner       { flex-direction: column; align-items: flex-start; }
@@ -538,6 +586,8 @@
       .footer-inner { padding: 28px 24px; }
 
       .campus-card  { padding: 36px 24px; }
+
+      .campus-discord-list { grid-template-columns: 1fr; }
 
       .hero-bg-cyan {
         width: min(900px, 150vw);
@@ -720,6 +770,89 @@
         We would rather show unfinished engineering honestly than sell finished bullshit convincingly.
 
       </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+<!--
+  DISCORD_INVITE_PENDING — Jake: replace the Join Discord href with the real
+  YewForge Campus invite (discord.gg/…). Searched site, notes, and Discord
+  desktop config; no public invite URL found. See DISCORD_INVITE_PENDING.md.
+-->
+<section class="section" id="yewforge-campus-discord">
+
+  <div class="container">
+
+    <div class="reveal" style="margin-bottom:48px;max-width:760px;">
+
+      <p class="eyebrow">Community</p>
+
+      <h2 class="section-h2" style="max-width:640px;">Join YewForge Campus</h2>
+
+      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;line-height:1.8;color:rgba(255,255,255,0.58);margin:24px 0 0;">
+
+        Nivren OS is built in public. The YewForge Campus Discord is where daily build updates, suggestions, bug reports, engineering talk and community showcases live alongside the work — not as a separate marketing channel.
+
+      </p>
+
+    </div>
+
+    <ul class="campus-discord-list reveal" aria-label="What happens in YewForge Campus Discord">
+
+      <li class="campus-discord-item">
+
+        <strong>Daily build updates</strong>
+
+        <span>Follow what landed, what broke, and what is next — in plain language.</span>
+
+      </li>
+
+      <li class="campus-discord-item">
+
+        <strong>Feature suggestions</strong>
+
+        <span>Propose ideas for Nivren and the Campus systems around it.</span>
+
+      </li>
+
+      <li class="campus-discord-item">
+
+        <strong>Bug reports</strong>
+
+        <span>Flag issues early so the workshop can fix them with evidence.</span>
+
+      </li>
+
+      <li class="campus-discord-item">
+
+        <strong>Engineering discussions</strong>
+
+        <span>Talk architecture, organs, local-first design and real constraints.</span>
+
+      </li>
+
+      <li class="campus-discord-item">
+
+        <strong>Community showcase</strong>
+
+        <span>Share experiments, screenshots and builds from the Campus community.</span>
+
+      </li>
+
+    </ul>
+
+    <div class="campus-discord-actions reveal">
+
+      <!-- TODO DISCORD_INVITE_PENDING: set real invite URL -->
+      <a class="btn-primary btn-primary--lg" href="https://discord.gg/REPLACE_ME" rel="noopener">Join Discord</a>
+
+      <p class="campus-discord-note">Invite URL pending Jake (<code>DISCORD_INVITE_PENDING</code>).</p>
 
     </div>
 
@@ -1364,6 +1497,8 @@
       <a href="https://www.instagram.com/yewforgedigital/" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
       <a href="https://www.linkedin.com/in/YewForgeDigital" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
       <a href="https://x.com/YewForgeDigital" target="_blank" rel="noopener" aria-label="X">X</a>
+      <!-- TODO DISCORD_INVITE_PENDING -->
+      <a href="https://discord.gg/REPLACE_ME" target="_blank" rel="noopener" aria-label="YewForge Campus Discord">Discord</a>
     </nav>
 
     <a class="footer-link" href="community-forge.html">Community Forge</a>
