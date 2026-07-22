@@ -143,8 +143,9 @@ Everything on `main` after `52e9c12`, including:
 | `1ea196d` | Add Nivren daily build updates and honest screenshot placeholders. |
 | `088085e` | Record final Nivren website pre-deploy QA pack. |
 | `0ee42c9` | Fill pre-deploy QA report with follow-on commit SHAs. |
+| `6ab3be7` | Correct follow-on commit SHAs in pre-deploy QA report. |
 
-Local `main` tip after this fix will add one more SHA for the corrected table; use `git log origin/main..HEAD` as the authoritative publish list.
+Authoritative publish list: `git log --oneline origin/main..HEAD`.
 
 ---
 
