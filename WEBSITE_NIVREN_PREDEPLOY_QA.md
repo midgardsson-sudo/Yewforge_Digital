@@ -140,10 +140,11 @@ Everything on `main` after `52e9c12`, including:
 | `dc5b331` | Align Campus nav and hierarchy with Nivren OS. |
 | `b736ff8` | Record Nivren website repositioning validation report. |
 | `3551b9b` | Include report commit SHA in Nivren website report. |
-|  | Add Nivren daily build updates and honest screenshot placeholders. |
-|  | Record final Nivren website pre-deploy QA pack. |
+| `1ea196d` | Add Nivren daily build updates and honest screenshot placeholders. |
+| `088085e` | Record final Nivren website pre-deploy QA pack. |
+| `0ee42c9` | Fill pre-deploy QA report with follow-on commit SHAs. |
 
-Exact new SHAs are recorded in the commit list section after creation.
+Local `main` tip after this fix will add one more SHA for the corrected table; use `git log origin/main..HEAD` as the authoritative publish list.
 
 ---
 
