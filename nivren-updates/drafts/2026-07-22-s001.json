@@ -1,0 +1,88 @@
+{
+  "id": "2026-07-22-s001",
+  "date": "2026-07-22",
+  "session_number": 1,
+  "title": "Campus / Nivren public site repositioning (draft)",
+  "visibility": "private",
+  "approval_status": "draft_awaiting_jake",
+  "stability_status": "In development",
+  "summary": "Public Campus site source was repositioned so YewForge Campus and Nivren OS lead, with commercial Forge services retained lower on the page. This draft covers website work only. It is not published until Jake approves.",
+  "completed_work": [
+    "Audited the live Campus site against the committed baseline and recorded gaps for Campus / Nivren positioning.",
+    "Repositioned the homepage so Campus and Nivren OS lead, with manifesto and campus project doorways above commercial Forge services.",
+    "Added a crawlable Nivren OS flagship page with honest working / in-development / roadmap separation and a working-name history note.",
+    "Updated sitemap, Campus nav, forge-stack hierarchy copy, and engineering journal active naming to Nivren while retaining historical path continuity.",
+    "Started a daily build-update system with draft gating and a crawlable published archive shell."
+  ],
+  "improvements": [
+    "Homepage and Campus meta titles now present YewForge Campus as home of Nivren OS rather than services-first studio framing.",
+    "Engineering journal hub wording distinguishes active Nivren branding from retained historical casefile names and URL paths.",
+    "Nivren OS page evidence section uses honest screenshot placeholders instead of inventing product imagery."
+  ],
+  "discoveries": [
+    "Deployed GitHub Pages site still matched the pre-repositioning commit at the start of this work; local main is ahead and unpublished.",
+    "No invented product domain was introduced; public canonicals remain on the existing Campus domain.",
+    "Real Nivren product screenshots are not yet supplied for the flagship page; requests are listed separately for Jake capture."
+  ],
+  "current_problems": [
+    "Daily build update for this session remains a private draft pending Jake approval.",
+    "Product evidence screenshots for Nivren OS are awaited; placeholders must not be mistaken for finished UI claims.",
+    "Pre-deploy QA and publish decision are still awaiting Jake sign-off; nothing has been pushed."
+  ],
+  "next_steps": [
+    "Jake review of this draft update; approve, edit, or reject before any publication.",
+    "Supply real Nivren screenshots per the screenshot request list, then replace placeholders.",
+    "Complete pre-deploy QA checklist items Jake marks as blocking, then decide whether to push the website commits."
+  ],
+  "screenshots_or_evidence": [
+    {
+      "type": "request",
+      "label": "Screenshot requests pending Jake capture",
+      "href": "/NIVREN_SCREENSHOT_REQUESTS.md",
+      "status": "Planned"
+    },
+    {
+      "type": "link",
+      "label": "Nivren Engineering Journal (conservative public record)",
+      "href": "/engineering/",
+      "status": "Working"
+    }
+  ],
+  "related_public_commits": [
+    {
+      "repo": "Yewforge_Digital (website)",
+      "sha": "2312354",
+      "message": "Document Phase 1 Nivren repositioning website audit."
+    },
+    {
+      "repo": "Yewforge_Digital (website)",
+      "sha": "1054e64",
+      "message": "Reposition homepage to Campus and Nivren first."
+    },
+    {
+      "repo": "Yewforge_Digital (website)",
+      "sha": "03e1f63",
+      "message": "Add Nivren OS flagship page."
+    },
+    {
+      "repo": "Yewforge_Digital (website)",
+      "sha": "e89a055",
+      "message": "Add nivren-os.html to sitemap with fresh lastmod."
+    },
+    {
+      "repo": "Yewforge_Digital (website)",
+      "sha": "07134a0",
+      "message": "Rebrand engineering journal active naming to Nivren."
+    },
+    {
+      "repo": "Yewforge_Digital (website)",
+      "sha": "dc5b331",
+      "message": "Align Campus nav and hierarchy with Nivren OS."
+    }
+  ],
+  "related_release_references": [],
+  "scrub_notes": [
+    "Website-only public wording. No private filesystem paths, credentials, personal data, crash logs, model weights, or internal security detail included.",
+    "Working-name history may mention Koda only as historical context, not as active product branding."
+  ]
+}

@@ -1177,3 +1177,150 @@ code {
     animation-duration: 0ms !important;
   }
 }
+
+/* Nivren daily build updates + evidence placeholders */
+.status-chip {
+  display: inline-block;
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.72);
+  background: rgba(255, 255, 255, 0.04);
+  margin: 0 6px 6px 0;
+  vertical-align: middle;
+}
+
+.status-chip.is-working { border-color: rgba(132, 204, 22, 0.45); color: #bef264; }
+.status-chip.is-experimental { border-color: rgba(34, 211, 238, 0.45); color: #67e8f9; }
+.status-chip.is-in-development { border-color: rgba(251, 191, 36, 0.45); color: #fde68a; }
+.status-chip.is-blocked { border-color: rgba(239, 68, 68, 0.45); color: #fca5a5; }
+.status-chip.is-planned { border-color: rgba(148, 163, 184, 0.45); color: #cbd5e1; }
+.status-chip.is-released { border-color: rgba(167, 139, 250, 0.45); color: #ddd6fe; }
+
+.nivren-updates-list {
+  display: grid;
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.nivren-updates-empty {
+  color: rgba(255, 255, 255, 0.55);
+  font-size: 15px;
+}
+
+.nivren-update-card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.025);
+  border-radius: 10px;
+  padding: 20px 22px;
+}
+
+.nivren-update-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  align-items: center;
+  margin-bottom: 10px;
+  color: rgba(255, 255, 255, 0.45);
+  font-size: 13px;
+}
+
+.nivren-update-title {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.nivren-update-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px 20px;
+  margin-top: 14px;
+}
+
+.nivren-update-grid h3 {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.42);
+  margin-bottom: 8px;
+}
+
+.nivren-update-grid ul,
+.nivren-update-card ul {
+  padding-left: 18px;
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.nivren-update-grid li + li,
+.nivren-update-card li + li { margin-top: 6px; }
+
+.nivren-update-muted { color: rgba(255, 255, 255, 0.4); font-size: 14px; }
+
+.evidence-placeholder-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 22px 0 18px;
+}
+
+.evidence-placeholder {
+  margin: 0;
+}
+
+.evidence-placeholder-frame {
+  min-height: 180px;
+  border: 1px dashed rgba(34, 211, 238, 0.35);
+  border-radius: 10px;
+  background:
+    linear-gradient(135deg, rgba(34, 211, 238, 0.06), rgba(255, 255, 255, 0.02) 45%, rgba(0, 0, 0, 0.25)),
+    repeating-linear-gradient(
+      -45deg,
+      rgba(255, 255, 255, 0.03) 0 8px,
+      rgba(255, 255, 255, 0.01) 8px 16px
+    );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 6px;
+  padding: 18px;
+}
+
+.evidence-placeholder-frame strong {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.evidence-placeholder-frame > span:last-child {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 13px;
+}
+
+.evidence-placeholder figcaption {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.48);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.evidence-placeholder figcaption a {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 980px) {
+  .nivren-update-grid,
+  .evidence-placeholder-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,3 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /nivren-updates/drafts/
+
 Sitemap: https://yewforge-digital.co.uk/sitemap.xml

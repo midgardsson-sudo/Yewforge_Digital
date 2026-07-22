@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "description": "Nivren daily build update record",
+  "required": [
+    "id",
+    "date",
+    "session_number",
+    "title",
+    "visibility",
+    "approval_status",
+    "stability_status",
+    "completed_work",
+    "improvements",
+    "discoveries",
+    "current_problems",
+    "next_steps",
+    "screenshots_or_evidence",
+    "related_public_commits",
+    "related_release_references"
+  ],
+  "stability_status_allowed": [
+    "Working",
+    "Experimental",
+    "In development",
+    "Blocked",
+    "Planned",
+    "Released"
+  ],
+  "visibility_allowed": ["public", "private"],
+  "approval_status_examples": [
+    "draft_awaiting_jake",
+    "published",
+    "rejected"
+  ]
+}

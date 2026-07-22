@@ -54,6 +54,7 @@
   <link rel="stylesheet" href="css/pippup.css" />
   <script src="js/campus.js" defer></script>
   <script src="js/pippup.js" defer></script>
+  <script src="js/nivren-updates.js" defer></script>
 </head>
 <body data-room="nivren">
   <div class="site-shell">
@@ -147,12 +148,88 @@
         <p><strong>Roadmap.</strong> Broader integrated operating-environment behaviour, wider specialist coverage and future surfaces. Roadmap items are not claimed as present capability.</p>
       </section>
 
+      <section class="purpose-panel" style="max-width:960px;margin:0 auto 56px;" id="daily-updates">
+        <p class="eyebrow ember">Building in public</p>
+        <h2>Daily build updates</h2>
+        <p>
+          Recent Jake-approved session notes. Status labels stay honest:
+          <span class="status-chip is-working">Working</span>
+          <span class="status-chip is-experimental">Experimental</span>
+          <span class="status-chip is-in-development">In development</span>
+          <span class="status-chip is-blocked">Blocked</span>
+          <span class="status-chip is-planned">Planned</span>
+          <span class="status-chip is-released">Released</span>
+        </p>
+        <div
+          id="nivren-updates-recent"
+          class="nivren-updates-list"
+          data-nivren-updates
+          data-manifest="nivren-updates/published/index.json"
+          data-mode="recent"
+          data-limit="3"
+        >
+          <p class="nivren-updates-empty">No published build updates yet. The latest session draft is waiting for Jake&rsquo;s approval before it can appear here.</p>
+        </div>
+        <p style="margin-top:18px;">
+          <a class="button button-quiet" href="nivren-updates/archive/">Open the build update archive</a>
+        </p>
+      </section>
+
       <section class="purpose-panel" style="max-width:960px;margin:0 auto 56px;" id="evidence">
         <p class="eyebrow">Evidence</p>
         <h2>Screenshots and build evidence</h2>
         <p>
           Public engineering evidence lives in the <a href="engineering/">Nivren Engineering Journal</a>. That record is deliberately conservative: it separates demonstrated behaviour from design intent, and does not present unfinished work as a finished product.
         </p>
+        <p>
+          Real product screenshots are requested from Jake and will replace the placeholders below. No stock imagery or invented UI is used as Nivren evidence. See <a href="NIVREN_SCREENSHOT_REQUESTS.md">NIVREN_SCREENSHOT_REQUESTS.md</a>.
+        </p>
+        <div class="evidence-placeholder-grid" aria-label="Screenshot placeholders awaiting real captures">
+          <figure class="evidence-placeholder">
+            <div class="evidence-placeholder-frame" role="img" aria-label="Placeholder for Nivren desktop shell overview screenshot">
+              <span class="status-chip is-planned">Awaiting capture</span>
+              <strong>Desktop shell overview</strong>
+              <span>Request 001 · Working / Experimental after capture</span>
+            </div>
+            <figcaption>
+              Needed: real Nivren desktop shell on local hardware.
+              <a href="NIVREN_SCREENSHOT_REQUESTS.md#request-001--desktop-shell-overview">Capture brief</a>
+            </figcaption>
+          </figure>
+          <figure class="evidence-placeholder">
+            <div class="evidence-placeholder-frame" role="img" aria-label="Placeholder for Nivren observability surface screenshot">
+              <span class="status-chip is-planned">Awaiting capture</span>
+              <strong>Observability surface</strong>
+              <span>Request 002 · Working only if demonstrated</span>
+            </div>
+            <figcaption>
+              Needed: live telemetry / workshop observability panel.
+              <a href="NIVREN_SCREENSHOT_REQUESTS.md#request-002--observability--telemetry-surface">Capture brief</a>
+            </figcaption>
+          </figure>
+          <figure class="evidence-placeholder">
+            <div class="evidence-placeholder-frame" role="img" aria-label="Placeholder for Nivren Chat doorway screenshot">
+              <span class="status-chip is-planned">Awaiting capture</span>
+              <strong>Chat as doorway</strong>
+              <span>Request 003 · Experimental / In development</span>
+            </div>
+            <figcaption>
+              Needed: chat inside wider OS chrome — not chat-as-product.
+              <a href="NIVREN_SCREENSHOT_REQUESTS.md#request-003--nivren-chat-as-doorway-not-the-whole-product">Capture brief</a>
+            </figcaption>
+          </figure>
+          <figure class="evidence-placeholder">
+            <div class="evidence-placeholder-frame" role="img" aria-label="Placeholder for Nivren evidence records screenshot">
+              <span class="status-chip is-planned">Awaiting capture</span>
+              <strong>Evidence records</strong>
+              <span>Request 004 · Working</span>
+            </div>
+            <figcaption>
+              Needed: sanitised evidence / project-state view.
+              <a href="NIVREN_SCREENSHOT_REQUESTS.md#request-004--evidence--project-state-record-view">Capture brief</a>
+            </figcaption>
+          </figure>
+        </div>
         <p>
           Related Campus systems: <a href="index.html#work">Fenryr</a> (internal operational system) and <a href="index.html#work">LYRA</a> (research/presence). Commercial website and software services remain under <a href="forge.html">The Forge</a>.
         </p>
