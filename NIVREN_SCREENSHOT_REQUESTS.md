@@ -7,62 +7,56 @@
 
 ---
 
-## Request 001 — Desktop shell overview
+## Request 001 — Desktop shell overview — FULFILLED (2026-07-22)
 
 | Field | Value |
 |-------|--------|
-| Page section | Nivren OS → Screenshots and build evidence |
-| Feature that must be shown | Nivren desktop / primary shell with recognisable OS chrome (panels or dock), not a browser-only dashboard |
-| Dimensions / aspect | 1600×900 (16:9) preferred; 1920×1080 acceptable |
-| Capture target | Desktop |
-| Required application/window state | Desktop idle or lightly populated with 1–2 real Nivren surfaces open; no staged fake windows |
-| Pointer visible | No |
-| Desktop background | Blurred or cropped so wallpaper does not dominate; hide personal photos |
-| Must exclude | Private paths, usernames, API keys, chat contents, notifications with personal data, credentials, crash dialogs |
-| Suggested filename | `assets/nivren/nivren-desktop-shell-overview.png` |
-| Alt text | Nivren OS desktop shell on local Linux hardware during active development |
-| Caption | Desktop shell overview — Working / In development (label to match actual state at capture) |
-| Functionality class | Working or Experimental — label honestly after capture |
+| Status | **Fulfilled** — wired into homepage carousel + `nivren-os.html#evidence` |
+| Filename | `assets/nivren/nivren-desktop-shell-overview.png` |
+| Source | `/home/jake/Downloads/screenshots/desktop overview.png` |
+| Alt text | Nivren OS desktop shell on local Linux hardware during active development, with IDE and terminal windows open |
+| Caption / chips | Desktop shell overview — Working / In development |
+| Functionality class | Working / In development |
 
 ---
 
-## Request 002 — Observability / telemetry surface
+## Request 002 — Observability / telemetry surface — FULFILLED (2026-07-22)
 
 | Field | Value |
 |-------|--------|
-| Page section | Nivren OS → Screenshots and build evidence |
-| Feature that must be shown | Live workshop observability or telemetry surface that already exists (GPU/RAM/system activity or equivalent demonstrated panel) |
-| Dimensions / aspect | 1400×900 (approx 14:9) or 16:9 crop |
-| Capture target | Desktop |
-| Required application/window state | Panel showing real local readings; freeze a calm non-alarming moment |
-| Pointer visible | No |
-| Desktop background | Hidden / cropped out of frame if possible |
-| Must exclude | Hostnames that leak private identity, absolute home paths, tokens, raw crash stacks, unrelated personal notifications |
-| Suggested filename | `assets/nivren/nivren-observability-surface.png` |
-| Alt text | Nivren observability surface showing local system activity |
-| Caption | Observability surface — Working (only if this exact panel is demonstrated) |
+| Status | **Fulfilled** — wired into homepage carousel + `nivren-os.html#evidence` |
+| Filename | `assets/nivren/nivren-observability-surface.png` |
+| Source | `/home/jake/Downloads/screenshots/observability.png` |
+| Alt text | Nivren observability surface showing local system activity including CPU, GPU, RAM and thermal readings |
+| Caption / chips | Observability surface — Working |
 | Functionality class | Working |
 
 ---
 
-## Request 003 — Nivren Chat as doorway (not the whole product)
+## Request 003 — Nivren Chat as doorway (not the whole product) — FULFILLED (2026-07-22)
 
 | Field | Value |
 |-------|--------|
-| Page section | Nivren OS → Screenshots and build evidence · supports “Nivren Chat” card |
-| Feature that must be shown | Conversational surface clearly framed as one doorway into the wider OS (chrome, nav, or sibling panels visible) |
-| Dimensions / aspect | 1200×900 (4:3) or 16:9 |
-| Capture target | Desktop |
-| Required application/window state | Chat UI open with placeholder or scrubbed non-sensitive prompt/response; surrounding OS context visible |
-| Pointer visible | Optional, only if it clarifies a control |
-| Desktop background | Blurred or out of frame |
-| Must exclude | Real private conversations, customer data, model system prompts, API keys, unpublished research text |
-| Suggested filename | `assets/nivren/nivren-chat-doorway.png` |
-| Alt text | Nivren Chat open as one interface within the wider operating environment |
-| Caption | Chat as doorway — Experimental or In development |
-| Functionality class | Experimental or In development |
+| Status | **Fulfilled** — wired into homepage carousel + `nivren-os.html#evidence` |
+| Filename | `assets/nivren/nivren-chat-doorway.png` |
+| Source | `/home/jake/Downloads/screenshots/chat.png` |
+| Alt text | Nivren Drop Chat open as one interface within the wider Nivren OS desktop |
+| Caption / chips | Chat as doorway — Experimental |
+| Functionality class | Experimental |
 
 ---
+
+
+## Extra capture — Privacy veil / tiled shell — FULFILLED (2026-07-22)
+
+| Field | Value |
+|-------|--------|
+| Status | **Fulfilled** (not in original numbered list; Jake labelled `privacy.png`) — homepage carousel + evidence grid |
+| Filename | `assets/nivren/nivren-privacy-veil.png` |
+| Source | `/home/jake/Downloads/screenshots/privacy.png` |
+| Alt text | Nivren OS tiled windows with privacy veil engaged to obscure sensitive content |
+| Caption / chips | Privacy veil / tiled shell — Experimental |
+| Functionality class | Experimental |
 
 ## Request 004 — Evidence / project-state record view
 
@@ -104,14 +98,13 @@
 
 ## Placeholder policy
 
-Until images arrive:
+Requests **001–003** plus the privacy-veil extra are fulfilled on the homepage carousel and `nivren-os.html#evidence`. Request **004** (evidence records) and optional **005** (mobile) remain awaiting capture — keep their placeholders until Jake supplies files.
 
-1. Keep the styled temporary placeholders on `nivren-os.html#evidence`.
-2. Link placeholders to this request list.
-3. Do not commit stock photos or generated UI as product evidence.
-4. Unrelated Campus/Forge page work may continue while screenshots are pending.
+1. Do not invent product screenshots or substitute stock / generated UI as Nivren evidence.
+2. Link remaining placeholders to this request list.
+3. Unrelated Campus/Forge page work may continue while outstanding screenshots are pending.
 
-## After Jake supplies files
+## After Jake supplies remaining files
 
 1. Place files under `assets/nivren/` using the suggested names (or update this list if names change).
 2. Replace the matching placeholder block with `<figure>` + real `<img alt>` + caption + honest status chip.
