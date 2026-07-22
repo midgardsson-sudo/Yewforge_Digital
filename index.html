@@ -5,40 +5,62 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>YewForge Digital | Websites, AI Tools &amp; Business Software</title>
-  <meta name="description" content="Practical websites, AI tools and business software for local businesses across the United Kingdom, built by Jake Evans at YewForge Digital." />
+  <title>YewForge Campus | Home of Nivren OS</title>
+  <meta name="description" content="YewForge Campus is the home of Nivren OS, a local-first AI operating system developed by YewForge, alongside Fenryr, LYRA and the systems used to build them." />
   <link rel="icon" href="favicon.ico" sizes="any">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="canonical" href="https://yewforge-digital.co.uk/" />
-  <meta property="og:title" content="YewForge Digital | Websites, AI Tools &amp; Business Software" />
-  <meta property="og:description" content="Practical websites, AI tools and business software for local businesses across the United Kingdom, built by Jake Evans at YewForge Digital." />
+  <meta property="og:title" content="YewForge Campus | Home of Nivren OS" />
+  <meta property="og:description" content="YewForge Campus is the home of Nivren OS, a local-first AI operating system developed by YewForge, alongside Fenryr, LYRA and the systems used to build them." />
   <meta property="og:url" content="https://yewforge-digital.co.uk/" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-image.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="YewForge Digital | Websites, AI Tools &amp; Business Software" />
-  <meta name="twitter:description" content="Practical websites, AI tools and business software for local businesses across the United Kingdom, built by Jake Evans at YewForge Digital." />
+  <meta name="twitter:title" content="YewForge Campus | Home of Nivren OS" />
+  <meta name="twitter:description" content="YewForge Campus is the home of Nivren OS, a local-first AI operating system developed by YewForge, alongside Fenryr, LYRA and the systems used to build them." />
   <meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-image.png" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "ProfessionalService",
-  "name": "YewForge Digital",
-  "founder": {
-    "@type": "Person",
-    "name": "Jake Evans"
-  },
-  "url": "https://yewforge-digital.co.uk",
-  "sameAs": [
-    "https://x.com/YewForgeDigital",
-    "https://www.instagram.com/yewforgedigital/"
-  ],
-  "areaServed": "United Kingdom",
-  "description": "Practical websites, AI tools and business software for local businesses."
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://yewforge-digital.co.uk/#organization",
+      "name": "YewForge",
+      "alternateName": ["YewForge Digital", "YewForge Campus"],
+      "url": "https://yewforge-digital.co.uk/",
+      "founder": {
+        "@type": "Person",
+        "name": "Jake Evans"
+      },
+      "sameAs": [
+        "https://x.com/YewForgeDigital",
+        "https://www.instagram.com/yewforgedigital/"
+      ],
+      "description": "YewForge Campus is the home of Nivren OS and the systems used to build it, alongside commercial digital services under The Forge."
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://yewforge-digital.co.uk/nivren-os.html#software",
+      "name": "Nivren OS",
+      "applicationCategory": "OperatingSystem",
+      "operatingSystem": "Linux",
+      "url": "https://yewforge-digital.co.uk/nivren-os.html",
+      "creator": { "@id": "https://yewforge-digital.co.uk/#organization" },
+      "description": "Nivren OS is a local-first AI operating system developed by YewForge. It is a genuine Linux-based AI operating system being built to coordinate specialist models, memory, applications, system services and the computer itself."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://yewforge-digital.co.uk/#website",
+      "name": "YewForge Campus",
+      "url": "https://yewforge-digital.co.uk/",
+      "publisher": { "@id": "https://yewforge-digital.co.uk/#organization" }
+    }
+  ]
 }
-  </script>
+</script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
 
@@ -593,6 +615,10 @@
 
     <a class="nav-link" href="index.html" aria-current="page">Entrance</a>
 
+    <a class="nav-link" href="nivren-os.html">Nivren OS</a>
+
+    <a class="nav-link" href="engineering/">Engineering</a>
+
     <a class="nav-link" href="forge.html">The Forge</a>
 
     <a class="nav-link" href="forge-stack.html">Partners</a>
@@ -627,37 +653,33 @@
 
   <div class="hero-inner container" style="padding-top:120px;padding-bottom:96px;">
 
-    <p class="hero-eyebrow" data-hero="0">Independent Digital Studio</p>
+    <p class="hero-eyebrow" data-hero="0">YewForge Campus</p>
 
     <h1 class="hero-h1" data-hero="80">
 
-      A website that works<br>
-
-      as hard as you do.
+      Home of Nivren OS.
 
     </h1>
 
     <p class="hero-lead" data-hero="160">
 
-      Modern websites for local businesses, built by one developer who cares about getting it right. No jargon, no pressure - just thoughtful technology that helps your business grow.
+      A local-first AI operating system being built to coordinate models, memory, applications, system services and the computer itself.
 
     </p>
 
     <div class="hero-ctas" data-hero="240">
 
-      <a class="btn-primary btn-primary--lg" href="index.html#contact">Start a conversation</a>
+      <a class="btn-primary btn-primary--lg" href="nivren-os.html">Nivren OS</a>
 
-      <a class="btn-ghost" href="#services">See what I build &darr;</a>
+      <a class="btn-ghost" href="campus.html">Enter the Campus &rarr;</a>
+
+      <a class="btn-ghost" href="engineering/">Current build / engineering log &rarr;</a>
+
+      <a class="btn-ghost" href="#work">Fenryr</a>
+
+      <a class="btn-ghost" href="#work">LYRA</a>
 
     </div>
-
-    <a class="pippup-inline-trigger" id="why-not-wix" href="#why-not-wix" data-pippup-open="why-not-wix">Thinking of using a website builder instead? Ask PipPup: Why not Wix?</a>
-
-    <p class="hero-sub" data-hero="400">
-
-      Caf&eacute;s &middot; Restaurants &middot; Barbers &middot; Tradespeople &middot; Independent shops &middot; Consultants &middot; Sole traders
-
-    </p>
 
   </div>
 
@@ -665,199 +687,105 @@
 
 
 
-<section class="section" id="services">
+<section class="section" id="manifesto">
+
+  <div class="container">
+
+    <div class="reveal" style="max-width:800px;">
+
+      <p class="eyebrow--amber">Manifesto</p>
+
+      <h2 class="section-h2" style="max-width:720px;">Bullshit takes the bus.</h2>
+
+      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;line-height:1.8;color:rgba(255,255,255,0.58);margin:24px 0 32px;">
+
+        We are not building another generic AI startup with an impressive landing page and nothing underneath it.
+
+      </p>
+
+      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;line-height:1.8;color:rgba(255,255,255,0.58);margin:0 0 32px;">
+
+        No fake urgency. No Instagram-founder theatre. No browser dashboard pretending to be an operating system. No compulsory subscription just to access your own tools, models or computer.
+
+      </p>
+
+      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;line-height:1.8;color:rgba(255,255,255,0.58);margin:0 0 32px;">
+
+        Nivren is being built in public, on real hardware, as an actual operating system. Some parts are finished. Some are experimental. Some will fail and be rebuilt.
+
+      </p>
+
+      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:17px;line-height:1.8;color:rgba(255,255,255,0.58);margin:0;">
+
+        We would rather show unfinished engineering honestly than sell finished bullshit convincingly.
+
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section" id="campus-projects">
 
   <div class="container">
 
     <div class="reveal" style="margin-bottom:56px;">
 
-      <p class="eyebrow">What I build</p>
+      <p class="eyebrow">Campus Projects</p>
 
-      <h2 class="section-h2" style="max-width:540px;">Focused on outcomes, not technologies.</h2>
+      <h2 class="section-h2" style="max-width:540px;">Explore the systems.</h2>
 
     </div>
 
-    <div class="grid-2">
+    <div class="grid-3">
 
-      <div class="card reveal" data-delay="0">
+      <div class="card reveal" data-delay="0" style="border-color:rgba(34,211,238,0.2);background:rgba(34,211,238,0.03);">
 
-        <div class="card-icon card-icon--cyan"><span>01</span></div>
+        <div class="card-icon card-icon--cyan"><span>N</span></div>
 
-        <h3 class="card-h3">Get online</h3>
+        <h3 class="card-h3">Nivren OS</h3>
 
-        <p class="card-body">A modern, mobile-friendly website that helps customers understand who you are, what you do, and how to reach you.</p>
+        <p class="card-body">A local-first AI operating system being built to coordinate models, memory, applications, system services and the computer itself.</p>
+
+        <a href="nivren-os.html" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:500;color:#22d3ee;text-decoration:none;margin-top:16px;display:inline-block;">Learn more &rarr;</a>
 
       </div>
 
       <div class="card reveal" data-delay="70">
 
-        <div class="card-icon card-icon--cyan"><span>02</span></div>
+        <div class="card-icon card-icon--amber"><span>F</span></div>
 
-        <h3 class="card-h3">Improve what you have</h3>
+        <h3 class="card-h3">Fenryr</h3>
 
-        <p class="card-body">Already have a website? Let's make it faster, clearer and easier to use.</p>
+        <p class="card-body">The internal operational system used inside the workshop to organise projects, coordinate AI, manage evidence and build better solutions.</p>
 
-      </div>
-
-      <div class="card card--amber reveal" data-delay="140" style="grid-column:1/-1;">
-
-        <div class="card-icon card-icon--amber"><span>03</span></div>
-
-        <h3 class="card-h3">Let's solve a problem</h3>
-
-        <p class="card-body" style="max-width:560px;">Need advice about websites, software or technology? Start with one real problem and we'll work out the right next step.</p>
+        <a href="index.html#work" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:500;color:#f59e0b;text-decoration:none;margin-top:16px;display:inline-block;">Meet Fenryr &rarr;</a>
 
       </div>
 
-    </div>
+      <div class="card reveal" data-delay="140" style="border-color:rgba(168,85,247,0.2);background:rgba(168,85,247,0.03);">
 
-  </div>
+        <div class="card-icon" style="background:rgba(168,85,247,0.1);"><span style="color:#a855f7;">L</span></div>
 
-</section>
+        <h3 class="card-h3">LYRA</h3>
 
+        <p class="card-body">A public YewForge project exploring presence, continuity and careful human-centred AI design. More revealed gradually through public channels.</p>
 
-
-<section style="border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);">
-
-  <div class="container">
-
-    <div class="trust-row reveal">
-
-      <div class="trust-cell">
-
-        <p class="trust-title">Independent</p>
-
-        <p class="trust-body">No agency overhead. No account managers. Just Jake - accountable for everything that gets built.</p>
-
-      </div>
-
-      <div class="trust-cell">
-
-        <p class="trust-title">Honest</p>
-
-        <p class="trust-body">I'll tell you when something won't work, when it isn't worth the cost, and when you don't need to spend anything at all.</p>
-
-      </div>
-
-      <div class="trust-cell">
-
-        <p class="trust-title">No lock-in</p>
-
-        <p class="trust-body">Everything I build is yours. No proprietary platforms you can't leave, no recurring fees for things you can run yourself.</p>
+        <a href="index.html#work" style="font-family:'Plus Jakarta Sans',sans-serif;font-size:14px;font-weight:500;color:#a855f7;text-decoration:none;margin-top:16px;display:inline-block;">Project LYRA &rarr;</a>
 
       </div>
 
     </div>
 
-  </div>
-
-</section>
-
-
-
-<section class="section" id="process">
-
-  <div class="container">
-
-    <div class="reveal">
-
-      <p class="eyebrow">How it works</p>
-
-      <h2 class="section-h2" style="max-width:520px;">Simple from the first conversation.</h2>
-
-    </div>
-
-    <div class="process-grid">
-
-      <div class="process-card reveal" data-delay="0">
-
-        <div class="process-num">01</div>
-
-        <p class="process-title">Start with one real thing</p>
-
-        <p class="process-body">Tell me what's frustrating, slow or missing. No forms, no spec documents - just a conversation about your business.</p>
-
-      </div>
-
-      <div class="process-card reveal" data-delay="80">
-
-        <div class="process-num">02</div>
-
-        <p class="process-title">I'll shape the right solution</p>
-
-        <p class="process-body">I'll be honest about what will help and what won't. Then I'll give you a clear plan before anything gets built.</p>
-
-      </div>
-
-      <div class="process-card reveal" data-delay="160">
-
-        <div class="process-num">03</div>
-
-        <p class="process-title">You get something that works</p>
-
-        <p class="process-body">A website you own, understand and can update. Delivered properly, without the wait.</p>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<section class="section" id="pricing">
-
-  <div class="container">
-
-    <div class="reveal">
-
-      <p class="eyebrow">Pricing</p>
-
-      <h2 class="section-h2" style="max-width:480px;">Clear prices. No surprises.</h2>
-
-    </div>
-
-    <div class="pricing-grid">
-
-      <div class="pricing-card reveal" data-delay="0">
-
-        <p class="pricing-label">Website Starter</p>
-
-        <p class="pricing-price">From &pound;199</p>
-
-        <p class="pricing-body">Perfect for getting online fast. A clean, mobile-friendly site with everything a new business needs to look credible and capture enquiries.</p>
-
-        <button class="pricing-cta" type="button" onclick="openModal('starter')">Find out more</button>
-
-      </div>
-
-      <div class="pricing-card pricing-card--featured reveal" data-delay="80">
-
-        <p class="pricing-label">Business Website</p>
-
-        <p class="pricing-price">From &pound;399</p>
-
-        <p class="pricing-body">A fuller site with more pages, more detail, and more room to grow. Designed around your specific business, not a template.</p>
-
-        <button class="pricing-cta" type="button" onclick="openModal('business')">Find out more</button>
-
-      </div>
-
-      <div class="pricing-card reveal" data-delay="160">
-
-        <p class="pricing-label">Something different?</p>
-
-        <p class="pricing-price pricing-price--chat">Let's talk</p>
-
-        <p class="pricing-body">Need a booking system, an AI assistant, software advice or something more specific? Start with one real problem and we'll work out the right next step.</p>
-
-        <button class="pricing-cta pricing-cta--ghost" type="button" onclick="openModal('custom')">Find out more</button>
-
-      </div>
-
-    </div>
+    <p class="reveal" style="margin-top:40px;font-family:'Plus Jakarta Sans',sans-serif;font-size:15px;color:rgba(255,255,255,0.45);">
+      <a href="engineering/" style="color:#22d3ee;text-decoration:none;">Current build / engineering log &rarr;</a>
+      &nbsp;&middot;&nbsp;
+      <a href="forge.html" style="color:rgba(255,255,255,0.55);text-decoration:none;">Commercial services in The Forge &rarr;</a>
+    </p>
 
   </div>
 
@@ -1062,6 +990,228 @@
         Explore the Campus &rarr;
 
       </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section" id="the-forge-services">
+
+  <div class="container">
+
+    <div class="reveal" style="margin-bottom:24px;">
+
+      <p class="eyebrow">The Forge</p>
+
+      <h2 class="section-h2" style="max-width:560px;">Commercial websites and software services.</h2>
+
+      <p style="font-family:'Plus Jakarta Sans',sans-serif;font-size:16px;line-height:1.75;color:rgba(255,255,255,0.5);max-width:640px;margin:20px 0 0;">
+        Local business websites, improvements and practical software work remain available under The Forge. They sit alongside Campus research — not above it.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section" id="services">
+
+  <div class="container">
+
+    <div class="reveal" style="margin-bottom:56px;">
+
+      <p class="eyebrow">Forge services</p>
+
+      <h2 class="section-h2" style="max-width:540px;">Focused on outcomes, not technologies.</h2>
+
+    </div>
+
+    <div class="grid-2">
+
+      <div class="card reveal" data-delay="0">
+
+        <div class="card-icon card-icon--cyan"><span>01</span></div>
+
+        <h3 class="card-h3">Get online</h3>
+
+        <p class="card-body">A modern, mobile-friendly website that helps customers understand who you are, what you do, and how to reach you.</p>
+
+      </div>
+
+      <div class="card reveal" data-delay="70">
+
+        <div class="card-icon card-icon--cyan"><span>02</span></div>
+
+        <h3 class="card-h3">Improve what you have</h3>
+
+        <p class="card-body">Already have a website? Let's make it faster, clearer and easier to use.</p>
+
+      </div>
+
+      <div class="card card--amber reveal" data-delay="140" style="grid-column:1/-1;">
+
+        <div class="card-icon card-icon--amber"><span>03</span></div>
+
+        <h3 class="card-h3">Let's solve a problem</h3>
+
+        <p class="card-body" style="max-width:560px;">Need advice about websites, software or technology? Start with one real problem and we'll work out the right next step.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section style="border-top:1px solid rgba(255,255,255,0.06);border-bottom:1px solid rgba(255,255,255,0.06);">
+
+  <div class="container">
+
+    <div class="trust-row reveal">
+
+      <div class="trust-cell">
+
+        <p class="trust-title">Independent</p>
+
+        <p class="trust-body">No agency overhead. No account managers. Just Jake - accountable for everything that gets built.</p>
+
+      </div>
+
+      <div class="trust-cell">
+
+        <p class="trust-title">Honest</p>
+
+        <p class="trust-body">I'll tell you when something won't work, when it isn't worth the cost, and when you don't need to spend anything at all.</p>
+
+      </div>
+
+      <div class="trust-cell">
+
+        <p class="trust-title">No lock-in</p>
+
+        <p class="trust-body">Everything I build is yours. No proprietary platforms you can't leave, no recurring fees for things you can run yourself.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section" id="process">
+
+  <div class="container">
+
+    <div class="reveal">
+
+      <p class="eyebrow">How it works</p>
+
+      <h2 class="section-h2" style="max-width:520px;">Simple from the first conversation.</h2>
+
+    </div>
+
+    <div class="process-grid">
+
+      <div class="process-card reveal" data-delay="0">
+
+        <div class="process-num">01</div>
+
+        <p class="process-title">Start with one real thing</p>
+
+        <p class="process-body">Tell me what's frustrating, slow or missing. No forms, no spec documents - just a conversation about your business.</p>
+
+      </div>
+
+      <div class="process-card reveal" data-delay="80">
+
+        <div class="process-num">02</div>
+
+        <p class="process-title">I'll shape the right solution</p>
+
+        <p class="process-body">I'll be honest about what will help and what won't. Then I'll give you a clear plan before anything gets built.</p>
+
+      </div>
+
+      <div class="process-card reveal" data-delay="160">
+
+        <div class="process-num">03</div>
+
+        <p class="process-title">You get something that works</p>
+
+        <p class="process-body">A website you own, understand and can update. Delivered properly, without the wait.</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<section class="section" id="pricing">
+
+  <div class="container">
+
+    <div class="reveal">
+
+      <p class="eyebrow">Pricing</p>
+
+      <h2 class="section-h2" style="max-width:480px;">Clear prices. No surprises.</h2>
+
+    </div>
+
+    <div class="pricing-grid">
+
+      <div class="pricing-card reveal" data-delay="0">
+
+        <p class="pricing-label">Website Starter</p>
+
+        <p class="pricing-price">From &pound;199</p>
+
+        <p class="pricing-body">Perfect for getting online fast. A clean, mobile-friendly site with everything a new business needs to look credible and capture enquiries.</p>
+
+        <button class="pricing-cta" type="button" onclick="openModal('starter')">Find out more</button>
+
+      </div>
+
+      <div class="pricing-card pricing-card--featured reveal" data-delay="80">
+
+        <p class="pricing-label">Business Website</p>
+
+        <p class="pricing-price">From &pound;399</p>
+
+        <p class="pricing-body">A fuller site with more pages, more detail, and more room to grow. Designed around your specific business, not a template.</p>
+
+        <button class="pricing-cta" type="button" onclick="openModal('business')">Find out more</button>
+
+      </div>
+
+      <div class="pricing-card reveal" data-delay="160">
+
+        <p class="pricing-label">Something different?</p>
+
+        <p class="pricing-price pricing-price--chat">Let's talk</p>
+
+        <p class="pricing-body">Need a booking system, an AI assistant, software advice or something more specific? Start with one real problem and we'll work out the right next step.</p>
+
+        <button class="pricing-cta pricing-cta--ghost" type="button" onclick="openModal('custom')">Find out more</button>
+
+      </div>
 
     </div>
 
