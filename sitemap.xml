@@ -2,13 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yewforge-digital.co.uk/</loc>
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://yewforge-digital.co.uk/nivren-os.html</loc>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.95</priority>
+  </url>
+  <url>
     <loc>https://yewforge-digital.co.uk/campus.html</loc>
-    <lastmod>2026-06-28</lastmod>
-    <priority>0.8</priority>
+    <lastmod>2026-07-22</lastmod>
+    <priority>0.85</priority>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/forge.html</loc>
@@ -95,57 +100,57 @@
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/koda/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/koda/objectives/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/koda/architecture/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/koda/current-state/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/koda/roadmap/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/koda/glossary/</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-22</lastmod>
     <priority>0.5</priority>
   </url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/</loc><lastmod>2026-07-15</lastmod><priority>0.7</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/forge-workshop/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/agent-governance/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/evidence-and-external-memory/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/observatory/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/living-activity-timeline/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/dataset-foundry/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/nano-factory/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/core-shard/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/development-history/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/evidence/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/revisions/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/revisions/dataset-identity-flaw/</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/revisions/native-observatory-cleanup-gate/</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/superseded/</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/system-map/</loc><lastmod>2026-07-15</lastmod><priority>0.6</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/organ-runtime/</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/cli-and-recovery/</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/shard-field/</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
-  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/security-and-research/</loc><lastmod>2026-07-15</lastmod><priority>0.5</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/</loc><lastmod>2026-07-22</lastmod><priority>0.7</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/forge-workshop/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/agent-governance/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/evidence-and-external-memory/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/observatory/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/living-activity-timeline/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/dataset-foundry/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/nano-factory/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/core-shard/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/development-history/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/evidence/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/revisions/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/revisions/dataset-identity-flaw/</loc><lastmod>2026-07-22</lastmod><priority>0.5</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/revisions/native-observatory-cleanup-gate/</loc><lastmod>2026-07-22</lastmod><priority>0.5</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/superseded/</loc><lastmod>2026-07-22</lastmod><priority>0.5</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/system-map/</loc><lastmod>2026-07-22</lastmod><priority>0.6</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/organ-runtime/</loc><lastmod>2026-07-22</lastmod><priority>0.5</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/cli-and-recovery/</loc><lastmod>2026-07-22</lastmod><priority>0.5</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/shard-field/</loc><lastmod>2026-07-22</lastmod><priority>0.5</priority></url>
+  <url><loc>https://yewforge-digital.co.uk/engineering/koda/systems/security-and-research/</loc><lastmod>2026-07-22</lastmod><priority>0.5</priority></url>
 </urlset>
