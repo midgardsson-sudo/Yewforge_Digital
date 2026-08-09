@@ -1098,6 +1098,12 @@ a:focus-visible {
   font-style: italic;
   line-height: 1.35;
   color: var(--ti-ink);
+  text-decoration: none;
+}
+
+.ti-next__line:hover {
+  color: var(--ti-oxblood);
+  text-decoration: underline;
 }
 
 .ti-pub-foot {
