@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nivren | Local-first AI platform and assistant by YewForge</title>
+  <meta name="description" content="Nivren is a local-first AI platform and assistant by YewForge: specialist models, memory and tools on your own hardware, with a human in charge." />
+  <link rel="icon" href="favicon.ico" sizes="32x32">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="canonical" href="https://yewforge-digital.co.uk/nivren.html" />
+  <meta property="og:title" content="Nivren | Local-first AI platform and assistant by YewForge" />
+  <meta property="og:description" content="Nivren is a local-first AI platform and assistant by YewForge: specialist models, memory and tools on your own hardware, with a human in charge." />
+  <meta property="og:url" content="https://yewforge-digital.co.uk/nivren.html" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-image.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Nivren | Local-first AI platform and assistant by YewForge" />
+  <meta name="twitter:description" content="Nivren is a local-first AI platform and assistant by YewForge: specialist models, memory and tools on your own hardware, with a human in charge." />
+  <meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-image.png" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://yewforge-digital.co.uk/#organization",
+      "name": "YewForge",
+      "alternateName": ["YewForge Digital"],
+      "url": "https://yewforge-digital.co.uk/",
+      "sameAs": [
+        "https://x.com/YewForgeDigital",
+        "https://www.instagram.com/yewforgedigital/"
+      ],
+      "description": "YewForge builds Nivren: an AI platform and assistant designed to run on your own hardware, with a developer environment, mobile and desktop OS directions and small local models. Built in the open, evidence first."
+    },
+    {
+      "@type": "SoftwareApplication",
+      "@id": "https://yewforge-digital.co.uk/nivren.html#software",
+      "name": "Nivren",
+      "url": "https://yewforge-digital.co.uk/nivren.html",
+      "creator": { "@id": "https://yewforge-digital.co.uk/#organization" },
+      "description": "Nivren is a local-first AI platform and assistant by YewForge: specialist models, memory and tools on your own hardware, with a human in charge."
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://yewforge-digital.co.uk/#website",
+      "name": "YewForge",
+      "url": "https://yewforge-digital.co.uk/",
+      "publisher": { "@id": "https://yewforge-digital.co.uk/#organization" }
+    }
+  ]
+}
+</script>
+  <link rel="preload" href="fonts/NivrenTechnical.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="css/ticker.css">
+  <style>
+    /* Visual overhaul R1 (3 Oct 2026): Nivren design-system tokens, same family as Home and NivKode.
+       Inline until css/yf-kit.css lands; values mirror home-facelift-r1/nivren.css. */
+    @font-face { font-family: "Nivren Technical"; src: url("fonts/NivrenTechnical.ttf") format("truetype"); font-weight: 200 800; font-stretch: 75% 125%; font-display: swap; }
+    @font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains_mono_regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
+    @font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains_mono_medium.ttf") format("truetype"); font-weight: 500 700; font-display: swap; }
+    :root {
+      --bg: #05090D; --surface-1: #0B1318; --surface-2: #101B23; --surface-3: #15242A;
+      --line: #1C2A31; --line-strong: #27404A;
+      --ink: #E9F0F5; --ink-2: #B9C7CF; --muted: #92A4AE;
+      --cyan: #4FEAE4; --violet: #A99BFF; --amber: #FFC477; --green: #82D9AD; --red: #FF9A9A;
+      --display: "Nivren Technical", "DejaVu Sans", system-ui, sans-serif;
+      --mono: "JetBrains Mono", "DejaVu Sans Mono", ui-monospace, monospace;
+      --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 20px; --s6: 24px; --s8: 32px; --s12: 48px; --s16: 64px; --s24: 96px;
+      --r-chip: 6px; --r-row: 10px; --r-mod: 16px; --r-sheet: 24px;
+      --wrap: 1120px;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { background: var(--bg); scroll-padding-top: 72px; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--display); font-size: 16px; line-height: 1.55; font-stretch: 92%; -webkit-font-smoothing: antialiased; }
+    a { color: var(--cyan); text-underline-offset: 3px; }
+    a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: var(--r-chip); }
+    h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
+    ul, ol { padding: 0; list-style: none; }
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--s5); }
+    .skip-link { position: absolute; left: -9999px; top: var(--s2); z-index: 100; background: var(--cyan); color: var(--bg); padding: var(--s2) var(--s4); border-radius: var(--r-chip); font-weight: 600; }
+    .skip-link:focus { left: var(--s4); }
+    .mono { font-family: var(--mono); font-stretch: 100%; letter-spacing: -.01em; }
+    .eyebrow { font-size: 11px; letter-spacing: .26em; text-transform: uppercase; color: var(--cyan); font-weight: 500; font-stretch: 100%; }
+    .eyebrow.violet { color: var(--violet); } .eyebrow.amber { color: var(--amber); } .eyebrow.green { color: var(--green); } .eyebrow.muted { color: var(--muted); }
+
+    /* top bar: the status rail is the signature */
+    .bar { position: sticky; top: 0; z-index: 50; background: rgba(5,9,13,.92); border-bottom: 1px solid var(--line); }
+    @supports (backdrop-filter: blur(8px)) { .bar { background: rgba(5,9,13,.78); backdrop-filter: blur(10px); } }
+    .bar .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; gap: var(--s4); }
+    .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-size: 18px; font-weight: 650; }
+    .brand .mark { width: 20px; height: 20px; border: 2px solid var(--cyan); border-radius: 50%; border-right-color: transparent; transform: rotate(-35deg); }
+    .bar nav { display: flex; gap: var(--s1); }
+    .bar nav a { color: var(--ink-2); text-decoration: none; font-size: 14px; padding: 10px var(--s2); border-radius: var(--r-chip); }
+    .bar nav a:hover { color: var(--ink); background: var(--surface-1); }
+    .bar nav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--cyan); border-radius: 0; }
+    .bar nav .hide-s { display: none; }
+    @media (min-width: 720px) { .bar nav .hide-s { display: inline-block; } }
+
+    /* chips: one state per module, shared colour grammar */
+    .chip { display: inline-flex; align-items: center; gap: 6px; height: 22px; padding: 0 8px; border-radius: var(--r-chip); border: 1px solid var(--line-strong); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); white-space: nowrap; font-stretch: 100%; }
+    .fam .chip, .prov .chip { align-self: flex-start; }
+    .chip::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+    .chip.live { color: var(--cyan); border-color: rgba(79,234,228,.35); }
+    .chip.hosted { color: var(--violet); border-color: rgba(169,155,255,.35); }
+    .chip.need { color: var(--amber); border-color: rgba(255,196,119,.35); }
+    .chip.proof { color: var(--green); border-color: rgba(130,217,173,.35); }
+    .chip.plan { color: var(--muted); border-style: dashed; } .chip.plan::before { background: transparent; border: 1.5px solid currentColor; width: 4px; height: 4px; }
+    .chip.off { color: var(--red); border-color: rgba(255,154,154,.35); }
+
+    /* hero: the verdict leads, the date is context */
+    .hero { padding: var(--s12) 0 var(--s12); }
+    .hero .meta { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s4); align-items: center; }
+    .hero h1 { margin-top: var(--s5); font-size: clamp(40px, 9.5vw, 76px); line-height: 1.0; font-weight: 700; letter-spacing: -.015em; font-stretch: 84%; max-width: 14ch; }
+    .hero .lead { margin-top: var(--s5); font-size: 18px; color: var(--ink-2); max-width: 58ch; }
+    .cta-row { margin-top: var(--s8); display: flex; flex-wrap: wrap; gap: var(--s3) var(--s6); align-items: center; }
+    .btn { display: inline-flex; align-items: center; gap: var(--s2); min-height: 48px; padding: 0 var(--s6); border-radius: var(--r-row); background: var(--cyan); color: #04201F; font-weight: 650; font-size: 16px; text-decoration: none; font-stretch: 96%; }
+    .btn:hover { background: #7FF1EC; }
+    .textlink { color: var(--ink-2); font-size: 15px; text-decoration: underline; text-decoration-color: var(--line-strong); padding: var(--s3) 0; }
+    .textlink:hover { color: var(--ink); text-decoration-color: var(--cyan); }
+
+    /* verdict module: hero companion */
+    .grid-hero { display: grid; gap: var(--s8); align-items: end; }
+    @media (min-width: 960px) { .grid-hero { grid-template-columns: 1.35fr 1fr; } }
+    .mod { background: var(--surface-1); border: 1px solid var(--line); border-radius: var(--r-mod); padding: var(--s4) var(--s5); }
+    .mod.edge { box-shadow: inset 2px 0 0 var(--cyan); }
+    .mod-h { display: flex; justify-content: space-between; align-items: center; gap: var(--s3); margin-bottom: var(--s3); }
+    .rows > li { display: flex; justify-content: space-between; gap: var(--s4); align-items: baseline; padding: 11px 0; border-top: 1px solid var(--line); }
+    .rows > li:first-child { border-top: 0; }
+    .rows .k { color: var(--ink); font-size: 15px; }
+    .rows .v { font-family: var(--mono); font-size: 12.5px; color: var(--muted); text-align: right; }
+    .launch .date { font-family: var(--mono); font-size: clamp(28px, 6vw, 36px); font-weight: 500; letter-spacing: -.03em; color: var(--ink); margin-top: var(--s2); }
+    .launch p { color: var(--muted); font-size: 14px; margin-top: var(--s2); }
+
+    /* ticker band */
+    .band { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface-1); }
+    .band .wrap { display: flex; gap: var(--s4); align-items: center; }
+    .band .eyebrow { flex: none; display: none; }
+    @media (min-width: 720px) { .band .eyebrow { display: inline; } }
+    .band [data-yf-updates] { flex: 1; min-width: 0; font-family: var(--mono); font-size: 13px; color: var(--ink-2); }
+    .band [data-yf-updates] a { color: var(--ink); }
+
+    /* sections */
+    section.s { padding: var(--s16) 0; }
+    section.s + section.s { border-top: 1px solid var(--line); }
+    .s-h { max-width: 62ch; margin-bottom: var(--s8); }
+    .s-h h2 { margin-top: var(--s3); font-size: clamp(28px, 5vw, 40px); line-height: 1.08; font-weight: 680; font-stretch: 86%; letter-spacing: -.01em; }
+    .s-h p { margin-top: var(--s3); color: var(--ink-2); font-size: 17px; }
+
+    /* family modules */
+    .fam { display: grid; gap: var(--s3); grid-template-columns: 1fr; }
+    @media (min-width: 720px) { .fam { grid-template-columns: repeat(2, 1fr); } }
+    @media (min-width: 1040px) { .fam { grid-template-columns: repeat(3, 1fr); } .fam .lead-mod { grid-column: span 1; grid-row: span 2; } }
+    @media (min-width: 1040px) { .fam.four { grid-template-columns: repeat(4, 1fr); } }
+    .fam .mod { display: flex; flex-direction: column; gap: var(--s3); padding: var(--s5); }
+    .fam h3 { font-size: 22px; font-weight: 650; font-stretch: 88%; }
+    .fam p { color: var(--ink-2); font-size: 15px; }
+    .fam .foot { margin-top: auto; padding-top: var(--s3); border-top: 1px solid var(--line); font-family: var(--mono); font-size: 12px; color: var(--muted); }
+    .fam .lead-mod { box-shadow: inset 2px 0 0 var(--cyan); }
+    .fam .lead-mod a { font-size: 15px; }
+
+    /* evidence strip: proof in mono */
+    .ev { display: grid; gap: var(--s3); }
+    @media (min-width: 900px) { .ev { grid-template-columns: repeat(3, 1fr); } }
+    .ev .mod { display: flex; flex-direction: column; gap: var(--s3); padding: var(--s5); }
+    .ev .verdict { font-family: var(--mono); font-size: 13px; font-weight: 500; letter-spacing: .04em; }
+    .ev h3 { font-size: 18px; font-weight: 620; }
+    .ev .num { font-family: var(--mono); font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; line-height: 1.7; }
+    .ev .num b { color: var(--ink); font-weight: 500; }
+    .ev .cav { font-size: 13.5px; color: var(--muted); margin-top: auto; padding-top: var(--s3); border-top: 1px solid var(--line); }
+    .ev-foot { margin-top: var(--s5); font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+
+    /* provenance labels */
+    .prov { display: grid; gap: var(--s3); }
+    @media (min-width: 900px) { .prov { grid-template-columns: repeat(3, 1fr); } }
+    .prov li { padding: var(--s5); border: 1px solid var(--line); border-radius: var(--r-mod); background: var(--surface-1); }
+    .prov li p { margin-top: var(--s3); color: var(--ink-2); font-size: 15px; }
+
+
+    /* product visual */
+    .shot { margin: 0; border: 1px solid var(--line); border-radius: var(--r-mod); background: var(--surface-1); overflow: hidden; }
+    .shot img { display: block; width: 100%; height: auto; }
+    .shot figcaption { padding: var(--s3) var(--s4); border-top: 1px solid var(--line); font-family: var(--mono); font-size: 12px; color: var(--muted); display: flex; gap: var(--s3); flex-wrap: wrap; align-items: center; }
+
+    /* footer */
+    footer.f { border-top: 1px solid var(--line); padding: var(--s8) 0 var(--s12); color: var(--muted); font-size: 14px; }
+    footer.f .wrap { display: grid; gap: var(--s4); }
+    footer.f nav { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s4); }
+    footer.f a { color: var(--ink-2); text-decoration: none; padding: var(--s2) 0; display: inline-block; }
+    footer.f a:hover { color: var(--ink); text-decoration: underline; }
+    footer.f .mono { font-size: 12px; }
+
+    @media (min-width: 720px) {
+      .wrap { padding: 0 var(--s8); }
+      .hero { padding: var(--s24) 0 var(--s16); }
+      section.s { padding: var(--s24) 0; }
+    }
+    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
+  </style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>YewForge</a>
+    <nav aria-label="Main">
+      <a href="nivren.html" aria-current="page">Nivren</a>
+      <a href="index.html#evidence">Evidence</a>
+      <a class="hide-s" href="engineering/">Research</a>
+      <a class="hide-s" href="about.html">About</a>
+      <a class="hide-s" href="press/">Press</a>
+      <a class="hide-s" href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="hero-h">
+  <div class="wrap grid-hero">
+    <div>
+      <div class="meta"><span class="eyebrow">Nivren &middot; by YewForge</span><span class="chip live">In active development</span></div>
+      <h1 id="hero-h">Runs on your machine. You stay in charge.</h1>
+      <p class="lead">Nivren is a local-first AI platform and assistant. It coordinates specialist models, memory, tools and applications on hardware you own, keeps its state inspectable, and leaves consequential decisions to you.</p>
+      <div class="cta-row">
+        <a class="btn" href="engineering/koda/current-state/">See what works today</a>
+        <a class="textlink" href="engineering/koda/architecture/">Read the architecture</a>
+      </div>
+    </div>
+    <aside class="mod edge" aria-label="Status at a glance">
+      <div class="mod-h"><span class="eyebrow">Status, honestly</span><span class="chip need">No public build</span></div>
+      <ul class="rows">
+        <li><span class="k">Workshop interfaces &amp; telemetry</span><span class="v" style="color:var(--cyan)">working</span></li>
+        <li><span class="k">Evidence &amp; project-state records</span><span class="v" style="color:var(--cyan)">working</span></li>
+        <li><span class="k">Orchestration &amp; memory continuity</span><span class="v" style="color:var(--amber)">in development</span></li>
+        <li><span class="k">Broader integrated behaviour</span><span class="v">planned</span></li>
+        <li><span class="k">Public launch</span><span class="v"><time datetime="2026-11-02">2 Nov 2026</time></span></li>
+      </ul>
+    </aside>
+  </div>
+</section>
+
+<div class="band" role="region" aria-label="Latest updates">
+  <div class="wrap">
+    <span class="eyebrow muted">Updates</span>
+    <div data-yf-updates></div>
+  </div>
+</div>
+
+<section class="s" id="what" aria-labelledby="what-h">
+  <div class="wrap">
+    <div class="s-h">
+      <p class="eyebrow">What Nivren is</p>
+      <h2 id="what-h">One identity. Many specialist models. A human with the final say.</h2>
+    </div>
+    <div class="fam four">
+      <article class="mod"><span class="eyebrow">Principle 1</span><h3>Local-first</h3><p>Designed to run on ordinary local hardware. Cloud convenience is used where it helps; it is not the product&rsquo;s identity.</p></article>
+      <article class="mod"><span class="eyebrow">Principle 2</span><h3>Governed, not autonomous</h3><p>Models and tools are bounded contributors under one governed environment. Consequential actions need your approval.</p></article>
+      <article class="mod"><span class="eyebrow">Principle 3</span><h3>Inspectable</h3><p>Memory, evidence and system state are records you can look at, not things hidden behind a chat window.</p></article>
+      <article class="mod"><span class="eyebrow">Principle 4</span><h3>More than chat</h3><p>Conversation is one doorway. Nivren also reaches you through NivKode, NivDroid and NivMac.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="family" aria-labelledby="fam-h">
+  <div class="wrap">
+    <div class="s-h">
+      <p class="eyebrow">Ways in</p>
+      <h2 id="fam-h">The Nivren family.</h2>
+    </div>
+    <div class="fam four">
+      <article class="mod"><span class="chip live">Launching 2 Nov</span><h3>NivKode</h3><p>The developer environment where Nivren, models, agents and projects meet in one command and work surface.</p></article>
+      <article class="mod"><span class="chip need">Early</span><h3>NivDroid</h3><p>Nivren on Android. Nivren Home runs on an internal test phone today; an everyday phone OS is the direction.</p></article>
+      <article class="mod"><span class="chip plan">Direction</span><h3>NivMac</h3><p>A lightweight desktop OS that keeps capable older hardware useful.</p></article>
+      <article class="mod"><span class="chip plan">Planned family</span><h3>Nivren Quark</h3><p>Small local models, NQ-0.5B, NQ-1B and NQ-3B, each to be published with its provenance label.</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="provenance" aria-labelledby="prov-h">
+  <div class="wrap">
+    <div class="s-h">
+      <p class="eyebrow violet">Model provenance</p>
+      <h2 id="prov-h">Three labels, never blurred.</h2>
+      <p>Nivren will grow more intelligence of its own over time and still use other excellent models where they are the better tool. Every model it uses carries one of these.</p>
+    </div>
+    <ul class="prov">
+      <li><span class="chip live">Nivren-native</span><p>Model work genuinely produced and owned by Nivren.</p></li>
+      <li><span class="chip proof">Nivren-derived</span><p>Adapters, fine-tunes and derivatives of upstream models, under their licences.</p></li>
+      <li><span class="chip hosted">Nivren-integrated</span><p>External models and services Nivren routes to, and does not claim to own.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="s" id="evidence" aria-labelledby="ev-h">
+  <div class="wrap">
+    <div class="s-h">
+      <p class="eyebrow green">Evidence</p>
+      <h2 id="ev-h">Don&rsquo;t take our word for it.</h2>
+      <p>The engineering journal separates demonstrated behaviour from design intent and keeps the failures on the record.</p>
+    </div>
+    <ul class="rows mod" style="max-width:720px">
+      <li><a class="k" href="engineering/koda/">Nivren overview</a><span class="v">journal</span></li>
+      <li><a class="k" href="engineering/koda/architecture/">Architecture</a><span class="v">design intent</span></li>
+      <li><a class="k" href="engineering/koda/current-state/">Current state</a><span class="v">what works</span></li>
+      <li><a class="k" href="engineering/koda/revisions/">Failure records</a><span class="v">what didn&rsquo;t</span></li>
+      <li><a class="k" href="index.html#evidence">Latest experiments</a><span class="v">1 positive &middot; 2 null</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="s" id="contact" aria-labelledby="contact-h">
+  <div class="wrap">
+    <div class="s-h">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact-h">Questions about Nivren?</h2>
+      <p><a data-mail="display"><span data-mail-text="1"></span></a></p>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="f">
+  <div class="wrap">
+    <a class="brand" href="index.html"><span class="mark" aria-hidden="true"></span>YewForge</a>
+    <nav aria-label="Site">
+      <a href="nivren.html">Nivren</a>
+      <a href="engineering/">Research</a>
+      <a href="about.html">About</a>
+      <a href="press/">Press</a>
+      <a href="https://discord.com/invite/3zenJxtKCG" rel="noopener">Discord</a>
+      <a href="https://x.com/YewForgeDigital" rel="noopener">X</a>
+      <a href="https://www.linkedin.com/in/YewForgeDigital" rel="noopener">LinkedIn</a>
+    </nav>
+    <p class="mono">&copy; <span id="yr"></span> YewForge &middot; <span data-mail-footer="1"></span></p>
+  </div>
+</footer>
+<script src="js/ticker.js" defer></script>
+<script>
+  (function () {
+    var e = "yewforge.partnerships" + "@" + "gmail.com";
+    document.querySelectorAll("[data-mail]").forEach(function (el) { el.href = "mail" + "to:" + e; });
+    document.querySelectorAll("[data-mail-text],[data-mail-footer]").forEach(function (el) { el.textContent = e; });
+    document.getElementById("yr").textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>

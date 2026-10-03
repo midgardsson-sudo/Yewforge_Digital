@@ -1,0 +1,32 @@
+[
+  {
+    "date": "2026-10-02",
+    "title": "Must-change repair framing: feedback uptake improved (exploratory, confirmation pending)",
+    "link": "#evidence",
+    "kind": "result"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "PyOrgan v3: inconclusive, all arms 14/24. Kept and published",
+    "link": "#evidence",
+    "kind": "result"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Reflex R0: learned routing rejected by its preregistered rule",
+    "link": "#evidence",
+    "kind": "result"
+  },
+  {
+    "date": "2026-10-02",
+    "title": "Nivren Home 0.6 on Android: worker seats and system tabs",
+    "link": "nivren.html",
+    "kind": "build"
+  },
+  {
+    "date": "2026-09-30",
+    "title": "NivKode introduced. Public launch 2 November 2026",
+    "link": "nivren.html",
+    "kind": "announcement"
+  }
+]

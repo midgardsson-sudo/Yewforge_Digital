@@ -1,0 +1,106 @@
+/* The host reserves its final height before its data request completes. */
+[data-yf-updates],
+.yf-updates {
+  box-sizing: border-box;
+  min-height: 4rem;
+}
+
+.yf-updates {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: .75rem;
+  overflow: hidden;
+  padding: .5rem 0;
+}
+
+.yf-visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.yf-ticker-viewport {
+  min-width: 0;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 1.5rem, #000 calc(100% - 1.5rem), transparent);
+}
+
+.yf-ticker-run {
+  display: flex;
+  width: max-content;
+}
+
+.yf-ticker-track {
+  display: flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 2rem;
+  width: max-content;
+  margin: 0;
+  padding: .25rem 1rem;
+  list-style: none;
+}
+
+.yf-ticker-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: .65rem;
+  white-space: nowrap;
+}
+
+.yf-ticker-item time,
+.yf-ticker-kind {
+  color: #aeb7ae;
+  font-size: .75rem;
+}
+
+.yf-ticker-kind { text-transform: uppercase; letter-spacing: .06em; }
+.yf-ticker-item a { color: #edf0e8; text-underline-offset: .18em; }
+.yf-ticker-item a:focus-visible,
+.yf-ticker-control:focus-visible { outline: 2px solid #d8ae61; outline-offset: 3px; }
+
+.yf-ticker-control {
+  min-width: 44px;
+  min-height: 44px;
+  padding: .5rem .8rem;
+  border: 1px solid #34423b;
+  border-radius: 3px;
+  background: #171d1b;
+  color: #edf0e8;
+  font: inherit;
+  cursor: pointer;
+}
+
+.yf-ticker-control:disabled { cursor: default; opacity: .8; }
+.yf-ticker-status { grid-column: 1 / -1; margin: 0; color: #aeb7ae; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .yf-updates.yf-updates--animated:not([data-paused="true"]) .yf-ticker-run {
+    animation: yf-ticker-scroll 30s linear infinite;
+  }
+
+  .yf-updates:not([data-paused="true"]) .yf-ticker-viewport:hover .yf-ticker-run,
+  .yf-updates:not([data-paused="true"]) .yf-ticker-viewport:focus-within .yf-ticker-run { animation-play-state: paused; }
+}
+
+@keyframes yf-ticker-scroll {
+  to { transform: translateX(-50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .yf-ticker-track { transform: none !important; animation: none !important; }
+}
+
+@media (max-width: 520px) {
+  [data-yf-updates],
+  .yf-updates { min-height: 5.5rem; }
+  .yf-updates { grid-template-columns: minmax(0, 1fr); gap: .25rem; }
+  .yf-ticker-control { justify-self: end; }
+}
