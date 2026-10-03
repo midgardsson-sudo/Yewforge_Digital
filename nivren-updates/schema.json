@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "description": "Nivren daily build update record",
+  "description": "Nivren public build update record",
   "required": [
     "id",
     "date",
@@ -28,7 +28,7 @@
   ],
   "visibility_allowed": ["public", "private"],
   "approval_status_examples": [
-    "draft_awaiting_jake",
+    "draft_pending_approval",
     "published",
     "rejected"
   ]

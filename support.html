@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support our work | YewForge</title>
-  <meta name="description" content="Support expands YewForge's capacity to test Nivren across hardware and pursue careful, independent research.">
+  <title>Support YewForge | Development support</title>
+  <meta name="description" content="Support YewForge's development of Nivren, NivKode and related work. Support is intended to fund development capacity and does not influence research conclusions.">
   <link rel="canonical" href="https://yewforge-digital.co.uk/support.html">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -16,8 +16,14 @@
     .terms p { color: var(--ink); }
     .terms strong { color: var(--ink); }
     .support-contact { margin-top: var(--s8); }
+    .skip { min-width: 44px; min-height: 44px; }
+    .fund-uses { padding-left: 1.25rem; }
+    .fund-uses li { margin: .35rem 0; }
+    .brand, .site-nav a, .site-foot a, main a:not(.payment-link) { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
+    @media (max-width: 759px) { .site-nav ul, .site-foot ul { column-gap: var(--s4); } }
+    @media (min-width: 760px) and (max-width: 900px) { .grid.three { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   </style>
-</head>
+<meta property="og:title" content="Support YewForge | Development support"><meta property="og:description" content="We explain how to support our Nivren development, where contributions go and why support does not influence research conclusions."><meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-image.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Support YewForge | Development support"><meta name="twitter:description" content="We explain how to support our Nivren development, where contributions go and why support does not influence research conclusions."><meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-image.png"></head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-head">
@@ -38,34 +44,52 @@
     <div class="wrap">
       <section class="hero" aria-labelledby="support-title">
         <p class="eyebrow">Support YewForge</p>
-        <h1 id="support-title">More room to test, learn and build.</h1>
-        <p class="lede">Support expands our testing and research capacity. It does not determine what our evidence says.</p>
+        <h1 id="support-title">Throw some fuel into the forge.</h1>
+        <p class="lede">Support is intended to expand development capacity for Nivren, NivKode and related work through tools, compute, test hardware and infrastructure. It does not influence research conclusions.</p>
+        <p class="chip">Financial support is available through Ko-fi.</p>
       </section>
 
       <section class="block split" aria-labelledby="why-title">
-        <div><p class="eyebrow">Why support matters</p><h2 id="why-title">Capacity changes what we can examine.</h2></div>
+        <div><p class="eyebrow">Why support matters</p><h2 id="why-title">Small support can add practical capacity.</h2></div>
         <div class="prose">
-          <p>Funding, compute and donated hardware give us more time and resources to test Nivren across a broader range of setups, investigate failures and pursue research questions carefully.</p>
-          <p>More capacity can broaden the work. It cannot predetermine a result.</p>
+          <p>Support is not payment for unreleased work or a promise of a particular product, result or financial return. Support does not buy influence over technical or research conclusions.</p>
+          <p>The first milestone is <strong>£50 net</strong>. When reached, a public note will describe what the support enabled.</p>
         </div>
+      </section>
+
+      <section class="block" aria-labelledby="goal-title">
+        <p class="eyebrow">First milestone</p>
+        <h2 id="goal-title">£50 net for additional development capacity.</h2>
+        <article class="mod edge-cyan prose">
+          <p>Support is intended to be reinvested in practical development needs such as:</p>
+          <ul class="fund-uses">
+            <li>additional AI worker capacity and model/API access;</li>
+            <li>compute and development tools;</li>
+            <li>test hardware and infrastructure.</li>
+          </ul>
+          <p>When the milestone is reached, a public note will report what it enabled. The target does not promise a particular service, result or delivery date.</p>
+        </article>
       </section>
 
       <section class="block" aria-labelledby="ways-title">
         <p class="eyebrow">Ways to help</p>
-        <h2 id="ways-title">Support that adds practical capacity.</h2>
+        <h2 id="ways-title">Three ways to help.</h2>
         <div class="grid three">
           <article class="mod">
-            <div class="mod-h"><h3>Financial support</h3><span class="chip needs">Coming soon</span></div>
-            <p>We can’t accept financial support yet. When we can, we’ll explain how here.</p>
+            <div class="mod-h"><h3>Financial support</h3><span class="chip">Available</span></div>
+            <p>One-off support through Ko-fi helps us build development capacity. It is not an investment, a charitable contribution, or a purchase of an unreleased product.</p>
+            <p><a class="payment-link" id="kofi-support-link" hidden rel="noopener noreferrer" target="_blank">Support YewForge on Ko-fi</a></p>
+            <p id="kofi-support-fallback" class="chip needs">The support link is temporarily unavailable.</p>
           </article>
           <article class="mod edge-violet">
             <h3>Compute sponsorship</h3>
-            <p>Compute sponsorship can give us more capacity for testing and research. Any arrangement would be discussed directly and recorded clearly.</p>
+            <p>Compute credits or access may help with development and testing. Any arrangement would be discussed directly and recorded clearly.</p>
+            <p><a href="contact.html">Discuss compute support</a></p>
           </article>
           <article class="mod edge-cyan">
             <h3>Hardware donations</h3>
-            <p>Equipment can help us investigate compatibility, repair and reuse across real hardware.</p>
-            <p><a href="#hardware-terms">Read the hardware donation terms</a>.</p>
+            <p>Hardware offered by arrangement may add equipment for development, repair and testing.</p>
+            <p><a href="#hardware-terms">Read the hardware donation terms</a></p>
           </article>
         </div>
       </section>
@@ -73,18 +97,19 @@
       <section class="block" id="hardware-terms" aria-labelledby="terms-title">
         <p class="eyebrow">Please read before offering equipment</p>
         <h2 id="terms-title">Hardware donation terms.</h2>
-        <!-- DRAFT: owner legal review -->
         <article class="mod terms prose">
           <p>Donated equipment may be opened, dismantled, analysed, modified, repaired, repurposed, upcycled, used for component harvesting or responsibly recycled.</p>
-          <p><strong>Please do not expect donated equipment to be returned unchanged, or returned at all, unless we separately agree that with you in advance.</strong></p>
+          <p>Please securely wipe all personal data before donating; YewForge does not accept responsibility for data left on devices.</p>
+          <p><strong>Donations by arrangement only.</strong></p>
+          <p><strong>Donated equipment may not be returned or may be returned changed unless a return arrangement is agreed in advance.</strong></p>
         </article>
       </section>
 
       <section class="block split" aria-labelledby="independence-title">
         <div><p class="eyebrow">Independence</p><h2 id="independence-title">Support never buys a result.</h2></div>
         <div class="prose">
-          <p>Financial support, compute sponsorship and hardware donations do not buy favourable results, coverage or conclusions. Supporters do not get to choose what our research finds or how we report it.</p>
-          <p>We apply the same evidence standards whatever the result, including when findings are negative or inconclusive.</p>
+          <p>Financial support, compute sponsorship and hardware donations do not buy favourable results, coverage or conclusions. Supporters do not choose research outcomes or reporting.</p>
+          <p>The same evidence standards apply to positive, negative and inconclusive findings.</p>
         </div>
       </section>
 
@@ -105,8 +130,23 @@
         <li><a href="press/index.html">Press</a></li>
         <li><a href="support.html" aria-current="page">Support</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="privacy.html">Privacy</a></li>
       </ul></nav>
     </div>
-  </footer>
+  <span class="site-review">Last reviewed: <time datetime="2026-10-03">2026-10-03</time></span></footer>
+<script>
+  (function () {
+    const SUPPORT_BUILD_ENABLED = true;
+    const OWNER_KOFI_URL = "https://ko-fi.com/yewforge";
+    const safeUrl = /^https:\/\/ko-fi\.com\/[A-Za-z0-9_-]+\/?$/.test(OWNER_KOFI_URL);
+    if (!safeUrl) throw new Error("Support links must use ko-fi.com.");
+    if (!SUPPORT_BUILD_ENABLED) return;
+    const link = document.getElementById("kofi-support-link");
+    const fallback = document.getElementById("kofi-support-fallback");
+    link.href = OWNER_KOFI_URL;
+    link.hidden = false;
+    fallback.hidden = true;
+  }());
+</script>
 </body>
 </html>

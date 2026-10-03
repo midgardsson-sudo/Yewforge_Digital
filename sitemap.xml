@@ -7,88 +7,94 @@
     <loc>https://yewforge-digital.co.uk/support.html</loc>
   </url>
   <url>
+    <loc>https://yewforge-digital.co.uk/privacy.html</loc>
+  </url>
+  <url>
     <loc>https://yewforge-digital.co.uk/engineering/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/architecture/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/architecture/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/current-state/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/current-state/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/development-history/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/development-history/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/evidence/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/evidence/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/glossary/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/glossary/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/objectives/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/objectives/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/revisions/dataset-identity-flaw/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/revisions/data-identity-correction/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/revisions/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/revisions/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/revisions/native-observatory-cleanup-gate/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/revisions/monitoring-integration-limit/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/roadmap/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/roadmap/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/superseded/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/superseded/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/system-map/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/system-map/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/agent-governance/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/agent-governance/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/cli-and-recovery/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/cli-and-recovery/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/core-shard/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/workspace-interface/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/dataset-foundry/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/data-research/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/evidence-and-external-memory/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/evidence-and-external-memory/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/forge-workshop/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/project-workspace/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/living-activity-timeline/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/activity-timeline/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/nano-factory/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/factory-research/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/observatory/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/system-monitoring/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/organ-runtime/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/local-runtime/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/security-and-research/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/security-and-research/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/koda/systems/shard-field/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/workspace-field/</loc>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/</loc>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/updates/</loc>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/nivren-updates/archive/</loc>

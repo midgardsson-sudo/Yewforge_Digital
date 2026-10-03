@@ -1,7 +1,7 @@
 (function (global) {
   "use strict";
 
-  const DATA_URL = "/data/updates.json";
+  const DATA_URL = "/site-review.json";
   const ISO_DATE = /^\d{4}-\d{2}-\d{2}$/;
 
   function validItem(item) {
@@ -96,7 +96,8 @@
         if (!response.ok) throw new Error("Update data request failed");
         return response.json();
       })
-      .then(function (items) {
+      .then(function (review) {
+        const items = review && review.ticker;
         if (!Array.isArray(items) || !items.length || !items.every(validItem)) {
           throw new Error("Update data did not match the expected format");
         }

@@ -1,0 +1,15 @@
+{
+  "reviewed_on": "2026-10-03",
+  "max_age_days": 14,
+  "product_status": {
+    "NivKode": "0.1.0 RC6 ready for testing; public launch planned for 2 November 2026"
+  },
+  "ticker": [
+    {
+      "date": "2026-10-03",
+      "title": "NivKode 0.1.0 RC6 is ready for testing",
+      "link": "/updates/",
+      "kind": "Product and research update"
+    }
+  ]
+}

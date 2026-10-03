@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1318"/>
+      <stop offset="1" stop-color="#10252c"/>
+    </linearGradient>
+    <linearGradient id="mark" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#4feae4"/>
+      <stop offset="1" stop-color="#a99bff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#05090d"/>
+  <rect x="32" y="32" width="1136" height="566" rx="22" fill="url(#glow)" stroke="#1c2a31" stroke-width="2"/>
+  <rect x="32" y="32" width="8" height="566" rx="4" fill="#4feae4"/>
+  <circle cx="230" cy="315" r="102" fill="none" stroke="url(#mark)" stroke-width="12" stroke-dasharray="550 100" transform="rotate(-35 230 315)"/>
+  <path d="M184 270 L230 318 L276 270 M230 318 L230 366" fill="none" stroke="url(#mark)" stroke-width="17" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="420" y="260" fill="#e9f0f5" font-family="DejaVu Sans, sans-serif" font-size="64" font-weight="700" letter-spacing="-2">YewForge</text>
+  <text x="424" y="334" fill="#4feae4" font-family="DejaVu Sans, sans-serif" font-size="27" font-weight="600" letter-spacing="4">BUILDING NIVREN</text>
+  <path d="M424 374h600" stroke="#27404a" stroke-width="2"/>
+  <text x="424" y="428" fill="#b9c7cf" font-family="DejaVu Sans, sans-serif" font-size="28">A local-first AI platform and assistant</text>
+  <text x="424" y="470" fill="#b9c7cf" font-family="DejaVu Sans, sans-serif" font-size="28">in active development.</text>
+</svg>

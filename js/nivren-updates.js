@@ -1,5 +1,5 @@
 /**
- * Nivren daily build updates — renders Jake-approved published entries only.
+ * Nivren public build updates — renders approved published entries only.
  * Unpublished drafts are kept outside the published website tree and are never fetched by this script.
  */
 (function () {
@@ -106,7 +106,7 @@
     });
 
     if (!updates.length) {
-      host.innerHTML = '<p class="nivren-updates-empty">No published build updates yet. Approved sessions will appear here after Jake publishes them.</p>';
+      host.innerHTML = '<p class="nivren-updates-empty">No published build updates yet. Approved updates will appear here after publication.</p>';
       return;
     }
 
