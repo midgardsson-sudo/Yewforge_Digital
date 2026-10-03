@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Support our work | YewForge</title>
-  <meta name="description" content="Support expands YewForge's capacity to test Nivren across hardware and pursue careful, independent research.">
+  <meta name="description" content="Support YewForge development. Contributions are reinvested into compute, AI tooling, test hardware and infrastructure for Nivren, NivKode and related work.">
   <link rel="canonical" href="https://yewforge-digital.co.uk/support.html">
   <link rel="icon" href="favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="favicon.svg">
@@ -16,6 +16,16 @@
     .terms p { color: var(--ink); }
     .terms strong { color: var(--ink); }
     .support-contact { margin-top: var(--s8); }
+    .support-actions { display:flex; flex-wrap:wrap; gap:.75rem; margin-top:1.25rem; }
+    .support-actions a {
+      display:inline-flex; align-items:center; justify-content:center; min-height:44px;
+      padding:.75rem 1rem; border:1px solid var(--cyan); color:var(--ink);
+      text-decoration:none; letter-spacing:.04em;
+    }
+    .support-actions a:hover, .support-actions a:focus-visible { box-shadow:0 0 0 2px rgba(85,236,255,.16); }
+    .fund-goal { margin-top:1rem; }
+    .fund-goal strong { color:var(--ink); }
+    .fund-goal small { display:block; margin-top:.45rem; color:var(--muted); }
   </style>
 </head>
 <body>
@@ -38,35 +48,61 @@
     <div class="wrap">
       <section class="hero" aria-labelledby="support-title">
         <p class="eyebrow">Support YewForge</p>
-        <h1 id="support-title">More room to test, learn and build.</h1>
-        <p class="lede">Support expands our testing and research capacity. It does not determine what our evidence says.</p>
+        <h1 id="support-title">Throw some fuel into the forge.</h1>
+        <p class="lede">YewForge is bootstrapped. Support is reinvested into development capacity: AI tooling, compute, test hardware and infrastructure. It never buys a result.</p>
+        <div class="support-actions" aria-label="Support options">
+          <!-- LAUNCH GATE: replace __KOFI_URL__ during owner approval before merge. -->
+          <a href="__KOFI_URL__" rel="noopener noreferrer">Support on Ko-fi</a>
+        </div>
       </section>
 
       <section class="block split" aria-labelledby="why-title">
-        <div><p class="eyebrow">Why support matters</p><h2 id="why-title">Capacity changes what we can examine.</h2></div>
+        <div><p class="eyebrow">Why support matters</p><h2 id="why-title">Small support can add real capacity.</h2></div>
         <div class="prose">
-          <p>Funding, compute and donated hardware give us more time and resources to test Nivren across a broader range of setups, investigate failures and pursue research questions carefully.</p>
-          <p>More capacity can broaden the work. It cannot predetermine a result.</p>
+          <p>At our current scale, even modest support can directly fund another development tool, additional model/API headroom, testing infrastructure or part of the hardware fund.</p>
+          <p>We are not asking supporters to fund a founder salary. The purpose of this channel is to help the work sustain and accelerate itself.</p>
         </div>
+      </section>
+
+      <section class="block" aria-labelledby="goal-title">
+        <p class="eyebrow">First public goal</p>
+        <h2 id="goal-title">£50 — fund additional development capacity.</h2>
+        <article class="mod edge-cyan fund-goal prose">
+          <p><strong>Start small. Show exactly what it enabled.</strong></p>
+          <p>The first £50 net received through this support channel will be assigned to additional development capacity: coding-agent access, model/API credits or equivalent tooling that can immediately increase productive throughput.</p>
+          <small>When a milestone is reached, YewForge intends to record what the support enabled. Future goals may include £100, £250, £500, the first dedicated 24GB GPU worker and, later, the Nivren compute lab.</small>
+        </article>
       </section>
 
       <section class="block" aria-labelledby="ways-title">
         <p class="eyebrow">Ways to help</p>
-        <h2 id="ways-title">Support that adds practical capacity.</h2>
+        <h2 id="ways-title">Cash is useful. Capacity is useful too.</h2>
         <div class="grid three">
           <article class="mod">
-            <div class="mod-h"><h3>Financial support</h3><span class="chip needs">Coming soon</span></div>
-            <p>We can’t accept financial support yet. When we can, we’ll explain how here.</p>
+            <div class="mod-h"><h3>Financial support</h3><span class="chip">Live at launch</span></div>
+            <p>One-off support helps pay for development tools, compute and hardware. There is no investment, equity or promised financial return attached to a contribution.</p>
+            <div class="support-actions">
+              <a href="__KOFI_URL__" rel="noopener noreferrer">Support the build</a>
+            </div>
           </article>
           <article class="mod edge-violet">
             <h3>Compute sponsorship</h3>
-            <p>Compute sponsorship can give us more capacity for testing and research. Any arrangement would be discussed directly and recorded clearly.</p>
+            <p>Cloud/GPU credits and compute access can replace real infrastructure spending and give us room for larger evaluation, training and experimentation runs.</p>
+            <p><a href="contact.html">Discuss compute support</a>.</p>
           </article>
           <article class="mod edge-cyan">
             <h3>Hardware donations</h3>
-            <p>Equipment can help us investigate compatibility, repair and reuse across real hardware.</p>
+            <p>GPUs, SSDs, RAM, networking equipment and test devices can directly increase the range of hardware we can build and test against.</p>
             <p><a href="#hardware-terms">Read the hardware donation terms</a>.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="block split" aria-labelledby="where-title">
+        <div><p class="eyebrow">Where it goes</p><h2 id="where-title">Back into the work.</h2></div>
+        <div class="prose">
+          <p>Typical uses include AI development subscriptions and credits, local and hosted compute, CI and infrastructure, storage, networking, testing devices and the dedicated Nivren hardware fund.</p>
+          <p>Support is deliberately separated from editorial and technical judgement. Spending can increase capacity; it cannot purchase a favourable conclusion, review or research result.</p>
         </div>
       </section>
 
@@ -91,8 +127,8 @@
       <section class="block" aria-labelledby="contact-title">
         <article class="mod support-contact">
           <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Discuss a contribution.</h2>
-          <p class="prose">For questions about compute sponsorship or hardware donations, <a href="contact.html">contact YewForge</a>.</p>
+          <h2 id="contact-title">Prefer to contribute hardware or compute?</h2>
+          <p class="prose">For compute sponsorship, hardware donations or other practical support, <a href="contact.html">contact YewForge</a>.</p>
         </article>
       </section>
     </div>
