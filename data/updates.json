@@ -1,7 +1,13 @@
 [
   {
-    "date": "2026-10-02",
-    "title": "Must-change repair framing: feedback uptake improved (exploratory, confirmation pending)",
+    "date": "2026-10-03",
+    "title": "YewForge website and press kit are live",
+    "link": "press/",
+    "kind": "news"
+  },
+  {
+    "date": "2026-10-03",
+    "title": "Must-change repair framing: exploratory result not confirmed by preregistered fresh-suite test",
     "link": "#evidence",
     "kind": "result"
   },
@@ -19,7 +25,7 @@
   },
   {
     "date": "2026-10-02",
-    "title": "Nivren Home 0.6 on Android: worker seats and system tabs",
+    "title": "Nivren Home launcher: internal builds on an Android test phone",
     "link": "nivren.html",
     "kind": "build"
   },
