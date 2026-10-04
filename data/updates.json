@@ -1,10 +1,10 @@
 [
   {
-    "date": "2026-10-03",
-    "title": "NivKode 0.1.0 RC6 is ready for testing",
+    "date": "2026-10-04",
+    "title": "NivKode 0.1.0 RC8 is a review candidate",
     "link": "/updates/",
     "kind": "Product and research update",
     "approved": true,
-    "text": "NivKode 0.1.0 RC6 is ready for testing: a desktop app alongside the CLI and live terminal view, dyslexia-friendly and colour-blind-safe themes, and free automated tests on every change. Open source (AGPL-3.0), launching 2 November. We also corrected our own research records: some ratings we'd labelled as human were made by an AI model. Those results stay inconclusive, and we've tightened our rules so it can't happen again. Honest results matter more than good-looking ones."
+    "text": "NivKode 0.1.0 RC8 is a review candidate. Release approval and publication are pending. Linux x86_64 install evidence used a fake local provider; it does not establish live-provider acceptance. No Android physical-device acceptance is claimed. The launch target remains 2 November 2026 and may move if testing finds issues. We also corrected our own research records: some ratings we'd labelled as human were made by an AI model. Those results stay inconclusive, and we've tightened our rules so it can't happen again. Honest results matter more than good-looking ones."
   }
 ]

@@ -1,15 +1,18 @@
 {
-  "reviewed_on": "2026-10-03",
+  "reviewed_on": "2026-10-04",
   "max_age_days": 14,
   "product_status": {
-    "NivKode": "0.1.0 RC6 ready for testing; public launch planned for 2 November 2026"
+    "NivKode": "0.1.0 RC8 review candidate; release approval and publication pending. Linux x86_64 install evidence used a fake local provider; no Android physical-device or live-provider acceptance claim. Launch target: 2 November 2026; may move if testing finds issues."
   },
   "ticker": [
     {
-      "date": "2026-10-03",
-      "title": "NivKode 0.1.0 RC6 is ready for testing",
+      "date": "2026-10-04",
+      "title": "NivKode 0.1.0 RC8 is a review candidate",
       "link": "/updates/",
       "kind": "Product and research update"
     }
-  ]
+  ],
+  "pages": {
+    "nivkode/": "NivKode 0.1.0 RC8 review candidate; approval/publication pending; Linux x86_64 fake-local-provider evidence only; no Android physical-device or live-provider acceptance claim; 2 November 2026 launch target may move if testing finds issues"
+  }
 }
