@@ -1,10 +1,16 @@
 {
-  "reviewed_on": "2026-10-04",
+  "reviewed_on": "2026-10-06",
   "max_age_days": 14,
   "product_status": {
-    "NivKode": "0.1.0 RC8 review candidate; release approval and publication pending. Linux x86_64 install evidence used a fake local provider; no Android physical-device or live-provider acceptance claim. Launch target: 2 November 2026; may move if testing finds issues."
+    "NivKode": "0.1.0 review candidate (RC17 is the latest numbered one; the 6 October work is in the next candidate); release approval and publication pending. Test runs on one machine with live Codex and local Ollama and two phone runs (the second with live Codex turns) passed on 6 October; agent-run, owner review pending. Launch target: 2 November 2026; may move if testing finds issues."
   },
   "ticker": [
+    {
+      "date": "2026-10-06",
+      "title": "NivKode 0.1.0 review candidate: 6 October update",
+      "link": "/updates/",
+      "kind": "Product update"
+    },
     {
       "date": "2026-10-04",
       "title": "NivKode 0.1.0 RC8 is a review candidate",
@@ -13,6 +19,6 @@
     }
   ],
   "pages": {
-    "nivkode/": "NivKode 0.1.0 RC8 review candidate; approval/publication pending; Linux x86_64 fake-local-provider evidence only; no Android physical-device or live-provider acceptance claim; 2 November 2026 launch target may move if testing finds issues"
+    "nivkode/": "NivKode 0.1.0 review candidate; approval/publication pending; live Codex, local Ollama and phone test runs on 6 October were agent-run and await owner review; source not public yet (AGPL-3.0-only); 2 November 2026 launch target may move if testing finds issues"
   }
 }
