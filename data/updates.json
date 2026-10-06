@@ -1,6 +1,14 @@
 [
   {
     "approved": true,
+    "date": "2026-10-07",
+    "kind": "Correction",
+    "link": "/updates/",
+    "title": "Corrections to our 3 October update",
+    "text": "Our 3 October update said NivKode was “launching 2 November”. 2 November is our target for the public release, not a fixed date, and it may move if testing finds issues. The same update described “dyslexia-friendly and colour-blind-safe themes”. NivKode offers reading-font choices, including OpenDyslexic, and colour palettes for colour-blind users and high contrast; we have checked them with automated contrast tests only. Our 6 October update corrected the other claims in that entry."
+  },
+  {
+    "approved": true,
     "date": "2026-10-06",
     "kind": "Product update",
     "link": "/updates/",
