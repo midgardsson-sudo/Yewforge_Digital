@@ -79,6 +79,7 @@ section.block { padding: var(--s12) 0 0; }
 
 /* chips: one per module header */
 .chip { display: inline-flex; align-items: center; gap: 6px; min-height: 22px; padding: 0 8px; border-radius: var(--r-chip); border: 1px solid var(--line-strong); font-family: var(--mono); font-size: 11px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); white-space: nowrap; }
+.chip[hidden] { display: none; }
 .chip::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .chip.live { color: var(--cyan); border-color: rgba(79,234,228,.35); }
 .chip.violet { color: var(--violet); border-color: rgba(169,155,255,.35); }
