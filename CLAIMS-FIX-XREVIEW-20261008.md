@@ -59,3 +59,29 @@ Scanned tracked HTML and JSON for `local`, `private`, `offline`, `Claude`, `defa
 ## Required before READY
 
 Qualify or remove the two unscoped local-first engineering metadata phrases; resolve the homepage feature/test assertions and the remaining uncited test-result copies in Nivren, press and `site-review.json`; then cross-review the revised branch. No site edits were made as part of this review.
+
+## Claims fix cross-review — round 3 — 8 October 2026
+
+**Verdict: READY**
+**Reviewed:** `origin/website/claims-fix-20261008` at `a89bf1f`, reworked from `b1f091c`, based on `3de9a2a`; audit `f80cf52` (`PUB-CLAIMS-AUDIT-20261008.md`).
+**Scope:** Read-only review of the candidate and all tracked HTML/JSON claim text. No site files changed.
+
+### Round 2 findings and audit disposition
+
+- **P1 — Nivren-wide local-first metadata: fixed.** `engineering/nivren/development-history/index.html` and `engineering/nivren/objectives/index.html` now call local operation a design goal. The candidate contains no unqualified “local-first” product label. The local-start statement remains limited to new conversations in the NivKode desktop app when a local model is installed; it says defaults in other clients vary.
+- **P2 — Homepage feature and test assertions: fixed.** The unsupported desktop, CLI, terminal and accessibility feature list and release-candidate test-frequency assertion are gone. The homepage states review-candidate status and pending release approval/publication.
+- **P2 — Uncited test results: fixed.** The Codex/Ollama, Linux and Android result statements and the Linux x86_64 tested-build assertion identified in round 2 are removed from Nivren, press, `site-review.json`, NivKode and updates. Current summaries say testing continues without claiming platform/provider results. The 3 October entry is visibly superseded; its unsupported feature/test copy is withdrawn in both HTML and JSON.
+- **Remaining original audit findings: resolved.** Nivren programme descriptions are framed as development goals with broader integration planned; Claude is explicitly untested and contract-only; unsupported NivKode controls, safety, accessibility, build and benchmark assertions have been removed or described as evaluation/design content; the privacy copy retains only the owner-confirmed desktop local-start and Codex-to-OpenAI statements; 2 November remains a movable target; corporate/location/support-independence assertions were removed or narrowed. No P1/P2 item is left without resolution or explanation in the candidate's `CLAIMS-FIX-NOTES-20261008.md`.
+
+### Residual claim scan
+
+Scanned all tracked HTML and JSON for `local`, `private`, `offline`, `Claude`, `default`, `November`, `available` and `users`. Residual local-model references are either the approved desktop-only new-conversation behavior or explicitly planned Nivren Quark models. The private match in `nivren-updates/schema.json` is a `visibility_allowed` enum value, not a public product claim. “Available” matches concern generic assets, support-link status or explicit lack of public builds; no fabricated user counts or reviews were found. Claude appears only as untested/contract-only. November mentions describe the 2 November target and say it may move. Codex is consistently described as sending its conversation to OpenAI under the user's account. I found no new overclaim in the rework.
+
+### Privacy, HTML and links
+
+- Compared with `3de9a2a`, `privacy.html` changes only the C2 product paragraph. C1, C3, C4 and C5 remain unchanged. C2 removes the unverified non-receipt/website-receives-nothing assurances and keeps the desktop-start and Codex/OpenAI statements.
+- `python3 -I` with Python's `HTMLParser` parsed all 110 tracked HTML files with no exceptions. All 4 tracked JSON files parsed successfully. This checks parsing, not full HTML conformance; `tidy` is not installed.
+- Checked local links and fragments across the full candidate: 0 missing paths or anchors, including 0 in changed HTML files.
+- `git diff --check` from both the legal baseline and round 2 candidate to the reviewed candidate is clean.
+
+Round 3 found no remaining P1/P2 issue requiring rework. No site files were changed as part of this review.
