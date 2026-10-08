@@ -50,17 +50,17 @@
       <section class="hero" aria-labelledby="nk-title">
         <p class="eyebrow">NivKode</p>
         <h1 id="nk-title">A developer environment in development.</h1>
-        <p class="lede">NivKode is a desktop app, a command-line tool and a live terminal view for working with AI coding assistants. Your workspace and history stay on your machine. You bring a local model or your own Codex account; a conversation that uses Codex is sent to OpenAI.</p>
+        <p class="lede">We are developing NivKode as a desktop app, command-line tool and terminal view for working with AI coding assistants. In the desktop app, new conversations start on a local model when one is installed. When a conversation uses Codex, NivKode sends that conversation to OpenAI under your own account.</p>
         <p><span class="chip needs launch-status">Launch target <time datetime="2026-11-02">2 Nov 2026</time></span> <span class="chip">AGPL-3.0-only</span> <span>May move if testing finds issues.</span></p>
       </section>
 
       <section class="block" aria-labelledby="what-title">
         <p class="eyebrow">What it is</p>
-        <h2 id="what-title">Three ways in, one local gateway.</h2>
+        <h2 id="what-title">Development direction</h2>
         <div class="grid three">
-          <article class="mod edge-cyan"><h3>Desktop app</h3><p>Connect to your local gateway, then open or start a conversation. The app shows run state and where each response came from.</p></article>
-          <article class="mod edge-violet"><h3>CLI and live terminal view</h3><p>A terminal view shows a session's steps, routing, changed files and review status as they arrive.</p></article>
-          <article class="mod edge-green"><h3>Desktop local start. Provider choice in each conversation.</h3><p>In the desktop app, new conversations start on a local model through Ollama when one is installed. If you sign in to your own Codex account (experimental), the desktop app uses it only in conversations where you choose it. Codex asks before it changes your files. A local model can read files in your workspace but can't change them or run commands. Claude has not yet been tested in NivKode; the adapter is contract-only.</p></article>
+          <article class="mod edge-cyan"><h3>Desktop app</h3><p>We are developing a desktop app for working with AI coding assistants.</p></article>
+          <article class="mod edge-violet"><h3>Command-line tool and terminal view</h3><p>We are developing command-line and terminal interfaces for NivKode.</p></article>
+          <article class="mod edge-green"><h3>Provider options</h3><p>In the desktop app, new conversations start on a local model when one is installed. Defaults in other clients vary. Claude has not yet been tested in NivKode; the adapter is contract-only.</p></article>
         </div>
         <ul class="facts prose" style="margin-top: var(--s5)">
           <li><strong>Review gate:</strong> We are evaluating workspace controls and approval flows in a review candidate. Human review and release approval are pending.</li>
@@ -87,8 +87,8 @@
           <ul class="limits">
             <li>NivKode 0.1.0 is a review candidate. Human release approval is still pending and nothing is published yet.</li>
             <li>The tested desktop build is Linux x86_64. Other systems have not been tested.</li>
-            <li>Automated smoke tests used a simulated provider. On 6 October, test runs on one machine passed with a live Codex account and a local Ollama model, including an approval request and a real file change. Our AI agents ran them, and we still have to review them.</li>
-            <li>The Android app is a preview that you build yourself. On 6 October two builds passed test runs on one phone, the second including two live Codex turns. Our AI agents ran them, and we still have to review them.</li>
+            <li>Automated smoke tests used a simulated provider. Live-provider and Android device test results are not reported here.</li>
+            <li>The Android app is a preview that you build yourself. Human review and release approval are pending.</li>
             <li>The launch date may move if testing finds problems.</li>
           </ul>
         </div>

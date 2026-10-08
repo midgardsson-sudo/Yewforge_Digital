@@ -31,3 +31,9 @@ Branch: `website/claims-fix-20261008`, based on `3de9a2a` (`legal/site-legal-1-c
 - `data/updates.json:32` — the 3 October archived update now begins “Superseded by our corrections on 6 and 7 October.” Its historical wording remains visible as a dated record.
 
 No layout or CSS was changed. The other P2 findings were left as they already carry an adjacent agent-run/human-review caveat or did not have a clearly supported replacement in the available audit and owner rules.
+
+## Rework
+
+- `nivkode/index.html` — removed the unsupported claim that workspace and history stay on the user's machine, the single-local-gateway assertion, runtime/session display claims, and claims about Codex approval and local-model file/command restrictions. The remaining provider statements are scoped to the desktop local-start behavior accepted in cross-review and the Codex/OpenAI route. Other interface descriptions now state development intent.
+- `privacy.html` — removed the unverified assurances that YewForge does not receive Codex conversations and that the website receives nothing from NivKode use. The paragraph retains only the desktop local-start behavior and the Codex/OpenAI route.
+- `nivkode/index.html`, `updates/index.html`, and `data/updates.json` — removed the unsupported live Codex/Ollama and Android phone test results from the product page and 6 October update. Removed build reproducibility, test counts, accessibility scan results, specific unsubstantiated feature claims, and the release-candidate test-frequency claim from the update. Human review, release approval, publication status and the movable launch target remain.
