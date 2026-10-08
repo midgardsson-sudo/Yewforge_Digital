@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NivKode | Developer environment by YewForge</title>
-  <meta name="description" content="We are developing NivKode as a developer environment with a desktop app, CLI and live terminal view. In the desktop app, new conversations start on a local model when one is installed; defaults in other clients vary. AGPL-3.0-only. Launch target: 2 November 2026; may move if testing finds issues.">
+  <meta name="description" content="We are developing NivKode as a developer environment. In the desktop app, new conversations start on a local model when one is installed; defaults in other clients vary. AGPL-3.0-only. Launch target: 2 November 2026; may move if testing finds issues.">
   <link rel="canonical" href="https://yewforge-digital.co.uk/nivkode/">
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -26,7 +26,7 @@
     .launch-status::before { flex: 0 0 6px; }
     @media (min-width: 760px) and (max-width: 900px) { .grid.three { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   </style>
-  <meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are developing NivKode as a developer environment with a desktop app, CLI and live terminal view. In the desktop app, new conversations start on a local model when one is installed; defaults in other clients vary. AGPL-3.0-only. Launch target: 2 November 2026; may move if testing finds issues."><meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-image.png"><meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are developing NivKode as a developer environment. In the desktop app, new conversations start on a local model when one is installed; defaults in other clients vary. AGPL-3.0-only. Launch target: 2 November 2026; may move if testing finds issues."><meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-image.png"><meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -50,7 +50,7 @@
       <section class="hero" aria-labelledby="nk-title">
         <p class="eyebrow">NivKode</p>
         <h1 id="nk-title">A developer environment in development.</h1>
-        <p class="lede">We are developing NivKode as a desktop app, command-line tool and terminal view for working with AI coding assistants. In the desktop app, new conversations start on a local model when one is installed. When a conversation uses Codex, NivKode sends that conversation to OpenAI under your own account.</p>
+        <p class="lede">We are developing NivKode. Desktop, command-line and terminal interfaces remain development goals. In the desktop app, new conversations start on a local model when one is installed. When a conversation uses Codex, NivKode sends that conversation to OpenAI under your own account.</p>
         <p><span class="chip needs launch-status">Launch target <time datetime="2026-11-02">2 Nov 2026</time></span> <span class="chip">AGPL-3.0-only</span> <span>May move if testing finds issues.</span></p>
       </section>
 
@@ -58,8 +58,8 @@
         <p class="eyebrow">What it is</p>
         <h2 id="what-title">Development direction</h2>
         <div class="grid three">
-          <article class="mod edge-cyan"><h3>Desktop app</h3><p>We are developing a desktop app for working with AI coding assistants.</p></article>
-          <article class="mod edge-violet"><h3>Command-line tool and terminal view</h3><p>We are developing command-line and terminal interfaces for NivKode.</p></article>
+          <article class="mod edge-cyan"><h3>Desktop app</h3><p>A desktop app remains a development goal.</p></article>
+          <article class="mod edge-violet"><h3>Command-line tool and terminal view</h3><p>Command-line and terminal interfaces remain development goals.</p></article>
           <article class="mod edge-green"><h3>Provider options</h3><p>In the desktop app, new conversations start on a local model when one is installed. Defaults in other clients vary. Claude has not yet been tested in NivKode; the adapter is contract-only.</p></article>
         </div>
         <ul class="facts prose" style="margin-top: var(--s5)">
@@ -72,12 +72,12 @@
       <section class="block" aria-labelledby="shots-title">
         <p class="eyebrow">Screenshots</p>
         <h2 id="shots-title">From the 0.1.0 RC8 review candidate.</h2>
-        <p class="prose">These images come from automated test runs using a simulated local provider, not from live provider sessions.</p>
+        <p class="prose">These scripted demonstrations use a simulated local provider. They show interface designs, not feature completeness, accessibility, or live-provider results.</p>
         <div class="shots" style="margin-top: var(--s5)">
           <figure class="shot"><img src="../assets/nivkode/nivkode-desktop-onboarding.png" width="1280" height="900" loading="lazy" alt="NivKode desktop app before connecting: a gateway address field, a paired device token field and a Connect button beside an empty conversation area."><figcaption><strong>Desktop onboarding.</strong> Connect to a gateway on your own machine.</figcaption></figure>
           <figure class="shot"><img src="../assets/nivkode/nivkode-review-gate.png" width="1280" height="1173" loading="lazy" alt="NivKode desktop conversation showing an 'Outcome unknown' notice and a Review gate card stating that no test results or file changes were reported for the run."><figcaption><strong>The review gate.</strong> When a run's outcome is unknown, NivKode says so instead of assuming tests passed.</figcaption></figure>
           <figure class="shot"><img src="../assets/nivkode/nivkode-accessibility-themes.png" width="1280" height="961" loading="lazy" alt="NivKode desktop conversation with the ColourSafe palette and OpenDyslexic reading font selected, showing widened letter spacing in the message text."><figcaption><strong>Accessibility themes.</strong> ColourSafe palette with the OpenDyslexic reading font.</figcaption></figure>
-          <figure class="shot"><img src="../assets/nivkode/nivkode-terminal-view.png" width="1280" height="680" loading="lazy" alt="NivKode terminal view with panels for session, steps, routing, files and review, showing a completed run that changed two files and passed 12 tests. A label reads 'Simulated provider'."><figcaption><strong>Terminal view.</strong> A scripted demo session (simulated provider), from the RC6 walkthrough.</figcaption></figure>
+          <figure class="shot"><img src="../assets/nivkode/nivkode-terminal-view.png" width="1280" height="680" loading="lazy" alt="NivKode terminal view from a scripted demonstration using a simulated provider; displayed run details are demonstration content."><figcaption><strong>Terminal view.</strong> A scripted demo session (simulated provider), from the RC6 walkthrough.</figcaption></figure>
         </div>
       </section>
 
@@ -86,9 +86,8 @@
         <div class="prose">
           <ul class="limits">
             <li>NivKode 0.1.0 is a review candidate. Human release approval is still pending and nothing is published yet.</li>
-            <li>The tested desktop build is Linux x86_64. Other systems have not been tested.</li>
-            <li>Automated smoke tests used a simulated provider. Live-provider and Android device test results are not reported here.</li>
-            <li>The Android app is a preview that you build yourself. Human review and release approval are pending.</li>
+            <li>NivKode remains in testing; platform and provider results are not reported here.</li>
+            <li>An Android app remains a development goal.</li>
             <li>The launch date may move if testing finds problems.</li>
           </ul>
         </div>

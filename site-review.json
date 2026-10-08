@@ -2,7 +2,7 @@
   "reviewed_on": "2026-10-06",
   "max_age_days": 14,
   "product_status": {
-    "NivKode": "0.1.0 review candidate (RC17 is the latest numbered one; the 6 October work is in the next candidate); release approval and publication pending. Test runs on one machine with live Codex and local Ollama and two phone runs (the second with live Codex turns) passed on 6 October; agent-run, owner review pending. Launch target: 2 November 2026; may move if testing finds issues."
+    "NivKode": "0.1.0 review candidate; release approval and publication pending; in testing. Launch target: 2 November 2026; may move if testing finds issues."
   },
   "ticker": [
     {
@@ -19,6 +19,6 @@
     }
   ],
   "pages": {
-    "nivkode/": "NivKode 0.1.0 review candidate; approval/publication pending; live Codex, local Ollama and phone test runs on 6 October were agent-run and await owner review; source not public yet (AGPL-3.0-only); 2 November 2026 launch target may move if testing finds issues"
+    "nivkode/": "NivKode 0.1.0 review candidate; approval/publication pending; in testing; source not public yet (AGPL-3.0-only); 2 November 2026 launch target may move if testing finds issues"
   }
 }
