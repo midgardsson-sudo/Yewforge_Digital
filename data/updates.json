@@ -29,6 +29,6 @@
     "link": "/updates/",
     "kind": "Product and research update",
     "approved": true,
-    "text": "NivKode 0.1.0 RC6 is ready for testing: a desktop app alongside the CLI and live terminal view, dyslexia-friendly and colour-blind-safe themes, and free automated tests on every change. Open source (AGPL-3.0), launching 2 November. We also corrected our own research records: some ratings we'd labelled as human were made by an AI model. Those results stay inconclusive, and we've tightened our rules so it can't happen again. Honest results matter more than good-looking ones."
+    "text": "Superseded by our corrections on 6 and 7 October. NivKode 0.1.0 RC6 is ready for testing: a desktop app alongside the CLI and live terminal view, dyslexia-friendly and colour-blind-safe themes, and free automated tests on every change. Open source (AGPL-3.0), launching 2 November. We also corrected our own research records: some ratings we'd labelled as human were made by an AI model. Those results stay inconclusive, and we've tightened our rules so it can't happen again. Honest results matter more than good-looking ones."
   }
 ]

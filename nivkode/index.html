@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NivKode | Local-first developer environment</title>
-  <meta name="description" content="NivKode is a local-first developer environment: a desktop app, a CLI and a live terminal view. Bring your own provider accounts. AGPL-3.0-only. Launch target: 2 November 2026; may move if testing finds issues.">
+  <title>NivKode | Developer environment by YewForge</title>
+  <meta name="description" content="We are developing NivKode as a developer environment with a desktop app, CLI and live terminal view. In the desktop app, new conversations start on a local model when one is installed; defaults in other clients vary. AGPL-3.0-only. Launch target: 2 November 2026; may move if testing finds issues.">
   <link rel="canonical" href="https://yewforge-digital.co.uk/nivkode/">
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -26,7 +26,7 @@
     .launch-status::before { flex: 0 0 6px; }
     @media (min-width: 760px) and (max-width: 900px) { .grid.three { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
   </style>
-  <meta property="og:title" content="NivKode | Local-first developer environment"><meta property="og:description" content="A desktop app, CLI and live terminal view. Bring your own provider accounts. AGPL-3.0-only. Launch target: 2 November 2026; may move if testing finds issues."><meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-image.png"><meta name="twitter:card" content="summary_large_image">
+  <meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are developing NivKode as a developer environment with a desktop app, CLI and live terminal view. In the desktop app, new conversations start on a local model when one is installed; defaults in other clients vary. AGPL-3.0-only. Launch target: 2 November 2026; may move if testing finds issues."><meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-image.png"><meta name="twitter:card" content="summary_large_image">
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -49,7 +49,7 @@
     <div class="wrap">
       <section class="hero" aria-labelledby="nk-title">
         <p class="eyebrow">NivKode</p>
-        <h1 id="nk-title">A local-first developer environment.</h1>
+        <h1 id="nk-title">A developer environment in development.</h1>
         <p class="lede">NivKode is a desktop app, a command-line tool and a live terminal view for working with AI coding assistants. Your workspace and history stay on your machine. You bring a local model or your own Codex account; a conversation that uses Codex is sent to OpenAI.</p>
         <p><span class="chip needs launch-status">Launch target <time datetime="2026-11-02">2 Nov 2026</time></span> <span class="chip">AGPL-3.0-only</span> <span>May move if testing finds issues.</span></p>
       </section>
@@ -60,11 +60,11 @@
         <div class="grid three">
           <article class="mod edge-cyan"><h3>Desktop app</h3><p>Connect to your local gateway, then open or start a conversation. The app shows run state and where each response came from.</p></article>
           <article class="mod edge-violet"><h3>CLI and live terminal view</h3><p>A terminal view shows a session's steps, routing, changed files and review status as they arrive.</p></article>
-          <article class="mod edge-green"><h3>Local first. Choice always. External by human decision.</h3><p>In the desktop app, new conversations start on a local model through Ollama when one is installed. If you sign in to your own Codex account (experimental), the desktop app uses it only in conversations where you choose it. Codex asks before it changes your files. A local model can read files in your workspace but can't change them or run commands. Claude is not available.</p></article>
+          <article class="mod edge-green"><h3>Desktop local start. Provider choice in each conversation.</h3><p>In the desktop app, new conversations start on a local model through Ollama when one is installed. If you sign in to your own Codex account (experimental), the desktop app uses it only in conversations where you choose it. Codex asks before it changes your files. A local model can read files in your workspace but can't change them or run commands. Claude has not yet been tested in NivKode; the adapter is contract-only.</p></article>
         </div>
         <ul class="facts prose" style="margin-top: var(--s5)">
-          <li><strong>Review gate:</strong> Codex works in a read-only sandbox and must ask for your approval before it changes your workspace, and the approval step can't be turned off. The review card lists changed files, diffs, reported tests and pending approval actions.</li>
-          <li><strong>Accessibility themes:</strong> reading font choices (including Atkinson Hyperlegible and OpenDyslexic), text size and spacing controls, and colour palettes for colour-blind users and high contrast. Evidence for dyslexia-specific fonts is mixed, so they are optional.</li>
+          <li><strong>Review gate:</strong> We are evaluating workspace controls and approval flows in a review candidate. Human review and release approval are pending.</li>
+          <li><strong>Accessibility themes:</strong> We are evaluating reading-font choices, text controls and colour palettes in a review candidate. Human review and release approval are pending.</li>
           <li><strong>Licence:</strong> AGPL-3.0-only. The source code is not public yet.</li>
         </ul>
       </section>
@@ -99,14 +99,14 @@
           <p class="eyebrow">Follow progress</p>
           <h2 id="follow-title">Launch target: 2 November 2026; may move if testing finds issues.</h2>
           <p class="prose">We post progress as it is evidenced. <a href="../updates/">Follow progress in Updates</a>.</p>
-          <p class="prose">YewForge is UK-based. If you would like to help fund development, <a href="https://ko-fi.com/yewforge" rel="noopener noreferrer" target="_blank">support us on Ko-fi</a>. Support does not buy influence over results.</p>
+          <p class="prose">If you would like to help fund development, <a href="https://ko-fi.com/yewforge" rel="noopener noreferrer" target="_blank">support us on Ko-fi</a>. We welcome support for development.</p>
         </article>
       </section>
     </div>
   </main>
   <footer class="site-foot">
     <div class="wrap">
-      <span>&copy; 2026 YewForge · UK-based, reaching globally</span>
+      <span>&copy; 2026 YewForge</span>
       <nav aria-label="Footer"><ul>
         <li><a href="../about.html">About</a></li>
         <li><a href="../press/">Press</a></li>
