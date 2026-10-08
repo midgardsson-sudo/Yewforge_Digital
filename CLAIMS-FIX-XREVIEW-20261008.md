@@ -1,56 +1,61 @@
-# Claims fix cross-review — 8 October 2026
+# Claims fix cross-review — round 2 — 8 October 2026
 
 **Verdict: REWORK**  
-**Reviewed:** `website/claims-fix-20261008` at `f7dfaca`, based on `3de9a2a`; audit `f80cf52` (`PUB-CLAIMS-AUDIT-20261008.md`).  
+**Reviewed:** `origin/website/claims-fix-20261008` at `b1f091c`, reworked from `f7dfaca`, based on `3de9a2a`; audit `f80cf52` (`PUB-CLAIMS-AUDIT-20261008.md`).
 **Scope:** Read-only review of site changes and all tracked HTML/JSON claim text. No site files changed.
 
-## Findings
+## Audit disposition
 
-### P1 — broad local-first/default implications: fixed
+### P1 — Product-wide local-first/default implications: mostly fixed; residual metadata claims
 
-The edits remove the product-wide local-first labels from home, Nivren, NivKode, press, engineering, and the privacy paragraph. The remaining behavioral statement is scoped to new conversations in the NivKode desktop app when a local model is installed, and the Nivren/press copy says other client defaults vary. This follows the owner rule. The Codex/OpenAI wording remains in place. The Claude wording now says it has not been tested in NivKode and is contract-only.
+The main product, Nivren, NivKode, press and privacy summaries now avoid a product-wide local-first label. NivKode's local-start statement is limited to new conversations in the desktop app when a local model is installed, and the copy says defaults in other clients vary. The Codex route remains identified as sending the conversation to OpenAI.
+
+Two engineering-page descriptions still use unqualified local-first language in search metadata: `engineering/nivren/development-history/index.html` calls Nivren a “governed local-first programme”; `engineering/nivren/objectives/index.html` lists “local-first operation” among its objectives. The objectives page has maturity framing in its share description, but the metadata phrases can stand alone and still imply a Nivren-wide operating property. Scope both explicitly as design goals or remove the label.
 
 ### P2 — Nivren programme/design language: fixed
 
-The prominent Nivren descriptions now use YewForge's “we” voice, identify coordination as a development goal, and say broader integration is planned. The Nivren page's prior “Runs on your machine” and local-hardware assertions are removed.
+The edited Nivren and home summaries use YewForge's “we” voice, describe coordination as development work, and state that broader integrated behaviour remains planned.
 
-### P2 — Claude description: fixed
+### P2 — Claude: fixed
 
-`nivkode/index.html` now says Claude has not been tested and the adapter is contract-only.
+`nivkode/index.html` says Claude has not been tested in NivKode and the adapter is contract-only. I found no claim that Claude has been tested.
 
-### P2 — feature/control claims: partially fixed; residuals need resolution
+### P2 — NivKode feature, control and test claims: partly fixed; public claims remain without cited evidence
 
-The review-gate and accessibility bullets at `nivkode/index.html:66-67` now describe evaluation in a review candidate and disclose pending human review and release approval. However, adjacent claims remain categorical and unsupported by an implementation artifact in the audit's evidence set:
+The rework removes the unsupported workspace/history retention, single-gateway, runtime/session display, Codex approval and local-model file/command restriction claims from `nivkode/index.html`. It also removes the specific build reproducibility, test counts, accessibility scan results, and live Codex/Ollama and Android results from the 6 October update. The remaining review-candidate and simulated-provider wording is bounded.
 
-- `nivkode/index.html:53` says workspace and history stay on the user's machine.
-- `nivkode/index.html:59-63` says the product has one local gateway, displays run/response state, displays live session steps/routing/files/review status, requires Codex approval before file changes, and prevents a local model from changing files or running commands.
-- The 6 October update still reports build reproducibility, test counts, accessibility scan results, and live Codex/Ollama and phone runs (`updates/index.html:16`, `data/updates.json:16`). It does disclose agent-run checks and pending human review, but this clone contains no candidate-specific evidence links supporting those results.
+The homepage still says NivKode includes a desktop app, CLI and live terminal view, reading-font and colour-palette options, and automated tests on every release candidate (`index.html:273`). The audit identified this location as an evidence gap; the rework does not cite an implementation or test artifact for these statements, and its rework notes do not explain why they remain.
 
-`CLAIMS-FIX-NOTES-20261008.md:33` gives a general reason for leaving other P2s (“adjacent ... caveat” or no supported replacement), but does not identify which of these statements remain or provide supporting evidence. Human-review caveats do not substantiate the underlying product/data-flow details.
+### P2 — Candidate and live-provider test runs: partly fixed; unresolved copies remain
 
-### P2 — privacy data-flow claims: unresolved
+The NivKode page and 6 October update no longer report the specific live-provider and phone results. However, the same results remain in `nivren.html:279`, `press/index.html:70`, and `site-review.json:5,22`; the Linux live Codex/Ollama test claim also remains in `nivren.html:327` and `press/index.html:157`. `nivkode/index.html:89` still says the tested desktop build is Linux x86_64. These assertions have no candidate-specific evidence links in the reviewed site, and the product clone cited by the audit contains no test records. Agent-run and pending-human-review caveats do not substantiate the results. The round-2 rework notes do not identify these remaining copies or give a specific reason for retaining them.
 
-`privacy.html:27` now scopes the local-start statement to the desktop app and correctly says Codex conversations are sent to OpenAI. It still says “we do not receive it” and “This website receives nothing from your NivKode use.” The audit explicitly found no product data-flow inventory to verify these categorical statements. The fix notes (`CLAIMS-FIX-NOTES-20261008.md:26,33`) record that the rest of the paragraph was left unchanged and give only the general no-supported-replacement rationale. This is not enough to resolve the audit finding; substantiate the statements or qualify them to the verified boundary.
+### P2 — Privacy data-flow claims: fixed within the reviewed evidence boundary
 
-### P2 — other audited items: fixed or explicitly scoped
+The unverified assurances that YewForge does not receive Codex conversations and that the website receives nothing from NivKode use are removed. The paragraph retains only the owner-confirmed desktop local-start and Codex-to-OpenAI statements.
 
-- Corporate/location/support copy is changed to “We”/YewForge and development support wording; unsupported UK/reach and support-independence assertions are removed.
-- The 3 October update is labelled superseded in both the visible Updates entry and the archived JSON text; the preceding 6/7 October corrections remain visible.
-- The launch date is consistently described as a movable 2 November target in current product/press summaries. Historical text remains only under the superseded label.
-- The privacy diff from `3de9a2a` is limited to the C2 product paragraph. No other privacy-notice content changed in this fix.
+Compared with `3de9a2a`, the candidate's `privacy.html` change is confined to that C2 paragraph. C1, C3, C4 and C5 content is unchanged.
+
+### P2 — Older update: fixed
+
+The 3 October entry is visibly labelled “Superseded — corrected on 6 and 7 October” in HTML and its JSON archive text begins “Superseded by our corrections on 6 and 7 October.” The 2 November date is stated as a movable target in current summaries.
+
+### P2 — Corporate descriptors: fixed
+
+The previously flagged UK/reach and support-independence wording is absent from the reviewed product summaries; support is presented as development funding.
 
 ## Residual claim scan
 
-Scanned all tracked `*.html` and `*.json` text for `local`, `private`, `offline`, `Claude`, `default`, `November`, `available`, and `users`. Expected scoped mentions remain, including the desktop local-start rule, local/Ollama test summaries, movable November target, Ko-fi availability, explicit unavailable/not-yet-available product statuses, and historical superseded copy. No remaining product-wide “local-first” claim or claim that Claude was tested was found. The unresolved claims requiring rework are listed above.
+Scanned tracked HTML and JSON for `local`, `private`, `offline`, `Claude`, `default`, `November`, `available` and `users`. The desktop-only local-start statement and “defaults in other clients vary” are properly scoped. November mentions describe a target that may move; availability wording describes product/status or support-link states; I found no fabricated user count. Claude is described as untested and contract-only. The two local-first engineering metadata phrases above remain a P1 concern. The unsupported test summaries listed above remain a P2 concern. Older 3 October wording remains only under its superseded label.
 
 ## Integrity checks
 
-- Python `HTMLParser` parsed all 110 HTML files with no exceptions or parser errors. No `tidy` executable was present. This parser pass is a syntax/readability check, not a full HTML conformance validator.
-- Changed-page local links and fragments: 0 broken targets across 10 changed HTML pages.
-- All tracked JSON files parsed successfully.
-- `git diff --check 3de9a2a..f7dfaca`: clean.
-- The only `privacy.html` change is the C2 sentence replacing the NivKode-wide/local-first wording with the desktop-scoped local-start wording.
+- Python `HTMLParser` parsed all 110 tracked HTML files with no exceptions; `tidy` is not installed. This is a parser check, not full HTML conformance validation.
+- All 4 tracked JSON files parsed successfully.
+- Local links and fragments from all 10 HTML files changed since `3de9a2a`: 0 broken targets.
+- `git diff --check 3de9a2a..b1f091c` and `git diff --check f7dfaca..b1f091c`: clean.
+- No broken link or anchor was introduced by the rewrites.
 
 ## Required before READY
 
-Resolve or substantiate the residual data-retention, gateway, runtime-control and update-result statements above, then cross-review the revised branch. No site edits were made as part of this review.
+Qualify or remove the two unscoped local-first engineering metadata phrases; resolve the homepage feature/test assertions and the remaining uncited test-result copies in Nivren, press and `site-review.json`; then cross-review the revised branch. No site edits were made as part of this review.
