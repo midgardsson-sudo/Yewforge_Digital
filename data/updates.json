@@ -1,6 +1,14 @@
 [
   {
     "approved": true,
+    "date": "2026-10-09",
+    "kind": "Product update",
+    "link": "/updates/",
+    "title": "NivKode re-tested, next release candidate chosen: 9 October update",
+    "text": "NivKode remains in testing. On 9 October a newer build was re-tested in full, exactly as it would be reviewed, and an automated cross-review accepted it as our next release candidate; human review, release approval and publication are still to come. We develop NivKode in a recorded workshop: AI workers take tasks, every job, review and hand-off is recorded, and merging to the live product or publishing a release still needs a human decision. We also continue to measure open models on our own hardware, and will publish figures only alongside their evidence. Our target for the public release is 2 November 2026, and it may move if testing finds issues."
+  },
+  {
+    "approved": true,
     "date": "2026-10-07",
     "kind": "Correction",
     "link": "/updates/",
