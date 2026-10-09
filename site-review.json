@@ -6,6 +6,12 @@
   },
   "ticker": [
     {
+      "date": "2026-10-09",
+      "title": "NivKode re-tested, next release candidate chosen: 9 October update",
+      "link": "/updates/",
+      "kind": "Product update"
+    },
+    {
       "date": "2026-10-06",
       "title": "NivKode 0.1.0 review candidate: 6 October update",
       "link": "/updates/",
