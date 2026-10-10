@@ -1,6 +1,14 @@
 [
   {
     "approved": true,
+    "date": "2026-10-10",
+    "kind": "Product update",
+    "link": "/updates/",
+    "title": "NivKode release test and desktop fixes: 10 October update",
+    "text": "NivKode remains in testing. On 10 October we ran our full release test on a newer NivKode build in a deliberately hostile test setup: an unusually long temporary-folder path, with a stray settings file placed where a careless test might pick it up. It is meant to catch tests that only work on the machine they were written on. Earlier attempts exposed weaknesses in our test setup itself, which we fixed before running it again. We also changed the desktop app for readability: pages should reflow instead of scrolling sideways when you zoom in a long way or use a narrow window, and the app now includes the Atkinson Hyperlegible reading font it already offered, instead of quietly showing a system font. These changes are not yet in a release candidate, and so far they have been checked only by automated tests and an automated review. An automated cross-review of our desktop walkthrough also found that switching to another workspace could leave panels from the previous workspace on screen. We made a fix the same day; a second automated review found it incomplete, so that work continues. Human review, release approval and publication are still to come. Our target for the public release is 2 November 2026, and it may move if testing finds issues."
+  },
+  {
+    "approved": true,
     "date": "2026-10-09",
     "kind": "Product update",
     "link": "/updates/",
