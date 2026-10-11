@@ -1,6 +1,14 @@
 [
   {
     "approved": true,
+    "date": "2026-10-11",
+    "kind": "Product update",
+    "link": "/updates/",
+    "title": "NivKode workspace fix accepted, and release rules: 11 October update",
+    "text": "NivKode remains in testing. In yesterday's update we said our fix for a workspace-switching problem in the desktop app had been sent back after an automated review. On 10 October an automated cross-review of the next attempt found one more case in a test: while the app was moving to another conversation, the previous conversation's approve and stop buttons stayed active, and if the move failed, its stop button could interrupt a run in the conversation being opened. The attempt after that ties every approve, decline and stop button to the conversation and run it was shown for, and NivKode now refuses a stop or a decision aimed at a different run or conversation. An automated cross-review accepted it that evening. The readability changes from yesterday's update are now included in a newer test build, and an automated cross-review accepted them too. Our rules for how releases will be built and checked were also accepted on automated cross-review: a release build stops unless its source matches exactly what is committed, and by default the installer refuses a package that is unsigned or older than the one already installed. The signing key has not been created yet, so nothing has been signed. None of these changes is in a release candidate yet. Human review, release approval and publication are still to come. Our target for the public release is 2 November 2026, and it may move if testing finds issues."
+  },
+  {
+    "approved": true,
     "date": "2026-10-10",
     "kind": "Product update",
     "link": "/updates/",
