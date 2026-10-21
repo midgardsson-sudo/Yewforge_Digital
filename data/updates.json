@@ -1,6 +1,16 @@
 [
   {
     "approved": true,
+    "date": "2026-10-21",
+    "kind": "Product update",
+    "link": "/updates/",
+    "title": "NivKode launch target moves to Friday 13 November: 21 October update",
+    "text": "NivKode's launch target moves from 2 November to Friday 13 November 2026, to give development and testing the time they need. NivKode remains in testing; human review of a release candidate, release approval and publication are all still to come. Yes, it is a Friday the 13th, and we know.",
+    "image": "/assets/nivkode/nivkode-launch-13-nov.png",
+    "image_alt": "YewForge card: NivKode launch target 2 November crossed out, with a strip of tape over it reading 13 November"
+  },
+  {
+    "approved": true,
     "date": "2026-10-11",
     "kind": "Product update",
     "link": "/updates/",
