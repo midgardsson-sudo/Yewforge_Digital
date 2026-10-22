@@ -2,7 +2,7 @@
   "reviewed_on": "2026-10-06",
   "max_age_days": 14,
   "product_status": {
-    "NivKode": "0.1.0 review candidate; release approval and publication pending; in testing. Launch target: 2 November 2026; may move if testing finds issues."
+    "NivKode": "0.1.0 review candidate; release approval and publication pending; in testing. Launch target: Friday 13 November 2026; may move if testing finds issues."
   },
   "ticker": [
     {
@@ -37,6 +37,6 @@
     }
   ],
   "pages": {
-    "nivkode/": "NivKode 0.1.0 review candidate; approval/publication pending; in testing; source not public yet (AGPL-3.0-only); 2 November 2026 launch target may move if testing finds issues"
+    "nivkode/": "NivKode 0.1.0 review candidate; approval/publication pending; in testing; source not public yet (AGPL-3.0-only); Friday 13 November 2026 launch target may move if testing finds issues"
   }
 }
