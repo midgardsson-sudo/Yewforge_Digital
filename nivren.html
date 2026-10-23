@@ -1,26 +1,24 @@
-<!DOCTYPE html>
-
-<html lang="en">
-
+<!doctype html>
+<html lang="en-GB">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nivren | AI research and development by YewForge</title>
-  <meta name="description" content="We are developing Nivren to coordinate specialist models, memory, tools and applications. These are design goals; broader integrated behaviour is still planned. NivKode 0.1.0 is a review candidate; release approval and publication are pending. The launch target is Friday 13 November 2026 and may move if testing finds issues." />
-  <link rel="icon" href="favicon.ico" sizes="32x32">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="canonical" href="https://yewforge-digital.co.uk/nivren.html" />
-  <meta property="og:title" content="Nivren | AI research and development by YewForge">
-  <meta property="og:description" content="We are developing Nivren to coordinate specialist models, memory, tools and applications. These are design goals; broader integrated behaviour is still planned. NivKode 0.1.0 is a review candidate; release approval and publication are pending. The launch target is Friday 13 November 2026 and may move if testing finds issues.">
-  <meta property="og:url" content="https://yewforge-digital.co.uk/nivren.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="YewForge mark and NivKode developer environment launch card"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Nivren | AI research and development by YewForge">
-  <meta name="twitter:description" content="We are developing Nivren to coordinate specialist models, memory, tools and applications. These are design goals; broader integrated behaviour is still planned. NivKode 0.1.0 is a review candidate; release approval and publication are pending. The launch target is Friday 13 November 2026 and may move if testing finds issues.">
-  <meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta name="twitter:image:alt" content="YewForge mark and NivKode developer environment launch card">
-  <script type="application/ld+json">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nivren | AI research and development by YewForge</title>
+<meta name="description" content="We are developing Nivren to coordinate specialist models, memory, tools and applications. These are design goals; broader integrated behaviour is still planned. NivKode 0.1.0 is a review candidate; release approval and publication are pending. The launch target is Friday 13 November 2026 and may move if testing finds issues.">
+<link rel="canonical" href="https://yewforge-digital.co.uk/nivren.html">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Nivren | AI research and development by YewForge">
+<meta property="og:description" content="We are developing Nivren to coordinate specialist models, memory, tools and applications. These are design goals; broader integrated behaviour is still planned. NivKode 0.1.0 is a review candidate; release approval and publication are pending. The launch target is Friday 13 November 2026 and may move if testing finds issues.">
+<meta property="og:url" content="https://yewforge-digital.co.uk/nivren.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="YewForge mark and NivKode developer environment launch card"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Nivren | AI research and development by YewForge">
+<meta name="twitter:description" content="We are developing Nivren to coordinate specialist models, memory, tools and applications. These are design goals; broader integrated behaviour is still planned. NivKode 0.1.0 is a review candidate; release approval and publication are pending. The launch target is Friday 13 November 2026 and may move if testing finds issues.">
+<meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta name="twitter:image:alt" content="YewForge mark and NivKode developer environment launch card">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@graph": [
@@ -54,316 +52,103 @@
   ]
 }
 </script>
-  <link rel="preload" href="fonts/NivrenTechnical.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="css/ticker.css">
-  <style>
-    /* Visual overhaul R1 (3 Oct 2026): Nivren design-system tokens, same family as Home and NivKode.
-       Inline until css/yf-kit.css lands; values mirror home-facelift-r1/nivren.css. */
-    @font-face { font-family: "Nivren Technical"; src: url("fonts/NivrenTechnical.ttf") format("truetype"); font-weight: 200 800; font-stretch: 75% 125%; font-display: swap; }
-    @font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains_mono_regular.ttf") format("truetype"); font-weight: 400; font-display: swap; }
-    @font-face { font-family: "JetBrains Mono"; src: url("fonts/jetbrains_mono_medium.ttf") format("truetype"); font-weight: 500 700; font-display: swap; }
-    :root {
-      --bg: #05090D; --surface-1: #0B1318; --surface-2: #101B23; --surface-3: #15242A;
-      --line: #1C2A31; --line-strong: #27404A;
-      --ink: #E9F0F5; --ink-2: #B9C7CF; --muted: #92A4AE;
-      --cyan: #4FEAE4; --violet: #A99BFF; --amber: #FFC477; --green: #82D9AD; --red: #FF9A9A;
-      --display: "Nivren Technical", "DejaVu Sans", system-ui, sans-serif;
-      --mono: "JetBrains Mono", "DejaVu Sans Mono", ui-monospace, monospace;
-      --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 20px; --s6: 24px; --s8: 32px; --s12: 48px; --s16: 64px; --s24: 96px;
-      --r-chip: 6px; --r-row: 10px; --r-mod: 16px; --r-sheet: 24px;
-      --wrap: 1120px;
-    }
-    *, *::before, *::after { box-sizing: border-box; }
-    html { background: var(--bg); scroll-padding-top: 72px; }
-    body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--display); font-size: 16px; line-height: 1.55; font-stretch: 92%; -webkit-font-smoothing: antialiased; }
-    a { color: var(--cyan); text-underline-offset: 3px; }
-    a:focus-visible, button:focus-visible { outline: 2px solid var(--cyan); outline-offset: 3px; border-radius: var(--r-chip); }
-    h1, h2, h3, p, ul, ol, dl, dd, figure { margin: 0; }
-    ul, ol { padding: 0; list-style: none; }
-    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 var(--s5); }
-    .skip-link { position: absolute; left: -9999px; top: var(--s2); z-index: 100; background: var(--cyan); color: var(--bg); padding: var(--s2) var(--s4); border-radius: var(--r-chip); font-weight: 600; }
-    .skip-link:focus { left: var(--s4); }
-    .mono { font-family: var(--mono); font-stretch: 100%; letter-spacing: -.01em; }
-    .eyebrow { font-size: 11px; letter-spacing: .26em; text-transform: uppercase; color: var(--cyan); font-weight: 500; font-stretch: 100%; }
-    .eyebrow.violet { color: var(--violet); } .eyebrow.amber { color: var(--amber); } .eyebrow.green { color: var(--green); } .eyebrow.muted { color: var(--muted); }
-
-    /* top bar: the status rail is the signature */
-    .bar { position: sticky; top: 0; z-index: 50; background: rgba(5,9,13,.92); border-bottom: 1px solid var(--line); }
-    @supports (backdrop-filter: blur(8px)) { .bar { background: rgba(5,9,13,.78); backdrop-filter: blur(10px); } }
-    .bar .wrap { display: flex; align-items: center; justify-content: space-between; height: 56px; gap: var(--s4); }
-    .brand { display: flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-size: 18px; font-weight: 650; }
-    .brand .mark { display: block; width: auto; height: 23px; flex: none; }
-    .bar nav { display: flex; gap: var(--s1); }
-    .bar nav a { color: var(--ink-2); text-decoration: none; font-size: 14px; padding: 10px var(--s2); border-radius: var(--r-chip); }
-    .bar nav a:hover { color: var(--ink); background: var(--surface-1); }
-    .bar nav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--cyan); border-radius: 0; }
-    .bar nav .hide-s { display: none; }
-    @media (min-width: 720px) { .bar nav .hide-s { display: inline-block; } }
-
-    /* chips: one state per module, shared colour grammar */
-    .chip { display: inline-flex; align-items: center; gap: 6px; height: 22px; padding: 0 8px; border-radius: var(--r-chip); border: 1px solid var(--line-strong); font-size: 10.5px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); white-space: nowrap; font-stretch: 100%; }
-    .fam .chip, .prov .chip { align-self: flex-start; }
-    .chip::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
-    .chip.live { color: var(--cyan); border-color: rgba(79,234,228,.35); }
-    .chip.hosted { color: var(--violet); border-color: rgba(169,155,255,.35); }
-    .chip.need { color: var(--amber); border-color: rgba(255,196,119,.35); }
-    .chip.proof { color: var(--green); border-color: rgba(130,217,173,.35); }
-    .chip.plan { color: var(--muted); border-style: dashed; } .chip.plan::before { background: transparent; border: 1.5px solid currentColor; width: 4px; height: 4px; }
-    .chip.off { color: var(--red); border-color: rgba(255,154,154,.35); }
-
-    /* hero: the verdict leads, the date is context */
-    .hero { padding: var(--s12) 0 var(--s12); }
-    .hero .meta { display: flex; flex-wrap: wrap; gap: var(--s2) var(--s4); align-items: center; }
-    .hero h1 { margin-top: var(--s5); font-size: clamp(40px, 9.5vw, 76px); line-height: 1.0; font-weight: 700; letter-spacing: -.015em; font-stretch: 84%; max-width: 14ch; }
-    .hero .lead { margin-top: var(--s5); font-size: 18px; color: var(--ink-2); max-width: 58ch; }
-    .cta-row { margin-top: var(--s8); display: flex; flex-wrap: wrap; gap: var(--s3) var(--s6); align-items: center; }
-    .btn { display: inline-flex; align-items: center; gap: var(--s2); min-height: 48px; padding: 0 var(--s6); border-radius: var(--r-row); background: var(--cyan); color: #04201F; font-weight: 650; font-size: 16px; text-decoration: none; font-stretch: 96%; }
-    .btn:hover { background: #7FF1EC; }
-    .textlink { color: var(--ink-2); font-size: 15px; text-decoration: underline; text-decoration-color: var(--line-strong); padding: var(--s3) 0; }
-    .textlink:hover { color: var(--ink); text-decoration-color: var(--cyan); }
-
-    /* verdict module: hero companion */
-    .grid-hero { display: grid; gap: var(--s8); align-items: end; }
-    @media (min-width: 960px) { .grid-hero { grid-template-columns: 1.35fr 1fr; } }
-    .mod { background: var(--surface-1); border: 1px solid var(--line); border-radius: var(--r-mod); padding: var(--s4) var(--s5); }
-    .mod.edge { box-shadow: inset 2px 0 0 var(--cyan); }
-    .mod-h { display: flex; justify-content: space-between; align-items: center; gap: var(--s3); margin-bottom: var(--s3); }
-    .rows > li { display: flex; justify-content: space-between; gap: var(--s4); align-items: baseline; padding: 11px 0; border-top: 1px solid var(--line); }
-    .rows > li:first-child { border-top: 0; }
-    .rows .k { color: var(--ink); font-size: 15px; }
-    .rows .v { font-family: var(--mono); font-size: 12.5px; color: var(--muted); text-align: right; }
-    .launch .date { font-family: var(--mono); font-size: clamp(28px, 6vw, 36px); font-weight: 500; letter-spacing: -.03em; color: var(--ink); margin-top: var(--s2); }
-    .launch p { color: var(--muted); font-size: 14px; margin-top: var(--s2); }
-
-    /* ticker band */
-    .band { border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); background: var(--surface-1); }
-    .band .wrap { display: flex; gap: var(--s4); align-items: center; }
-    .band .eyebrow { flex: none; display: none; }
-    @media (min-width: 720px) { .band .eyebrow { display: inline; } }
-    .band [data-yf-updates] { flex: 1; min-width: 0; font-family: var(--mono); font-size: 13px; color: var(--ink-2); }
-    .band [data-yf-updates] a { color: var(--ink); }
-
-    /* sections */
-    section.s { padding: var(--s16) 0; }
-    section.s + section.s { border-top: 1px solid var(--line); }
-    .s-h { max-width: 62ch; margin-bottom: var(--s8); }
-    .s-h h2 { margin-top: var(--s3); font-size: clamp(28px, 5vw, 40px); line-height: 1.08; font-weight: 680; font-stretch: 86%; letter-spacing: -.01em; }
-    .s-h p { margin-top: var(--s3); color: var(--ink-2); font-size: 17px; }
-
-    /* family modules */
-    .fam { display: grid; gap: var(--s3); grid-template-columns: 1fr; }
-    @media (min-width: 720px) { .fam { grid-template-columns: repeat(2, 1fr); } }
-    @media (min-width: 1040px) { .fam { grid-template-columns: repeat(3, 1fr); } .fam .lead-mod { grid-column: span 1; grid-row: span 2; } }
-    @media (min-width: 1040px) { .fam.four { grid-template-columns: repeat(4, 1fr); } }
-    .fam .mod { display: flex; flex-direction: column; gap: var(--s3); padding: var(--s5); }
-    .fam h3 { font-size: 22px; font-weight: 650; font-stretch: 88%; }
-    .fam p { color: var(--ink-2); font-size: 15px; }
-    .fam .foot { margin-top: auto; padding-top: var(--s3); border-top: 1px solid var(--line); font-family: var(--mono); font-size: 12px; color: var(--muted); }
-    .fam .lead-mod { box-shadow: inset 2px 0 0 var(--cyan); }
-    .fam .lead-mod a { font-size: 15px; }
-
-    /* evidence strip: proof in mono */
-    .ev { display: grid; gap: var(--s3); }
-    @media (min-width: 900px) { .ev { grid-template-columns: repeat(3, 1fr); } }
-    .ev .mod { display: flex; flex-direction: column; gap: var(--s3); padding: var(--s5); }
-    .ev .verdict { font-family: var(--mono); font-size: 13px; font-weight: 500; letter-spacing: .04em; }
-    .ev h3 { font-size: 18px; font-weight: 620; }
-    .ev .num { font-family: var(--mono); font-size: 13px; color: var(--ink-2); font-variant-numeric: tabular-nums; line-height: 1.7; }
-    .ev .num b { color: var(--ink); font-weight: 500; }
-    .ev .cav { font-size: 13.5px; color: var(--muted); margin-top: auto; padding-top: var(--s3); border-top: 1px solid var(--line); }
-    .ev-foot { margin-top: var(--s5); font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
-
-    /* provenance labels */
-    .prov { display: grid; gap: var(--s3); }
-    @media (min-width: 900px) { .prov { grid-template-columns: repeat(3, 1fr); } }
-    .prov li { padding: var(--s5); border: 1px solid var(--line); border-radius: var(--r-mod); background: var(--surface-1); }
-    .prov li p { margin-top: var(--s3); color: var(--ink-2); font-size: 15px; }
-
-
-    /* product visual */
-    .shot { margin: 0; border: 1px solid var(--line); border-radius: var(--r-mod); background: var(--surface-1); overflow: hidden; }
-    .shot img { display: block; width: 100%; height: auto; }
-    .shot figcaption { padding: var(--s3) var(--s4); border-top: 1px solid var(--line); font-family: var(--mono); font-size: 12px; color: var(--muted); display: flex; gap: var(--s3); flex-wrap: wrap; align-items: center; }
-
-    /* footer */
-    footer.f { border-top: 1px solid var(--line); padding: var(--s8) 0 var(--s12); color: var(--muted); font-size: 14px; }
-    footer.f .wrap { display: grid; gap: var(--s4); }
-    footer.f nav { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s4); }
-    footer.f a { color: var(--ink-2); text-decoration: none; padding: var(--s2) 0; display: inline-block; }
-    footer.f a:hover { color: var(--ink); text-decoration: underline; }
-    footer.f .mono { font-size: 12px; }
-
-    @media (min-width: 720px) {
-      .wrap { padding: 0 var(--s8); }
-      .hero { padding: var(--s24) 0 var(--s16); }
-      section.s { padding: var(--s24) 0; }
-    }
-    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; } }
-  </style>
+<link rel="preload" href="fonts/ember/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ember/nivren-technical-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/ember.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
-<body>
+<body class="ember">
+<!--ember:header-->
 <a class="skip-link" href="#main">Skip to content</a>
-<header class="bar">
+<header class="site-head">
   <div class="wrap">
-    <a class="brand" href="index.html"><svg class="mark" viewBox="50 50 710 800" width="20" height="23" aria-hidden="true" focusable="false"><g fill="#E4DACB"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>YewForge</a>
-    <nav aria-label="Main">
-      <a href="nivren.html" aria-current="page">Nivren</a>
-      <a href="nivkode/">NivKode</a>
-      <a href="index.html#evidence">Evidence</a>
-      <a class="hide-s" href="engineering/">Research</a>
-      <a class="hide-s" href="about.html">About</a>
-      <a class="hide-s" href="press/">Press</a>
-      <a class="hide-s" href="#contact">Contact</a>
+    <a class="brand" href="index.html"><svg class="mark" viewBox="50 50 710 800" width="22" height="25" aria-hidden="true" focusable="false"><g fill="currentColor"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>YewForge</a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary" data-open="false">
+      <ul>
+        <li><a href="nivren.html" aria-current="page">Nivren</a></li>
+        <li><a href="nivkode/">NivKode</a></li>
+        <li><a href="index.html#evidence">Evidence</a></li>
+        <li><a href="updates/">Updates</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="press/">Press</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
+    <a class="btn btn--sm btn--primary" href="contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Launch note</a>
+    <button class="btn btn--sm menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
   </div>
 </header>
-
+<!--/ember:header-->
 <main id="main">
-
-<section class="hero" aria-labelledby="hero-h">
-  <div class="wrap grid-hero">
-    <div>
-      <div class="meta"><span class="eyebrow">Nivren &middot; by YewForge</span><span class="chip need">In active development</span></div>
-      <h1 id="hero-h">Nivren is in development.</h1>
-      <p class="lead">We are developing Nivren to coordinate specialist models, memory, tools and applications. These are design goals; broader integrated behaviour is still planned.</p>
-      <div class="cta-row">
-        <a class="btn" href="engineering/nivren/current-state/">See what works today</a>
-        <a class="textlink" href="engineering/nivren/architecture/">Read the architecture</a>
-      </div>
-    </div>
-    <aside class="mod edge" aria-label="Status at a glance">
-      <div class="mod-h"><span class="eyebrow">Status, honestly</span><span class="chip need">No public build</span></div>
-      <ul class="rows">
-        <li><span class="k">Workshop interfaces &amp; telemetry</span><span class="v" style="color:var(--cyan)">working</span></li>
-        <li><span class="k">Evidence &amp; project-state records</span><span class="v" style="color:var(--cyan)">working</span></li>
-        <li><span class="k">Orchestration &amp; memory continuity</span><span class="v" style="color:var(--amber)">in development</span></li>
-        <li><span class="k">Broader integrated behaviour</span><span class="v">planned</span></li>
-        <li><span class="k">Nivren Home (NivDroid)</span><span class="v">Internal test build</span></li>
-        <li><span class="k">NivKode</span><span class="v">0.1.0 · review candidate</span></li>
-        <li><span class="k">NivMac</span><span class="v">Direction; no public build</span></li>
-        <li><span class="k">Nivren Quark</span><span class="v">Planned</span></li>
-      </ul>
-    </aside>
-  </div>
-</section>
-
-<div class="band" role="region" aria-label="Latest updates">
-  <div class="wrap">
-    <span class="eyebrow muted">Updates</span>
-    <div data-yf-updates></div>
-  </div>
-</div>
-
-<section class="s" id="what" aria-labelledby="what-h">
-  <div class="wrap">
-    <div class="s-h">
-      <p class="eyebrow">What Nivren is</p>
-      <h2 id="what-h">One identity. Many specialist models. A human with the final say.</h2>
-    </div>
-    <div class="fam four">
-      <article class="mod"><span class="eyebrow">Development direction</span><h3>Desktop local start</h3><p>In the NivKode desktop app, new conversations start on a local model when one is installed. Defaults in other clients vary.</p></article>
-      <article class="mod"><span class="eyebrow">Principle 2</span><h3>Governed, not autonomous</h3><p>Models and tools are bounded contributors under one governed environment. Consequential actions need your approval.</p></article>
-      <article class="mod"><span class="eyebrow">Principle 3</span><h3>Inspectable</h3><p>Memory, evidence and system state are records you can look at, not things hidden behind a chat window.</p></article>
-      <article class="mod"><span class="eyebrow">Principle 4</span><h3>More than chat</h3><p>Conversation is one possible interface. Other directions remain at different stages of development and are not public releases.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="s" id="family" aria-labelledby="fam-h">
-  <div class="wrap">
-    <div class="s-h">
-      <p class="eyebrow">Ways in</p>
-      <h2 id="fam-h">The Nivren family.</h2>
-    </div>
-    <div class="fam four">
-      <article class="mod"><span class="chip need">0.1.0 · review candidate</span><h3>NivKode</h3><p>NivKode 0.1.0 is a review candidate and remains in testing. Release approval and publication are pending. The launch target is <time datetime="2026-11-13">Friday 13 November 2026</time> and may move if testing finds issues.</p><p>The Harmony contributor licence agreement is a draft and is not operative.</p></article>
-      <article class="mod"><span class="chip held">Internal test build</span><h3>Nivren Home (NivDroid)</h3><p>Nivren Home is the internal test build for the NivDroid direction. It is not a public build.</p></article>
-      <article class="mod"><span class="chip plan">Direction; no public build</span><h3>NivMac</h3><p>A desktop direction for capable older hardware. There is no public build.</p></article>
-      <article class="mod"><span class="chip plan">Planned</span><h3>Nivren Quark</h3><p>Small local models, NQ-0.5B, NQ-1B and NQ-3B, each to be published with its provenance label.</p></article>
-    </div>
-  </div>
-</section>
-
-<section class="s" id="provenance" aria-labelledby="prov-h">
-  <div class="wrap">
-    <div class="s-h">
-      <p class="eyebrow violet">Model provenance</p>
-      <h2 id="prov-h">Three labels, never blurred.</h2>
-      <p>Nivren will grow more intelligence of its own over time and still use other excellent models where they are the better tool. Every model it uses carries one of these.</p>
-    </div>
-    <ul class="prov">
-      <li><span class="chip live">Nivren-native</span><p>Model work genuinely produced and owned by Nivren.</p></li>
-      <li><span class="chip proof">Nivren-derived</span><p>Adapters, fine-tunes and derivatives of upstream models, under their licences.</p></li>
-      <li><span class="chip hosted">Nivren-integrated</span><p>External models and services Nivren routes to, and does not claim to own.</p></li>
-    </ul>
-  </div>
-</section>
-
-<section class="s" id="evidence" aria-labelledby="ev-h">
-  <div class="wrap">
-    <div class="s-h">
-      <p class="eyebrow green">Evidence</p>
-      <h2 id="ev-h">Review the evidence record.</h2>
-      <p>The engineering journal separates demonstrated behaviour from design intent and records limitations.</p>
-    </div>
-    <ul class="rows mod" style="max-width:720px">
-      <li><a class="k" href="engineering/nivren/">Nivren overview</a><span class="v">journal</span></li>
-      <li><a class="k" href="engineering/nivren/architecture/">Architecture</a><span class="v">design intent</span></li>
-      <li><a class="k" href="engineering/nivren/current-state/">Current state</a><span class="v">what works</span></li>
-      <li><a class="k" href="engineering/nivren/revisions/">Failure records</a><span class="v">what didn&rsquo;t</span></li>
-      <li><a class="k" href="index.html#evidence">Latest research conclusions</a><span class="v">NOT CONFIRMED · INCONCLUSIVE · exploratory model-rated</span></li>
-    </ul>
-  </div>
-</section>
-
-<section class="s" id="compatibility" aria-labelledby="compatibility-h">
-  <div class="wrap">
-    <div class="s-h">
-      <p class="eyebrow green">Testing status</p>
-      <h2 id="compatibility-h">Testing status.</h2>
-      <p>NivKode remains in testing; platform and provider results are not reported.</p>
-    </div>
-    <p class="ev-foot"><a href="press/index.html#compatibility">Press wording and caveats</a>.</p>
-  </div>
-</section>
-
-<section class="s" id="contact" aria-labelledby="contact-h">
-  <div class="wrap">
-    <div class="s-h">
-      <p class="eyebrow">Contact</p>
-      <h2 id="contact-h">Questions about Nivren?</h2>
-      <p><a data-mail="display"><span data-mail-text="1"></span></a></p>
-    </div>
-  </div>
-</section>
-
+<section class="page-head" aria-labelledby="page-h"><div class="wrap">
+<h1 class="display" id="page-h">Nivren is in development.</h1>
+<p class="lead">We are developing Nivren to coordinate specialist models, memory, tools and applications. These are design goals; broader integrated behaviour is still planned.</p>
+<div class="actions"><a class="btn btn--primary" href="engineering/nivren/current-state/">See what works today</a><a class="btn" href="engineering/nivren/architecture/">Read the architecture</a></div>
+<p class="assure">In active development. No public build.</p>
+</div></section>
+<section class="sec" aria-labelledby="status-h"><div class="wrap">
+<div class="split"><div><h2 class="h2" id="status-h">Status, honestly.</h2></div><div class="">
+<table class="facts"><caption class="vh">Status at a glance</caption><tbody><tr><th scope="row">Workshop interfaces &amp; telemetry</th><td>working</td></tr><tr><th scope="row">Evidence &amp; project-state records</th><td>working</td></tr><tr><th scope="row">Orchestration &amp; memory continuity</th><td>in development</td></tr><tr><th scope="row">Broader integrated behaviour</th><td>planned</td></tr><tr><th scope="row">Nivren Home (NivDroid)</th><td>Internal test build</td></tr><tr><th scope="row">NivKode</th><td>0.1.0 · review candidate</td></tr><tr><th scope="row">NivMac</th><td>Direction; no public build</td></tr><tr><th scope="row">Nivren Quark</th><td>Planned</td></tr></tbody></table>
+</div></div>
+</div></section>
+<div class="band--char updates" role="region" aria-label="Latest updates"><div class="wrap"><span class="label">Latest updates</span><div data-yf-updates></div></div></div>
+<section class="sec" id="what" aria-labelledby="what-h"><div class="wrap">
+<div class="sec-head"><h2 class="h2" id="what-h">One identity. Many specialist models. A human with the final say.</h2></div>
+<ul class="items items--4">
+<li><h3>Desktop local start</h3><p>In the NivKode desktop app, new conversations start on a local model when one is installed. Defaults in other clients vary.</p></li>
+<li><h3>Governed, not autonomous</h3><p>Models and tools are bounded contributors under one governed environment. Consequential actions need your approval.</p></li>
+<li><h3>Inspectable</h3><p>Memory, evidence and system state are records you can look at, not things hidden behind a chat window.</p></li>
+<li><h3>More than chat</h3><p>Conversation is one possible interface. Other directions remain at different stages of development and are not public releases.</p></li>
+</ul>
+</div></section>
+<section class="sec band--paper" id="family" aria-labelledby="family-h"><div class="wrap">
+<div class="sec-head"><h2 class="h2" id="family-h">The Nivren family.</h2></div>
+<ul class="items items--4">
+<li><h3>NivKode</h3><p class="state">0.1.0 · review candidate</p><p>NivKode 0.1.0 is a review candidate and remains in testing. Release approval and publication are pending. The launch target is <time datetime="2026-11-13">Friday 13 November 2026</time> and may move if testing finds issues.</p><p>The Harmony contributor licence agreement is a draft and is not operative.</p></li>
+<li><h3>Nivren Home (NivDroid)</h3><p class="state">Internal test build</p><p>Nivren Home is the internal test build for the NivDroid direction. It is not a public build.</p></li>
+<li><h3>NivMac</h3><p class="state">Direction; no public build</p><p>A desktop direction for capable older hardware. There is no public build.</p></li>
+<li><h3>Nivren Quark</h3><p class="state">Planned</p><p>Small local models, NQ-0.5B, NQ-1B and NQ-3B, each to be published with its provenance label.</p></li>
+</ul>
+</div></section>
+<section class="sec" id="provenance" aria-labelledby="provenance-h"><div class="wrap">
+<div class="sec-head"><h2 class="h2" id="provenance-h">Three labels, never blurred.</h2><p class="lead">Nivren will grow more intelligence of its own over time and still use other excellent models where they are the better tool. Every model it uses carries one of these.</p></div>
+<ul class="ring-list"><li><strong>Nivren-native.</strong> Model work genuinely produced and owned by Nivren.</li><li><strong>Nivren-derived.</strong> Adapters, fine-tunes and derivatives of upstream models, under their licences.</li><li><strong>Nivren-integrated.</strong> External models and services Nivren routes to, and does not claim to own.</li></ul></div></section>
+<section class="sec band--char" id="evidence" aria-labelledby="evidence-h"><div class="wrap">
+<div class="sec-head"><h2 class="h2" id="evidence-h">Review the evidence record.</h2><p class="lead">The engineering journal separates demonstrated behaviour from design intent and records limitations.</p></div>
+<table class="facts"><caption class="vh">Evidence records</caption><tbody><tr><th scope="row"><a href="engineering/nivren/">Nivren overview</a></th><td>journal</td></tr><tr><th scope="row"><a href="engineering/nivren/architecture/">Architecture</a></th><td>design intent</td></tr><tr><th scope="row"><a href="engineering/nivren/current-state/">Current state</a></th><td>what works</td></tr><tr><th scope="row"><a href="engineering/nivren/revisions/">Failure records</a></th><td>what didn’t</td></tr><tr><th scope="row"><a href="index.html#evidence">Latest research conclusions</a></th><td>Not confirmed · inconclusive · exploratory, model-rated</td></tr></tbody></table></div></section>
+<section class="sec" id="compatibility" aria-labelledby="compatibility-h"><div class="wrap">
+<div class="sec-head"><h2 class="h2" id="compatibility-h">Testing status.</h2><p class="lead">NivKode remains in testing; platform and provider results are not reported.</p></div>
+<p><a href="press/index.html#compatibility">Press wording and caveats</a>.</p></div></section>
+<section class="sec band--paper" id="contact" aria-labelledby="contact-h"><div class="wrap">
+<div class="sec-head"><h2 class="h2" id="contact-h">Questions about Nivren?</h2></div>
+<p><a data-mail><span data-mail-text>yewforge.partnerships at gmail.com</span></a></p></div></section>
+<div class="wrap"><p class="reviewed">Last reviewed: <time datetime="2026-10-06">2026-10-06</time></p></div>
 </main>
-<footer class="f">
+<!--ember:footer-->
+<footer class="site-foot">
   <div class="wrap">
-    <a class="brand" href="index.html"><svg class="mark" viewBox="50 50 710 800" width="20" height="23" aria-hidden="true" focusable="false"><g fill="#E4DACB"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>YewForge</a>
-    <nav aria-label="Site">
-      <a href="nivren.html">Nivren</a>
-      <a href="nivkode/">NivKode</a>
-      <a href="engineering/">Research</a>
-      <a href="about.html">About</a>
-      <a href="press/">Press</a>
-      <a href="support.html">Support</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="https://discord.com/invite/3zenJxtKCG" rel="noopener">Discord</a>
-      <a href="https://x.com/YewForgeDigital" rel="noopener">X</a>
-      <a href="https://uk.linkedin.com/in/yewforgedigital" rel="noopener">LinkedIn</a>
-    </nav>
-    <p class="mono">&copy; <span id="yr"></span> YewForge &middot; <span data-mail-footer="1"></span></p>
+    <ul class="foot-links">
+      <li><a href="nivren.html">Nivren</a></li>
+      <li><a href="nivkode/">NivKode</a></li>
+      <li><a href="engineering/">Research</a></li>
+      <li><a href="updates/">Updates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="https://discord.com/invite/3zenJxtKCG" rel="noopener">Discord</a></li>
+      <li><a href="https://x.com/YewForgeDigital" rel="noopener">X</a></li>
+      <li><a href="https://uk.linkedin.com/in/yewforgedigital" rel="noopener">LinkedIn</a></li>
+    </ul>
+    <p class="foot-mail">Write to us: <a data-mail><span data-mail-text>yewforge.partnerships at gmail.com</span></a></p>
+    <p class="foot-meta">&copy; <span data-year>2026</span> YewForge. NivKode is licensed AGPL-3.0-only; the source code is not public yet.</p>
+    <div class="foot-word" aria-hidden="true">
+      <span>YewForge</span>
+      <svg viewBox="50 50 710 800" focusable="false"><g fill="#E9F0F5"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>
+    </div>
   </div>
-<span class="site-review">Last reviewed: <time datetime="2026-10-06">2026-10-06</time></span></footer>
+</footer>
+<!--/ember:footer-->
 <script src="js/ticker.js" defer></script>
-<script>
-  (function () {
-    var e = "yewforge.partnerships" + "@" + "gmail.com";
-    document.querySelectorAll("[data-mail]").forEach(function (el) { el.href = "mail" + "to:" + e; });
-    document.querySelectorAll("[data-mail-text],[data-mail-footer]").forEach(function (el) { el.textContent = e; });
-    document.getElementById("yr").textContent = new Date().getFullYear();
-  })();
-</script>
+<script src="js/ember.js" defer></script>
 </body>
 </html>

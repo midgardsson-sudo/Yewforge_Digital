@@ -9,145 +9,160 @@
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
   <link rel="apple-touch-icon" href="../apple-touch-icon.png">
-  <link rel="preload" href="../fonts/NivrenTechnical.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="../css/about-press.css">
-  <style>
-    .brand, .site-nav a, .site-foot a, main a { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
-    .skip { min-width: 44px; min-height: 44px; }
-    .shots { display: grid; gap: var(--s5); grid-template-columns: 1fr; }
-    @media (min-width: 900px) { .shots { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-    .shot { margin: 0; border: 1px solid var(--line); border-radius: var(--r-mod); background: var(--surface-1); overflow: hidden; }
-    .shot img { display: block; width: 100%; height: auto; }
-    .shot figcaption { padding: var(--s3) var(--s4); border-top: 1px solid var(--line); color: var(--ink-2); font-size: 14px; }
-    .shot figcaption strong { color: var(--ink); }
-    .facts, .limits { padding-left: 1.25rem; }
-    .facts li, .limits li { margin: .35rem 0; }
-    .launch-status { max-width: 100%; box-sizing: border-box; white-space: normal; }
-    .launch-status::before { flex: 0 0 6px; }
-    .nk-hero { padding-top: var(--s8); min-height: calc(100vh - 80px); box-sizing: border-box; }
-    /* Director 23 Oct: the hero carries the review-gate screenshot beside the copy on wide screens (S3). */
-    .nk-hero-grid { display: grid; gap: var(--s8); align-items: center; }
-    @media (min-width: 960px) { .nk-hero-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); } }
-    .nk-copy { min-width: 0; }
-    .nk-shot { margin: 0; min-width: 0; }
-    .nk-shot img { display: block; width: 100%; height: auto; border: 1px solid var(--line-strong); border-radius: var(--r-mod); }
-    .nk-shot figcaption { margin-top: var(--s3); color: var(--ink-2); font-size: 15px; }
-    .nk-lede { margin-top: var(--s6); }
-    .nk-hero h1 { max-width: 18ch; font-size: clamp(32px, 5.4vw, 64px); line-height: 1.08; }
-    .nk-hero .audience { max-width: 54ch; margin-top: var(--s5); font-size: clamp(18px, 2.2vw, 22px); color: var(--ink-2); }
-    .nk-hero .launch-line { margin-top: var(--s5); color: var(--ink); font-size: 18px; font-weight: 600; }
-    .nk-actions { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s3) var(--s5); margin-top: var(--s5); }
-    .nk-primary { display: inline-flex; align-items: center; min-height: 48px; padding: 0 18px; border-radius: var(--r-chip); background: var(--cyan); color: var(--bg); font-weight: 700; text-decoration: none; }
-    .nk-primary:hover { filter: brightness(1.08); }
-    .nk-actions .nk-evidence { min-height: 44px; align-items: center; }
-    .nk-email { color: var(--ink-2); overflow-wrap: anywhere; }
-    .site-nav .nk-header-cta { color: var(--bg); background: var(--cyan); border-radius: var(--r-chip); padding: 0 12px; font-weight: 700; }
-    .site-nav .nk-header-cta:hover { color: var(--bg); filter: brightness(1.08); }
-    @media (min-width: 760px) and (max-width: 900px) { .grid.three { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  </style>
-  <meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are developing NivKode as a developer environment. In the desktop app, new conversations start on a local model when one is installed; defaults in other clients vary. AGPL-3.0-only. Launch target: Friday 13 November 2026; may move if testing finds issues."><meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="YewForge mark and NivKode developer environment launch card"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta name="twitter:image:alt" content="YewForge mark and NivKode developer environment launch card"></head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-head">
-    <div class="wrap">
-      <a class="brand" href="../index.html"><svg class="mark" viewBox="50 50 710 800" width="20" height="23" aria-hidden="true" focusable="false"><g fill="#E4DACB"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>YewForge</a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="../nivren.html">Nivren</a></li>
-          <li><a href="index.html" aria-current="page">NivKode</a></li>
-          <li><a href="../engineering/">Research</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../press/">Press</a></li>
-          <li><a href="../contact.html">Contact</a></li>
-          <li><a class="nk-header-cta" href="mailto:yewforge.partnerships@gmail.com?subject=NivKode%20launch%20note&amp;body=Please%20let%20me%20know%20when%20NivKode%20is%20released.">Get the launch note</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <link rel="preload" href="../fonts/ember/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../fonts/ember/nivren-technical-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="../css/ember.css">
+  <script>document.documentElement.classList.add("js")</script>
+  <meta property="og:url" content="https://yewforge-digital.co.uk/nivkode/"><meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are developing NivKode as a developer environment. In the desktop app, new conversations start on a local model when one is installed; defaults in other clients vary. AGPL-3.0-only. Launch target: Friday 13 November 2026; may move if testing finds issues."><meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="YewForge mark and NivKode developer environment launch card"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+</head>
+<body class="ember">
+<!--ember:header-->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="../index.html"><svg class="mark" viewBox="50 50 710 800" width="22" height="25" aria-hidden="true" focusable="false"><g fill="currentColor"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>YewForge</a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary" data-open="false">
+      <ul>
+        <li><a href="../nivren.html">Nivren</a></li>
+        <li><a href="../nivkode/" aria-current="page">NivKode</a></li>
+        <li><a href="../index.html#evidence">Evidence</a></li>
+        <li><a href="../updates/">Updates</a></li>
+        <li><a href="../about.html">About</a></li>
+        <li><a href="../press/">Press</a></li>
+        <li><a href="../contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="btn btn--sm btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Launch note</a>
+    <button class="btn btn--sm menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  </div>
+</header>
+<!--/ember:header-->
   <main id="main">
-    <div class="wrap">
-      <section class="hero nk-hero" aria-labelledby="nk-title">
-        <div class="nk-hero-grid">
-        <div class="nk-copy">
-        <h1 id="nk-title">We are developing NivKode as a developer environment.</h1>
-        <!-- Claims check: product development status and type — PUBLIC_CLAIMS.md row 11. -->
-        <p class="audience">For developers who want to choose, for each conversation, between a local model and an external AI provider they sign in to.</p>
-        <!-- Claims check: per-conversation provider choice — PUBLIC_CLAIMS.md row 47. -->
-        <p class="launch-line">Launch target: <time datetime="2026-11-13">Friday 13 November 2026</time>; may move if testing finds issues.</p>
-        <!-- Claims check: conditional launch target — PUBLIC_CLAIMS.md row 14, current date confirmed in the site claims record. -->
-        <div class="nk-actions">
-          <a class="nk-primary" href="mailto:yewforge.partnerships@gmail.com?subject=NivKode%20launch%20note&amp;body=Please%20let%20me%20know%20when%20NivKode%20is%20released.">Get the launch note</a>
-          <a class="nk-evidence" href="../index.html#evidence">See the evidence</a>
-          <span class="nk-email">yewforge.partnerships@gmail.com</span>
+    <section class="hero" aria-labelledby="nk-title">
+      <div class="wrap hero-grid">
+        <div>
+          <h1 class="display" id="nk-title">NivKode is a developer environment we are building.</h1>
+          <p class="lead">Codex is the one external AI provider we have run so far, and it is experimental. Claude and Grok are not yet tested.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
+            <a class="btn" href="#evidence">See the evidence</a>
+          </div>
+          <p class="assure">The launch note button opens your own email app with a message to us. This page stores nothing.<noscript> Without scripts, write to yewforge.partnerships at gmail.com.</noscript></p>
         </div>
-        <p class="lede nk-lede">Desktop, command-line and terminal interfaces remain development goals. In the desktop app, new conversations start on a local model when one is installed. Defaults in other clients vary. When a conversation uses Codex, NivKode sends that conversation to the provider of your signed-in Codex account (for example OpenAI or Amazon Bedrock), under your own account.</p>
-        </div>
-        <figure class="shot nk-shot"><img src="../assets/nivkode/nivkode-review-gate.png" width="1280" height="1173" fetchpriority="high" alt="NivKode desktop conversation showing an 'Outcome unknown' notice and a Review gate card stating that no test results or file changes were reported for the run."><figcaption><strong>The review gate.</strong> When a run's outcome is unknown, NivKode says so instead of assuming tests passed.</figcaption></figure>
-        </div>
-      </section>
 
-      <section class="block" aria-labelledby="what-title">
-        <p class="eyebrow">What it is</p>
-        <h2 id="what-title">Development direction</h2>
-        <p><span class="chip">AGPL-3.0-only</span></p>
-        <div class="grid three">
-          <article class="mod edge-cyan"><h3>Desktop app</h3><p>A desktop app remains a development goal.</p></article>
-          <article class="mod edge-violet"><h3>Command-line tool and terminal view</h3><p>Command-line and terminal interfaces remain development goals.</p></article>
-          <article class="mod edge-green"><h3>Provider options</h3><p>In the desktop app, new conversations start on a local model when one is installed. Defaults in other clients vary. Claude has not yet been tested in NivKode; the adapter is contract-only.</p></article>
+        <div class="stage stage--control">
+          <svg class="ring" viewBox="0 0 600 600" aria-hidden="true" focusable="false"><circle class="ring-draw" cx="300" cy="300" r="280" pathLength="1"/></svg>
+          <div class="control" data-provider-control>
+            <h2>In the desktop app, choose where a conversation goes</h2>
+            <div class="opts" role="group" aria-label="Provider for a desktop app conversation" hidden>
+              <button class="opt" type="button" aria-pressed="true" data-k="local">Local model</button>
+              <button class="opt" type="button" aria-pressed="false" data-k="ext">An external AI provider you sign in to<small>Codex is the one we have run so far</small></button>
+            </div>
+            <div class="outs" aria-live="polite">
+              <p data-out="local"><b>Local model.</b> In the desktop app, new conversations start on a local model when one is installed.</p>
+              <p data-out="ext"><b>External provider.</b> When a conversation uses Codex, NivKode sends that conversation to the provider of your signed-in Codex account (for example OpenAI or Amazon Bedrock), under your own account. Codex is the one we have run so far, and it is experimental. Claude and Grok are not yet tested.</p>
+            </div>
+          </div>
         </div>
-        <ul class="facts prose" style="margin-top: var(--s5)">
-          <li><strong>Review gate:</strong> We are evaluating workspace controls and approval flows in a review candidate. Human review and release approval are pending.</li>
-          <li><strong>Accessibility themes:</strong> We are evaluating reading-font choices, text controls and colour palettes in a review candidate. Human review and release approval are pending.</li>
-          <li><strong>Licence:</strong> AGPL-3.0-only. The source code is not public yet.</li>
+      </div>
+    </section>
+
+    <section class="band--char datebar sec" aria-label="Launch target">
+      <div class="wrap">
+        <p class="bigdate"><span class="vh">Launch target: </span><time datetime="2026-11-13">Friday 13 November 2026</time></p>
+        <div>
+          <p><strong>Launch target.</strong> It may move if testing finds issues. NivKode 0.1.0 is a review candidate; human release approval and publication are still pending.</p>
+          <p class="muted">AGPL-3.0-only. The source code is not public yet.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec" aria-labelledby="gate-title">
+      <div class="wrap cols cols--shot">
+        <div>
+          <h2 class="h2" id="gate-title">When a run's outcome is unknown, NivKode says so instead of assuming tests passed.</h2>
+        </div>
+        <figure class="fig">
+          <div class="crop"><img src="../assets/nivkode/nivkode-review-gate.webp" width="1280" height="1173" fetchpriority="low" alt="NivKode desktop conversation showing an 'Outcome unknown' notice and a Review gate card stating that no test results or file changes were reported for the run."></div>
+          <figcaption><strong>Scripted demo session (simulated provider)</strong>, from the 0.1.0 RC8 review candidate. It shows interface designs, not feature completeness, accessibility, or live-provider results.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="sec band--paper" aria-labelledby="what-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 class="h2" id="what-title">What we are building.</h2>
+        </div>
+        <ul class="ring-list prose">
+          <li><strong>Desktop app.</strong> A desktop app remains a development goal. In it, new conversations start on a local model when one is installed. Defaults in other clients vary.</li>
+          <li><strong>Command-line tool and terminal view.</strong> Command-line and terminal interfaces remain development goals.</li>
+          <li><strong>Review gate.</strong> We are evaluating workspace controls and approval flows in a review candidate. Human review and release approval are pending.</li>
+          <li><strong>Accessibility themes.</strong> We are evaluating reading-font choices, text controls and colour palettes in a review candidate. Human review and release approval are pending.</li>
         </ul>
-      </section>
+        <p>When a conversation uses Codex, NivKode sends that conversation to the provider of your signed-in Codex account (for example OpenAI or Amazon Bedrock), under your own account.</p>
+      </div>
+    </section>
 
-      <section class="block" aria-labelledby="shots-title">
-        <p class="eyebrow">Screenshots</p>
-        <h2 id="shots-title">From the 0.1.0 RC8 review candidate.</h2>
-        <p class="prose">These scripted demonstrations use a simulated local provider. They show interface designs, not feature completeness, accessibility, or live-provider results.</p>
-        <div class="shots" style="margin-top: var(--s5)">
-          <figure class="shot"><img src="../assets/nivkode/nivkode-desktop-onboarding.png" width="1280" height="900" loading="lazy" alt="NivKode desktop app before connecting: a gateway address field, a paired device token field and a Connect button beside an empty conversation area."><figcaption><strong>Desktop onboarding.</strong> Connect to a gateway on your own machine.</figcaption></figure>
-          <figure class="shot"><img src="../assets/nivkode/nivkode-accessibility-themes.png" width="1280" height="961" loading="lazy" alt="NivKode desktop conversation with the ColourSafe palette and OpenDyslexic reading font selected, showing widened letter spacing in the message text."><figcaption><strong>Accessibility themes.</strong> ColourSafe palette with the OpenDyslexic reading font.</figcaption></figure>
-          <figure class="shot"><img src="../assets/nivkode/nivkode-terminal-view.png" width="1280" height="680" loading="lazy" alt="NivKode terminal view from a scripted demonstration using a simulated provider; displayed run details are demonstration content."><figcaption><strong>Terminal view.</strong> A scripted demo session (simulated provider), from the RC6 walkthrough.</figcaption></figure>
+    <section class="sec" id="evidence" aria-labelledby="ev-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <h2 class="h2" id="ev-title">What we have shown so far.</h2>
+          <p class="lead">These are scripted demonstrations from the 0.1.0 RC8 review candidate, using a simulated local provider. They show interface designs, not feature completeness, accessibility, or live-provider results.</p>
         </div>
-      </section>
-
-      <section class="block split" aria-labelledby="limits-title">
-        <div><p class="eyebrow">Known limitations</p><h2 id="limits-title">What we have and have not tested.</h2></div>
-        <div class="prose">
-          <ul class="limits">
+        <div class="shots">
+          <figure class="fig"><div class="crop"><img src="../assets/nivkode/nivkode-desktop-onboarding.png" width="1280" height="900" loading="lazy" alt="NivKode desktop app before connecting: a gateway address field, a paired device token field and a Connect button beside an empty conversation area."></div><figcaption><strong>Desktop onboarding.</strong> Connect to a gateway on your own machine.</figcaption></figure>
+          <figure class="fig"><div class="crop"><img src="../assets/nivkode/nivkode-accessibility-themes.png" width="1280" height="961" loading="lazy" alt="NivKode desktop conversation with the ColourSafe palette and OpenDyslexic reading font selected, showing widened letter spacing in the message text."></div><figcaption><strong>Accessibility themes.</strong> ColourSafe palette with the OpenDyslexic reading font.</figcaption></figure>
+          <figure class="fig"><div class="crop"><img src="../assets/nivkode/nivkode-terminal-view.png" width="1280" height="680" loading="lazy" alt="NivKode terminal view from a scripted demonstration using a simulated provider; displayed run details are demonstration content."></div><figcaption><strong>Terminal view.</strong> A scripted demo session (simulated provider), from the RC6 walkthrough.</figcaption></figure>
+        </div>
+        <div class="cols" style="margin-top: clamp(40px, 6vw, 88px)">
+          <h3 class="h2" id="limits-title">What we have and have not tested.</h3>
+          <ul class="ring-list limits" aria-labelledby="limits-title">
             <li>NivKode 0.1.0 is a review candidate. Human release approval is still pending and nothing is published yet.</li>
             <li>NivKode remains in testing; platform and provider results are not reported here.</li>
+            <li>Codex is the one we have run so far, and it is experimental. Claude and Grok are not yet tested.</li>
             <li>An Android app remains a development goal.</li>
             <li>The launch date may move if testing finds problems.</li>
           </ul>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="block" aria-labelledby="follow-title">
-        <article class="mod edge-cyan">
-          <p class="eyebrow">Follow progress</p>
-          <h2 id="follow-title">Launch target: Friday 13 November 2026; may move if testing finds issues.</h2>
-          <p class="prose">We post progress as it is evidenced. <a href="../updates/">Follow progress in Updates</a>.</p>
-          <p class="prose">If you would like to help fund development, <a href="https://ko-fi.com/yewforge" rel="noopener noreferrer" target="_blank">support us on Ko-fi</a>. We welcome support for development.</p>
-        </article>
-      </section>
-    </div>
+    <section class="band--char sec" aria-labelledby="follow-title">
+      <div class="wrap">
+        <h2 class="h2" id="follow-title">Launch target: Friday 13 November 2026; may move if testing finds issues.</h2>
+        <p class="lead">We post progress as it is evidenced. <a href="../updates/">Follow progress in Updates</a>.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
+        </div>
+        <p class="muted" style="margin-top:28px">If you would like to help fund development, <a href="https://ko-fi.com/yewforge" rel="noopener noreferrer" target="_blank">support us on Ko-fi</a>. We welcome support for development.</p>
+      </div>
+    </section>
   </main>
-  <footer class="site-foot">
-    <div class="wrap">
-      <span>&copy; 2026 YewForge</span>
-      <nav aria-label="Footer"><ul>
-        <li><a href="../about.html">About</a></li>
-        <li><a href="../press/">Press</a></li>
-        <li><a href="../support.html">Support</a></li>
-        <li><a href="../contact.html">Contact</a></li>
-        <li><a href="../privacy.html">Privacy</a></li>
-      </ul></nav>
-      <span class="site-review">Last reviewed: <time datetime="2026-10-06">2026-10-06</time></span>
+<!--ember:footer-->
+<footer class="site-foot">
+  <div class="wrap">
+    <ul class="foot-links">
+      <li><a href="../nivren.html">Nivren</a></li>
+      <li><a href="../nivkode/">NivKode</a></li>
+      <li><a href="../engineering/">Research</a></li>
+      <li><a href="../updates/">Updates</a></li>
+      <li><a href="../contact.html">Contact</a></li>
+      <li><a href="../support.html">Support</a></li>
+      <li><a href="../privacy.html">Privacy</a></li>
+      <li><a href="https://discord.com/invite/3zenJxtKCG" rel="noopener">Discord</a></li>
+      <li><a href="https://x.com/YewForgeDigital" rel="noopener">X</a></li>
+      <li><a href="https://uk.linkedin.com/in/yewforgedigital" rel="noopener">LinkedIn</a></li>
+    </ul>
+    <p class="foot-mail">Write to us: <a data-mail><span data-mail-text>yewforge.partnerships at gmail.com</span></a></p>
+    <p class="foot-meta">&copy; <span data-year>2026</span> YewForge. NivKode is licensed AGPL-3.0-only; the source code is not public yet.</p>
+    <div class="foot-word" aria-hidden="true">
+      <span>YewForge</span>
+      <svg viewBox="50 50 710 800" focusable="false"><g fill="#E9F0F5"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>
     </div>
-  </footer>
+  </div>
+</footer>
+<!--/ember:footer-->
+<script src="../js/ember.js" defer></script>
 </body>
 </html>
