@@ -474,3 +474,5 @@ body.ember .addr a, body.ember .updates .yf-ticker-item a { display: inline-flex
   .foot-word span { font-size: 12.4vw; }
   .foot-word svg { width: 11vw; }
 }
+
+.reading .display { font-size: clamp(2.2rem, 1.2rem + 3.6vw, 4.4rem); margin-bottom: .45em; }
