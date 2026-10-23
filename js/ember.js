@@ -2,17 +2,28 @@
   "use strict";
   var doc = document;
 
-  // Mobile menu: a disclosure button; Escape closes it and returns focus.
+  // Mobile menu: a disclosure button. Opening moves focus to the first link; while it is open Tab
+  // cycles Menu and the links (the nav sits before the button in the DOM but after it on screen).
+  // Escape closes it and returns focus. Desktop order is untouched: the menu button is hidden there.
   var btn = doc.querySelector(".menu-btn"), nav = doc.getElementById("site-nav");
   if (btn && nav) {
+    var isOpen = function () { return btn.getAttribute("aria-expanded") === "true"; };
     var set = function (open, refocus) {
       btn.setAttribute("aria-expanded", String(open));
       nav.setAttribute("data-open", String(open));
-      if (!open && refocus) btn.focus();
+      if (open) { var first = nav.querySelector("a"); if (first) first.focus(); }
+      else if (refocus) btn.focus();
     };
-    btn.addEventListener("click", function () { set(btn.getAttribute("aria-expanded") !== "true"); });
+    btn.addEventListener("click", function () { set(!isOpen()); });
     doc.addEventListener("keydown", function (e) {
-      if (e.key === "Escape" && btn.getAttribute("aria-expanded") === "true") set(false, true);
+      if (!isOpen()) return;
+      if (e.key === "Escape") { set(false, true); return; }
+      if (e.key !== "Tab" || btn.offsetParent === null) return;
+      var ring = [btn].concat(Array.prototype.slice.call(nav.querySelectorAll("a")));
+      var i = ring.indexOf(doc.activeElement);
+      if (i < 0) return;
+      e.preventDefault();
+      ring[(i + (e.shiftKey ? ring.length - 1 : 1)) % ring.length].focus();
     });
   }
 

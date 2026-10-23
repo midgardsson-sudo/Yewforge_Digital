@@ -47,6 +47,8 @@ def rules(rel, text):
     bad = []
     if not re.search(r'<html lang="en-GB"', text): bad.append('lang="en-GB"')
     if not re.search(r'<link rel="canonical" href="https://yewforge-digital\.co\.uk/[^"]*"', text): bad.append("canonical")
+    m = re.search(r'<link rel="canonical" href="([^"]+)"', text)
+    if not re.search(r'<meta property="og:url" content="%s"' % re.escape(m.group(1) if m else "-"), text): bad.append("og:url (must equal canonical)")
     if not re.search(r'<meta name="description" content="[^"]+"', text): bad.append("description")
     if not re.search(r'<meta name="viewport"', text): bad.append("viewport")
     if 'href="css/ember.css"' not in text and 'ember.css"' not in text: bad.append("ember.css")

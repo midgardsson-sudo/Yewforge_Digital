@@ -13,7 +13,7 @@
   <link rel="preload" href="../fonts/ember/nivren-technical-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/ember.css">
   <script>document.documentElement.classList.add("js")</script>
-  <meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are developing NivKode as a developer environment. In the desktop app, new conversations start on a local model when one is installed; defaults in other clients vary. AGPL-3.0-only. Launch target: Friday 13 November 2026; may move if testing finds issues."><meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="YewForge mark and NivKode developer environment launch card"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
+  <meta property="og:url" content="https://yewforge-digital.co.uk/nivkode/"><meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are developing NivKode as a developer environment. In the desktop app, new conversations start on a local model when one is installed; defaults in other clients vary. AGPL-3.0-only. Launch target: Friday 13 November 2026; may move if testing finds issues."><meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="YewForge mark and NivKode developer environment launch card"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image">
 </head>
 <body class="ember">
 <!--ember:header-->
@@ -42,7 +42,7 @@
       <div class="wrap hero-grid">
         <div>
           <h1 class="display" id="nk-title">NivKode is a developer environment we are building.</h1>
-          <p class="lead">You choose the AI provider for each conversation: a local model, or an external AI provider you sign in to. It is for developers who want that choice and want to see where their words go.</p>
+          <p class="lead">In the desktop app you choose where each conversation goes: a local model when one is installed, or an external AI provider you sign in to. Codex is the one we have run so far, and it is experimental.</p>
           <div class="actions">
             <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
             <a class="btn" href="#evidence">See the evidence</a>
@@ -53,14 +53,14 @@
         <div class="stage stage--control">
           <svg class="ring" viewBox="0 0 600 600" aria-hidden="true" focusable="false"><circle class="ring-draw" cx="300" cy="300" r="280" pathLength="1"/></svg>
           <div class="control" data-provider-control>
-            <h2>Choose where this conversation goes</h2>
-            <div class="opts" role="group" aria-label="Provider for this conversation" hidden>
+            <h2>In the desktop app, choose where a conversation goes</h2>
+            <div class="opts" role="group" aria-label="Provider for a desktop app conversation" hidden>
               <button class="opt" type="button" aria-pressed="true" data-k="local">Local model</button>
-              <button class="opt" type="button" aria-pressed="false" data-k="ext">An external AI provider you sign in to<small>For example Codex, Claude or Grok</small></button>
+              <button class="opt" type="button" aria-pressed="false" data-k="ext">An external AI provider you sign in to<small>Codex is the one we have run so far</small></button>
             </div>
             <div class="outs" aria-live="polite">
               <p data-out="local"><b>Local model.</b> In the desktop app, new conversations start on a local model when one is installed.</p>
-              <p data-out="ext"><b>External provider.</b> NivKode sends the conversation to the provider you are signed in to, under your own account. Codex is the only one we have run so far, and it is experimental. Claude and Grok are not yet tested and not available.</p>
+              <p data-out="ext"><b>External provider.</b> In the desktop app, NivKode sends the conversation to the provider you are signed in to, under your own account. Codex is the one we have run so far, and it is experimental. Claude and Grok are not yet tested.</p>
             </div>
           </div>
         </div>
@@ -80,13 +80,11 @@
     <section class="sec" aria-labelledby="gate-title">
       <div class="wrap cols cols--shot">
         <div>
-          <h2 class="h2" id="gate-title">It says so when it does not know.</h2>
-          <p class="lead">When a run's outcome is unknown, NivKode says so instead of assuming tests passed.</p>
-          <p>The review gate shows what was reported for a run: test results, file changes, and what is still missing.</p>
+          <h2 class="h2" id="gate-title">When a run's outcome is unknown, NivKode says so instead of assuming tests passed.</h2>
         </div>
         <figure class="fig">
           <div class="crop"><img src="../assets/nivkode/nivkode-review-gate.webp" width="1280" height="1173" fetchpriority="low" alt="NivKode desktop conversation showing an 'Outcome unknown' notice and a Review gate card stating that no test results or file changes were reported for the run."></div>
-          <figcaption><strong>Scripted demonstration, simulated provider.</strong> The review gate in the 0.1.0 RC8 review candidate. It shows interface design, not feature completeness, accessibility or live-provider results.</figcaption>
+          <figcaption><strong>Scripted demo session (simulated provider)</strong>, from the 0.1.0 RC8 review candidate. It shows interface designs, not feature completeness, accessibility, or live-provider results.</figcaption>
         </figure>
       </div>
     </section>
@@ -122,7 +120,7 @@
           <ul class="ring-list limits" aria-labelledby="limits-title">
             <li>NivKode 0.1.0 is a review candidate. Human release approval is still pending and nothing is published yet.</li>
             <li>NivKode remains in testing; platform and provider results are not reported here.</li>
-            <li>Only Codex has been run in NivKode so far, and it is experimental. Claude and Grok are not yet tested and not available.</li>
+            <li>Codex is the one we have run so far, and it is experimental. Claude and Grok are not yet tested.</li>
             <li>An Android app remains a development goal.</li>
             <li>The launch date may move if testing finds problems.</li>
           </ul>
