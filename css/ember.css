@@ -249,3 +249,110 @@ body.ember .site-foot a:hover { text-decoration: underline; text-decoration-colo
   body.ember .brand { font-size: 19px; gap: 8px; }
   body.ember .btn--sm { padding: 0 16px 0 14px; }
 }
+
+/* ======================================================================
+   Rollout layer: inner pages, the engineering journal (charcoal band as ground), reading pages
+   ====================================================================== */
+.foot-mail { margin: 0 0 14px; font-size: 18px; }
+body.ember .foot-mail a { display: inline-flex; align-items: center; min-height: 44px; color: var(--mist); text-underline-offset: 4px; text-decoration-color: var(--ember); text-decoration-thickness: 2px; word-break: break-word; }
+.band--char + .site-foot, main.band--char ~ .site-foot { border-top: 2px solid var(--char-3); }
+.reviewed { margin: clamp(36px, 5vw, 64px) 0 0; font-size: 16px; color: var(--ink-2); }
+.band--char .reviewed { color: var(--mist-2); }
+.reading { max-width: 46rem; }
+
+/* inner page head */
+.page-head { padding-block: clamp(24px, 4vw, 56px) clamp(32px, 5vw, 72px); }
+.page-head .display { font-size: clamp(2.2rem, 1.2rem + 3.6vw, 4.4rem); max-width: 14em; margin-bottom: .4em; }
+.page-head .lead { margin-bottom: 0; }
+.page-head .actions { margin-top: 22px; }
+
+/* two-column section: heading left, text right */
+.split { display: grid; gap: clamp(20px, 4vw, 64px); grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); padding-top: clamp(28px, 4vw, 48px); border-top: 2px solid var(--char); }
+.band--char .split { border-top-color: var(--char-3); }
+.split + .split { margin-top: clamp(36px, 5vw, 72px); }
+.split > :first-child .h2 { margin-bottom: 0; font-size: clamp(1.7rem, 1.1rem + 1.8vw, 2.6rem); }
+@media (max-width: 899px) { .split { grid-template-columns: 1fr; } }
+.prose p, .prose li { max-width: 44em; }
+.prose h3 { font-size: 1.25rem; font-weight: 600; margin: 1.4em 0 .3em; letter-spacing: -.01em; }
+.prose h3:first-child { margin-top: 0; }
+
+/* item lists: a heading and a few lines each, set on the ground with the ring marker, no boxes */
+.items { display: grid; gap: clamp(24px, 3.5vw, 48px) clamp(24px, 4vw, 56px); grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; }
+.items--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.items--4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.items > li, .items > article { min-width: 0; }
+.items h3 { font-size: 1.35rem; font-weight: 600; letter-spacing: -.015em; margin: 0 0 .35em; }
+.items h3::before { content: ""; display: block; width: 12px; height: 24px; background: var(--ember); border-radius: 0 999px 999px 0; margin-bottom: 14px; }
+.items p { margin: 0 0 .6em; }
+.items .state { font-weight: 600; margin-bottom: .4em; }
+.items .state + p { margin-top: 0; }
+@media (max-width: 1099px) { .items, .items--4 { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 719px) { .items, .items--2, .items--4 { grid-template-columns: 1fr; } }
+
+/* fact table: rules only */
+table.facts { width: 100%; border-collapse: collapse; font-size: 18px; }
+table.facts th, table.facts td { text-align: left; vertical-align: top; padding: 16px 20px 16px 0; border-top: 2px solid var(--char); }
+table.facts tr:last-child th, table.facts tr:last-child td { border-bottom: 2px solid var(--char); }
+table.facts th { font-family: var(--head); font-weight: 600; width: 34%; }
+@media (max-width: 599px) { table.facts th, table.facts td { display: block; width: auto; padding: 10px 0 0; border: 0; } table.facts tr { display: block; border-top: 2px solid var(--char); padding-bottom: 10px; } table.facts tr:last-child { border-bottom: 2px solid var(--char); } }
+
+/* press: copy lines */
+.copyline { margin: 0 0 clamp(24px, 3vw, 40px); padding-top: 22px; border-top: 2px solid var(--char); }
+.copyline blockquote { margin: 0 0 14px; font-size: 1.15rem; line-height: 1.5; max-width: 44em; }
+.copyline .label { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; font-size: 16px; color: var(--ink-2); }
+
+/* claims: say, then the limit */
+.claim-list { list-style: none; margin: 0 0 clamp(28px, 4vw, 48px); padding: 0; display: grid; gap: clamp(22px, 3vw, 36px) clamp(24px, 4vw, 56px); grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.claim-list h3 { font-size: 1.3rem; font-weight: 600; margin: 0 0 .3em; letter-spacing: -.015em; }
+.claim-list .say { margin: 0 0 .4em; }
+.claim-list .caveat { margin: 0; color: var(--ink-2); font-size: 17px; }
+.claim-list .caveat b { color: var(--ink); font-weight: 600; }
+@media (max-width: 799px) { .claim-list { grid-template-columns: 1fr; } }
+
+/* updates page entries */
+.entries { list-style: none; margin: 0; padding: 0; }
+.entry { display: grid; gap: 8px clamp(20px, 4vw, 64px); grid-template-columns: minmax(0, 11rem) minmax(0, 1fr); padding: clamp(24px, 3vw, 36px) 0; border-top: 2px solid var(--char); }
+.entry:last-child { border-bottom: 2px solid var(--char); }
+.entry time { font-family: var(--head); font-weight: 600; font-size: 1.05rem; }
+.entry .kind { display: block; margin-top: 4px; font-size: 16px; color: var(--ink-2); }
+.entry h2 { font-size: clamp(1.3rem, 1.05rem + 1vw, 1.9rem); font-weight: 650; letter-spacing: -.02em; line-height: 1.15; margin-bottom: .5em; }
+.entry p { max-width: 46em; }
+.entry .crop { max-width: 640px; margin-bottom: 1em; }
+@media (max-width: 719px) { .entry { grid-template-columns: 1fr; } }
+
+/* dynamic build-update archive (js/nivren-updates.js emits these classes) */
+.nivren-updates-list { display: grid; gap: 0; }
+.nivren-update-card { padding: 24px 0; border-top: 2px solid var(--char); }
+.nivren-update-meta { display: flex; flex-wrap: wrap; gap: 6px 18px; font-size: 16px; color: var(--ink-2); margin-bottom: 8px; }
+.status-chip { font-weight: 600; color: var(--ink); }
+.nivren-update-title { font-size: 1.4rem; margin: 0 0 .4em; letter-spacing: -.015em; }
+.nivren-update-grid { display: grid; gap: 16px 32px; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.nivren-update-muted, .nivren-updates-empty { color: var(--ink-2); }
+@media (max-width: 719px) { .nivren-update-grid { grid-template-columns: 1fr; } }
+.nivren-update-card ul { padding-left: 1.2em; }
+.nivren-update-card code { font-size: .92em; }
+
+/* ---------- engineering journal: Charcoal band is the ground ---------- */
+.ej { padding-block: clamp(20px, 3vw, 40px) clamp(56px, 8vw, 112px); }
+.ej-breadcrumb ol { display: flex; flex-wrap: wrap; align-items: center; gap: 0 10px; list-style: none; margin: 0; padding: 0; font-size: 16px; color: var(--mist-2); }
+.ej-breadcrumb li + li::before { content: "/"; margin-right: 10px; color: var(--char-3); }
+body.ember .ej a { display: inline; }
+body.ember .ej-breadcrumb a, body.ember .ej-sections a { display: inline-flex; align-items: center; min-height: 44px; }
+.ej-sections { margin: 4px 0 0; }
+.ej-sections ul { display: flex; flex-wrap: wrap; gap: 0 22px; list-style: none; margin: 0; padding: 0; font-size: 17px; }
+body.ember .ej-sections a[aria-current="page"] { color: var(--mist); font-weight: 600; text-decoration: underline; text-decoration-color: var(--ember); text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.ej-hero { padding-block: clamp(28px, 4vw, 56px) clamp(28px, 4vw, 48px); }
+.ej-hero h1 { font-weight: 700; font-size: clamp(2rem, 1.1rem + 3.4vw, 3.9rem); line-height: 1.02; letter-spacing: -.03em; max-width: 16em; margin-bottom: .5em; color: var(--mist); }
+.ej-hero .lead { margin-bottom: .8em; }
+.ej-meta { display: flex; flex-wrap: wrap; gap: 6px 0; list-style: none; margin: 22px 0 0; padding: 0; font-size: 16px; color: var(--mist-2); }
+.ej-meta li { padding-right: 14px; margin-right: 14px; border-right: 2px solid var(--char-3); }
+.ej-meta li:last-child { border-right: 0; margin-right: 0; padding-right: 0; }
+.ej-meta strong { color: var(--mist); font-weight: 600; }
+.ej-layout { display: grid; gap: clamp(32px, 5vw, 80px); grid-template-columns: minmax(0, 1fr) minmax(0, 18rem); align-items: start; border-top: 2px solid var(--char-3); padding-top: clamp(28px, 4vw, 48px); }
+.ej-article section { margin-bottom: clamp(28px, 3.5vw, 44px); }
+.ej-article h2 { font-weight: 650; font-size: clamp(1.4rem, 1.1rem + 1vw, 2rem); letter-spacing: -.02em; line-height: 1.12; margin-bottom: .45em; color: var(--mist); }
+.ej-article p { max-width: 42em; }
+.ej-side h2 { font: 600 17px/1.3 var(--text); color: var(--mist-2); margin-bottom: 8px; }
+.ej-side ul { list-style: none; margin: 0; padding: 0; }
+body.ember .ej-side a { display: flex; align-items: center; min-height: 44px; }
+@media (max-width: 899px) { .ej-layout { grid-template-columns: 1fr; } }
