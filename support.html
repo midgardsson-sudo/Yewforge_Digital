@@ -1,140 +1,103 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-GB">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Support YewForge | Development support</title>
-  <meta name="description" content="We welcome support for development of Nivren, NivKode and related work.">
-  <link rel="canonical" href="https://yewforge-digital.co.uk/support.html">
-  <link rel="icon" href="favicon.ico" sizes="32x32">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link rel="preload" href="fonts/NivrenTechnical.ttf" as="font" type="font/ttf" crossorigin>
-  <link rel="stylesheet" href="css/about-press.css">
-  <style>
-    .terms { border-color: rgba(255,196,119,.55); box-shadow: inset 3px 0 0 var(--amber); }
-    .terms p { color: var(--ink); }
-    .terms strong { color: var(--ink); }
-    .support-contact { margin-top: var(--s8); }
-    .skip { min-width: 44px; min-height: 44px; }
-    .fund-uses { padding-left: 1.25rem; }
-    .fund-uses li { margin: .35rem 0; }
-    .brand, .site-nav a, .site-foot a, main a:not(.payment-link) { display: inline-flex; align-items: center; min-width: 44px; min-height: 44px; }
-    @media (max-width: 759px) { .site-nav ul, .site-foot ul { column-gap: var(--s4); } }
-    @media (min-width: 760px) and (max-width: 900px) { .grid.three { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-  </style>
-<meta property="og:title" content="Support YewForge | Development support"><meta property="og:description" content="We welcome support for development of Nivren, NivKode and related work."><meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="YewForge mark and NivKode developer environment launch card"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Support YewForge | Development support"><meta name="twitter:description" content="We welcome support for development of Nivren, NivKode and related work."><meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta name="twitter:image:alt" content="YewForge mark and NivKode developer environment launch card"></head>
-<body>
-  <a class="skip" href="#main">Skip to content</a>
-  <header class="site-head">
-    <div class="wrap">
-      <a class="brand" href="index.html"><svg class="mark" viewBox="50 50 710 800" width="20" height="23" aria-hidden="true" focusable="false"><g fill="#E4DACB"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>YewForge</a>
-      <nav class="site-nav" aria-label="Primary">
-        <ul>
-          <li><a href="nivren.html">Nivren</a></li>
-          <li><a href="nivkode/">NivKode</a></li>
-          <li><a href="engineering/index.html">Research</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="press/index.html">Press</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-  <main id="main">
-    <div class="wrap">
-      <section class="hero" aria-labelledby="support-title">
-        <p class="eyebrow">Support YewForge</p>
-        <h1 id="support-title">Throw some fuel into the forge.</h1>
-        <p class="lede">We welcome support for development of Nivren, NivKode and related work.</p>
-        <p class="chip">Financial support is available through Ko-fi.</p>
-      </section>
-
-      <section class="block split" aria-labelledby="why-title">
-        <div><p class="eyebrow">Why support matters</p><h2 id="why-title">Small support can add practical capacity.</h2></div>
-        <div class="prose">
-          <p>Support is not payment for unreleased work or a promise of a particular product, result or financial return. We welcome support for development.</p>
-          <p>The first milestone is <strong>£50 net</strong>. When reached, a public note will describe what the support enabled.</p>
-        </div>
-      </section>
-
-      <section class="block" aria-labelledby="goal-title">
-        <p class="eyebrow">First milestone</p>
-        <h2 id="goal-title">£50 net for additional development capacity.</h2>
-        <article class="mod edge-cyan prose">
-          <p>Support is intended to be reinvested in practical development needs such as:</p>
-          <ul class="fund-uses">
-            <li>additional AI worker capacity and model/API access;</li>
-            <li>compute and development tools;</li>
-            <li>test hardware and infrastructure.</li>
-          </ul>
-          <p>When the milestone is reached, a public note will report what it enabled. The target does not promise a particular service, result or delivery date.</p>
-        </article>
-      </section>
-
-      <section class="block" aria-labelledby="ways-title">
-        <p class="eyebrow">Ways to help</p>
-        <h2 id="ways-title">Three ways to help.</h2>
-        <div class="grid three">
-          <article class="mod">
-            <div class="mod-h"><h3>Financial support</h3><span class="chip">Available</span></div>
-            <p>One-off support through Ko-fi helps us build development capacity. It is not an investment, a charitable contribution, or a purchase of an unreleased product.</p>
-            <p><a class="payment-link" id="kofi-support-link" hidden rel="noopener noreferrer" target="_blank">Support YewForge on Ko-fi</a></p>
-            <p id="kofi-support-fallback" class="chip needs">The support link is temporarily unavailable.</p>
-          </article>
-          <article class="mod edge-violet">
-            <h3>Compute sponsorship</h3>
-            <p>Compute credits or access may help with development and testing. Any arrangement would be discussed directly and recorded clearly.</p>
-            <p><a href="contact.html">Discuss compute support</a></p>
-          </article>
-          <article class="mod edge-cyan">
-            <h3>Hardware donations</h3>
-            <p>Hardware offered by arrangement may add equipment for development, repair and testing.</p>
-            <p><a href="#hardware-terms">Read the hardware donation terms</a></p>
-          </article>
-        </div>
-      </section>
-
-      <section class="block" id="hardware-terms" aria-labelledby="terms-title">
-        <p class="eyebrow">Please read before offering equipment</p>
-        <h2 id="terms-title">Hardware donation terms.</h2>
-        <article class="mod terms prose">
-          <p>Donated equipment may be opened, dismantled, analysed, modified, repaired, repurposed, upcycled, used for component harvesting or responsibly recycled.</p>
-          <p>Please securely wipe all personal data before donating; YewForge does not accept responsibility for data left on devices.</p>
-          <p><strong>Donations by arrangement only.</strong></p>
-          <p><strong>Donated equipment may not be returned or may be returned changed unless a return arrangement is agreed in advance.</strong></p>
-        </article>
-      </section>
-
-      <section class="block split" aria-labelledby="independence-title">
-        <div><p class="eyebrow">Development support</p><h2 id="independence-title">Support for development.</h2></div>
-        <div class="prose">
-          <p>We welcome support for development of Nivren, NivKode and related work.</p>
-          <p>The same evidence standards apply to positive, negative and inconclusive findings.</p>
-        </div>
-      </section>
-
-      <section class="block" aria-labelledby="contact-title">
-        <article class="mod support-contact">
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">Discuss a contribution.</h2>
-          <p class="prose">For questions about compute sponsorship or hardware donations, <a href="contact.html">contact YewForge</a>.</p>
-        </article>
-      </section>
-    </div>
-  </main>
-  <footer class="site-foot">
-    <div class="wrap">
-      <span>&copy; 2026 YewForge</span>
-      <nav aria-label="Footer"><ul>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support YewForge | Development support</title>
+<meta name="description" content="We welcome support for development of Nivren, NivKode and related work.">
+<link rel="canonical" href="https://yewforge-digital.co.uk/support.html">
+<link rel="icon" href="favicon.ico" sizes="32x32">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Support YewForge | Development support">
+<meta property="og:description" content="We welcome support for development of Nivren, NivKode and related work.">
+<meta property="og:url" content="https://yewforge-digital.co.uk/support.html">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="YewForge mark and NivKode developer environment launch card"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Support YewForge | Development support">
+<meta name="twitter:description" content="We welcome support for development of Nivren, NivKode and related work.">
+<meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta name="twitter:image:alt" content="YewForge mark and NivKode developer environment launch card">
+<link rel="preload" href="fonts/ember/sora-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/ember/nivren-technical-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/ember.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body class="ember">
+<!--ember:header-->
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="index.html"><svg class="mark" viewBox="50 50 710 800" width="22" height="25" aria-hidden="true" focusable="false"><g fill="currentColor"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>YewForge</a>
+    <nav class="site-nav" id="site-nav" aria-label="Primary" data-open="false">
+      <ul>
+        <li><a href="nivren.html">Nivren</a></li>
+        <li><a href="nivkode/">NivKode</a></li>
+        <li><a href="index.html#evidence">Evidence</a></li>
+        <li><a href="updates/">Updates</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="press/index.html">Press</a></li>
-        <li><a href="support.html" aria-current="page">Support</a></li>
+        <li><a href="press/">Press</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="privacy.html">Privacy</a></li>
-      </ul></nav>
-    </div>
-  <span class="site-review">Last reviewed: <time datetime="2026-10-06">2026-10-06</time></span></footer>
+      </ul>
+    </nav>
+    <a class="btn btn--sm btn--primary" href="contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Launch note</a>
+    <button class="btn btn--sm menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  </div>
+</header>
+<!--/ember:header-->
+<main id="main">
+<section class="page-head" aria-labelledby="page-h"><div class="wrap">
+<h1 class="display" id="page-h">Throw some fuel into the forge.</h1>
+<p class="lead">We welcome support for development of Nivren, NivKode and related work.</p>
+<p>Financial support is available through Ko-fi.</p>
+</div></section>
+<section class="sec" aria-labelledby="why-title"><div class="wrap">
+<div class="split"><div><h2 class="h2" id="why-title">Small support can add practical capacity.</h2></div><div class="prose">
+<p>Support is not payment for unreleased work or a promise of a particular product, result or financial return. We welcome support for development.</p>
+<p>The first milestone is <strong>£50 net</strong>. When reached, a public note will describe what the support enabled.</p>
+</div></div>
+</div></section>
+<section class="sec" aria-labelledby="goal-title"><div class="wrap">
+<div class="split"><div><h2 class="h2" id="goal-title">£50 net for additional development capacity.</h2></div><div class="prose">
+<p>Support is intended to be reinvested in practical development needs such as:</p>
+<ul class="ring-list"><li>additional AI worker capacity and model/API access;</li>
+<li>compute and development tools;</li>
+<li>test hardware and infrastructure.</li></ul>
+<p>When the milestone is reached, a public note will report what it enabled. The target does not promise a particular service, result or delivery date.</p>
+</div></div>
+</div></section>
+<section class="sec band--paper" id="ways" aria-labelledby="ways-h"><div class="wrap">
+<div class="sec-head"><h2 class="h2" id="ways-h">Three ways to help.</h2></div>
+<ul class="items">
+<li><h3>Financial support</h3><p class="state">Available</p><p>One-off support through Ko-fi helps us build development capacity. It is not an investment, a charitable contribution, or a purchase of an unreleased product.</p>
+<p><a class="payment-link" id="kofi-support-link" hidden rel="noopener noreferrer" target="_blank">Support YewForge on Ko-fi</a></p>
+<p id="kofi-support-fallback">The support link is temporarily unavailable.</p></li>
+<li><h3>Compute sponsorship</h3><p>Compute credits or access may help with development and testing. Any arrangement would be discussed directly and recorded clearly.</p><p><a href="contact.html">Discuss compute support</a></p></li>
+<li><h3>Hardware donations</h3><p>Hardware offered by arrangement may add equipment for development, repair and testing.</p><p><a href="#hardware-terms">Read the hardware donation terms</a></p></li>
+</ul>
+</div></section>
+<section class="sec" id="hardware-terms" aria-labelledby="terms-title"><div class="wrap">
+<div class="split"><div><h2 class="h2" id="terms-title">Hardware donation terms.</h2></div><div class="prose">
+<p>Donated equipment may be opened, dismantled, analysed, modified, repaired, repurposed, upcycled, used for component harvesting or responsibly recycled.</p>
+<p>Please securely wipe all personal data before donating; YewForge does not accept responsibility for data left on devices.</p>
+<p><strong>Donations by arrangement only.</strong></p>
+<p><strong>Donated equipment may not be returned or may be returned changed unless a return arrangement is agreed in advance.</strong></p>
+</div></div>
+</div></section>
+<section class="sec" aria-labelledby="independence-title"><div class="wrap">
+<div class="split"><div><h2 class="h2" id="independence-title">Support for development.</h2></div><div class="prose">
+<p>We welcome support for development of Nivren, NivKode and related work.</p>
+<p>The same evidence standards apply to positive, negative and inconclusive findings.</p>
+</div></div>
+</div></section>
+<section class="sec" aria-labelledby="contact-title"><div class="wrap">
+<div class="split"><div><h2 class="h2" id="contact-title">Discuss a contribution.</h2></div><div class="prose">
+<p>For questions about compute sponsorship or hardware donations, <a href="contact.html">contact YewForge</a>.</p>
+</div></div>
+</div></section>
+<div class="wrap"><p class="reviewed">Last reviewed: <time datetime="2026-10-06">2026-10-06</time></p></div>
+</main>
+
 <script>
   (function () {
     const SUPPORT_BUILD_ENABLED = true;
@@ -149,5 +112,30 @@
     fallback.hidden = true;
   }());
 </script>
+<!--ember:footer-->
+<footer class="site-foot">
+  <div class="wrap">
+    <ul class="foot-links">
+      <li><a href="nivren.html">Nivren</a></li>
+      <li><a href="nivkode/">NivKode</a></li>
+      <li><a href="engineering/">Research</a></li>
+      <li><a href="updates/">Updates</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="https://discord.com/invite/3zenJxtKCG" rel="noopener">Discord</a></li>
+      <li><a href="https://x.com/YewForgeDigital" rel="noopener">X</a></li>
+      <li><a href="https://uk.linkedin.com/in/yewforgedigital" rel="noopener">LinkedIn</a></li>
+    </ul>
+    <p class="foot-mail">Write to us: <a data-mail><span data-mail-text>yewforge.partnerships at gmail.com</span></a></p>
+    <p class="foot-meta">&copy; <span data-year>2026</span> YewForge. NivKode is licensed AGPL-3.0-only; the source code is not public yet.</p>
+    <div class="foot-word" aria-hidden="true">
+      <span>YewForge</span>
+      <svg viewBox="50 50 710 800" focusable="false"><g fill="#E9F0F5"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>
+    </div>
+  </div>
+</footer>
+<!--/ember:footer-->
+<script src="js/ember.js" defer></script>
 </body>
 </html>
