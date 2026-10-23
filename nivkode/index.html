@@ -25,6 +25,14 @@
     .launch-status { max-width: 100%; box-sizing: border-box; white-space: normal; }
     .launch-status::before { flex: 0 0 6px; }
     .nk-hero { padding-top: var(--s8); min-height: calc(100vh - 80px); box-sizing: border-box; }
+    /* Director 23 Oct: the hero carries the review-gate screenshot beside the copy on wide screens (S3). */
+    .nk-hero-grid { display: grid; gap: var(--s8); align-items: center; }
+    @media (min-width: 960px) { .nk-hero-grid { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); } }
+    .nk-copy { min-width: 0; }
+    .nk-shot { margin: 0; min-width: 0; }
+    .nk-shot img { display: block; width: 100%; height: auto; border: 1px solid var(--line-strong); border-radius: var(--r-mod); }
+    .nk-shot figcaption { margin-top: var(--s3); color: var(--ink-2); font-size: 15px; }
+    .nk-lede { margin-top: var(--s6); }
     .nk-hero h1 { max-width: 18ch; font-size: clamp(32px, 5.4vw, 64px); line-height: 1.08; }
     .nk-hero .audience { max-width: 54ch; margin-top: var(--s5); font-size: clamp(18px, 2.2vw, 22px); color: var(--ink-2); }
     .nk-hero .launch-line { margin-top: var(--s5); color: var(--ink); font-size: 18px; font-weight: 600; }
@@ -60,9 +68,11 @@
   <main id="main">
     <div class="wrap">
       <section class="hero nk-hero" aria-labelledby="nk-title">
+        <div class="nk-hero-grid">
+        <div class="nk-copy">
         <h1 id="nk-title">We are developing NivKode as a developer environment.</h1>
         <!-- Claims check: product development status and type — PUBLIC_CLAIMS.md row 11. -->
-        <p class="audience">For developers who want to choose an external AI provider (e.g. Codex, Claude or Grok) for each conversation.</p>
+        <p class="audience">For developers who want to choose, for each conversation, between a local model and an external AI provider they sign in to.</p>
         <!-- Claims check: per-conversation provider choice — PUBLIC_CLAIMS.md row 47. -->
         <p class="launch-line">Launch target: <time datetime="2026-11-13">Friday 13 November 2026</time>; may move if testing finds issues.</p>
         <!-- Claims check: conditional launch target — PUBLIC_CLAIMS.md row 14, current date confirmed in the site claims record. -->
@@ -71,7 +81,10 @@
           <a class="nk-evidence" href="../index.html#evidence">See the evidence</a>
           <span class="nk-email">yewforge.partnerships@gmail.com</span>
         </div>
-        <p class="lede" style="margin-top:var(--s8)">In the desktop app, new conversations start on a local model when one is installed. Defaults in other clients vary. When a conversation uses Codex, NivKode sends that conversation to the provider of your signed-in Codex account (for example OpenAI or Amazon Bedrock), under your own account.</p>
+        <p class="lede nk-lede">Desktop, command-line and terminal interfaces remain development goals. In the desktop app, new conversations start on a local model when one is installed. Defaults in other clients vary. When a conversation uses Codex, NivKode sends that conversation to the provider of your signed-in Codex account (for example OpenAI or Amazon Bedrock), under your own account.</p>
+        </div>
+        <figure class="shot nk-shot"><img src="../assets/nivkode/nivkode-review-gate.png" width="1280" height="1173" fetchpriority="high" alt="NivKode desktop conversation showing an 'Outcome unknown' notice and a Review gate card stating that no test results or file changes were reported for the run."><figcaption><strong>The review gate.</strong> When a run's outcome is unknown, NivKode says so instead of assuming tests passed.</figcaption></figure>
+        </div>
       </section>
 
       <section class="block" aria-labelledby="what-title">
@@ -96,7 +109,6 @@
         <p class="prose">These scripted demonstrations use a simulated local provider. They show interface designs, not feature completeness, accessibility, or live-provider results.</p>
         <div class="shots" style="margin-top: var(--s5)">
           <figure class="shot"><img src="../assets/nivkode/nivkode-desktop-onboarding.png" width="1280" height="900" loading="lazy" alt="NivKode desktop app before connecting: a gateway address field, a paired device token field and a Connect button beside an empty conversation area."><figcaption><strong>Desktop onboarding.</strong> Connect to a gateway on your own machine.</figcaption></figure>
-          <figure class="shot"><img src="../assets/nivkode/nivkode-review-gate.png" width="1280" height="1173" loading="lazy" alt="NivKode desktop conversation showing an 'Outcome unknown' notice and a Review gate card stating that no test results or file changes were reported for the run."><figcaption><strong>The review gate.</strong> When a run's outcome is unknown, NivKode says so instead of assuming tests passed.</figcaption></figure>
           <figure class="shot"><img src="../assets/nivkode/nivkode-accessibility-themes.png" width="1280" height="961" loading="lazy" alt="NivKode desktop conversation with the ColourSafe palette and OpenDyslexic reading font selected, showing widened letter spacing in the message text."><figcaption><strong>Accessibility themes.</strong> ColourSafe palette with the OpenDyslexic reading font.</figcaption></figure>
           <figure class="shot"><img src="../assets/nivkode/nivkode-terminal-view.png" width="1280" height="680" loading="lazy" alt="NivKode terminal view from a scripted demonstration using a simulated provider; displayed run details are demonstration content."><figcaption><strong>Terminal view.</strong> A scripted demo session (simulated provider), from the RC6 walkthrough.</figcaption></figure>
         </div>
