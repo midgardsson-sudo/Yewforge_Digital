@@ -164,7 +164,7 @@ body.ember .band--char a:not(.btn) { color: var(--ember); }
 @media (max-width: 899px) { .stage--control .ring { inset: auto; } }
 
 /* Home hero: ring with a real NivKode crop across it */
-.stage--shot .shotcrop { position: absolute; left: -10%; right: -14%; bottom: 14%; border-radius: 12px var(--crop) var(--crop) 12px; overflow: hidden; background: var(--char); }
+.stage--shot .shotcrop { position: absolute; left: -8%; right: -1%; bottom: 14%; border-radius: 12px 32px var(--crop) 12px; overflow: hidden; background: var(--char); }
 .stage--shot .shotcrop img { width: 100%; height: auto; }
 .stage--shot figcaption { position: absolute; left: -10%; right: -4%; bottom: -3%; font-size: 15px; color: var(--ink-2); }
 @media (max-width: 899px) {
@@ -224,7 +224,7 @@ table.status td p { margin: 0 0 .4em; }
 body.ember .updates .yf-ticker-item a { color: var(--mist); font-size: 16px; }
 .updates .yf-ticker-control { border: 2px solid var(--char-3); border-radius: 6px 999px 999px 6px; background: transparent; color: var(--mist); font: 500 15px var(--text); padding: 0 18px 0 14px; }
 .updates .yf-ticker-status { color: var(--mist-2); }
-.updates .yf-ticker-viewport { mask-image: none; }
+.updates .yf-ticker-viewport { -webkit-mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 40px), transparent); mask-image: linear-gradient(90deg, transparent, #000 40px, #000 calc(100% - 40px), transparent); }
 @media (max-width: 520px) { .updates .wrap { align-items: flex-start; flex-direction: column; gap: 0; } .updates [data-yf-updates] { width: 100%; } }
 
 /* ---------- contact block ---------- */
