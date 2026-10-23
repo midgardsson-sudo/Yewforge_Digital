@@ -1,18 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
-<title id="title">NivKode — a developer environment by YewForge</title>
-<desc id="desc">We are developing NivKode as a developer environment. Launch target: Friday 13 November 2026.</desc>
-<rect width="1200" height="630" fill="#0B1318"/>
-<g fill="#5B6F78" opacity=".34">
-<path d="M56 56h1088M56 126h1088M56 196h1088M56 266h1088M56 336h1088M56 406h1088M56 476h1088M56 546h1088" stroke="#5B6F78" stroke-width="1" opacity=".25"/>
+<title id="title">NivKode — a developer environment by YewForge Digital</title>
+<desc id="desc">We are developing NivKode as a developer environment. Launch target: Friday 13 November 2026; it may move if testing finds issues.</desc>
+<!-- Director 23 Oct: drawn in the owner's chosen site direction B (the ember ring). The ring is the logo's half-ring grown into the system and holds the date. -->
+<rect width="1200" height="630" fill="#E4DACB"/>
+<path fill="#FF7A2A" fill-rule="evenodd" d="M965 40a275 275 0 1 1 0 550a275 275 0 1 1 0-550ZM965 140a175 175 0 1 0 0 350a175 175 0 1 0 0-350Z"/>
+<g fill="#0B1318" font-family="Sora, sans-serif" text-anchor="middle">
+<text x="965" y="262" font-size="19" font-weight="600" letter-spacing="2.5">LAUNCH TARGET</text>
+<text x="965" y="342" font-size="84" font-weight="700" letter-spacing="-3">13 Nov</text>
+<text x="965" y="384" font-size="22" font-weight="500">Friday · 2026</text>
+<text x="965" y="414" font-size="17" fill="#A3410E">May move if testing finds issues</text>
 </g>
-<g transform="translate(82 78) scale(.22)">
-<g fill="#E4DACB"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/>
+<g transform="translate(72 62) scale(.15)">
+<g fill="#0B1318"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/>
 </g>
-<text x="250" y="139" fill="#E4DACB" font-family="Sora, sans-serif" font-size="28" letter-spacing="5">Y E W F O R G E</text>
-<text x="82" y="295" fill="#FF7A2A" font-family="Sora, sans-serif" font-size="26" font-weight="700" letter-spacing="4">NIVKODE</text>
-<text x="82" y="362" fill="#E4DACB" font-family="Sora, sans-serif" font-size="43" font-weight="600">We are developing NivKode</text>
-<text x="82" y="414" fill="#E4DACB" font-family="Sora, sans-serif" font-size="43" font-weight="600">as a developer environment.</text>
-<path d="M82 462h1036" stroke="#5B6F78" stroke-width="2"/>
-<text x="82" y="520" fill="#E4DACB" font-family="Sora, sans-serif" font-size="26">Launch target: Friday 13 November 2026.</text>
-<text x="1118" y="575" fill="#5B6F78" font-family="Sora, sans-serif" font-size="16" text-anchor="end">YewForge Digital</text>
+<text x="206" y="138" fill="#0B1318" font-family="Sora, sans-serif" font-size="27" font-weight="600" letter-spacing=".5">YewForge Digital</text>
+<text x="68" y="348" fill="#0B1318" font-family="Sora, sans-serif" font-size="118" font-weight="700" letter-spacing="-5">NivKode</text>
+<text x="72" y="410" fill="#0B1318" font-family="Sora, sans-serif" font-size="31" font-weight="500">We are developing NivKode</text>
+<text x="72" y="452" fill="#0B1318" font-family="Sora, sans-serif" font-size="31" font-weight="500">as a developer environment.</text>
+<text x="72" y="566" fill="#A3410E" font-family="Sora, sans-serif" font-size="21" font-weight="600" letter-spacing=".5">yewforge-digital.co.uk</text>
 </svg>
