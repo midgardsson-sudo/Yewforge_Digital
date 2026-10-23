@@ -6,7 +6,7 @@ Static public website for Nivren and related work.
 
 - **Nivren:** in active development.
 - **Nivren Home (NivDroid):** internal test build; no public build.
-- **NivKode:** version 0.1.0 RC5; RC6 work is in progress. It is not released. Public launch is scheduled for 2 November 2026.
+- **NivKode:** version 0.1.0 RC5; RC6 work is in progress. It is not released. Public launch target is Friday 13 November 2026.
 - **NivMac:** direction; no public build.
 - **Nivren Quark:** planned.
 
