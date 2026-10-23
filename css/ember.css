@@ -357,7 +357,7 @@ body.ember .ej-sections a[aria-current="page"] { color: var(--mist); font-weight
 body.ember .ej-side a { display: flex; align-items: center; min-height: 44px; }
 @media (max-width: 899px) { .ej-layout { grid-template-columns: 1fr; } }
 
-/* ---------- ticker structure (was css/ticker.css; kept last so it loads after the look above, as before) ---------- */
+/* ---------- ticker structure (kept last so it loads after the look above, as before) ---------- */
 /* The host reserves its final height before its data request completes. */
 [data-yf-updates],
 .yf-updates {
