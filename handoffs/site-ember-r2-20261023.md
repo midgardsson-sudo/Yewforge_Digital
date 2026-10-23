@@ -1,6 +1,6 @@
 # Site ember r2 (response to Codex REWORK on cbd490f)
 
-Branch: feat/site-ember-ring-20261023 · Commit: 52f6b7d78d9fa71add5919666a90cd2ad6baed58 · Pushed: no
+Branch: feat/site-ember-ring-20261023 · Commit: branch tip, SHA in the factoryctl commit event (a file cannot name its own commit) · Pushed: no
 
 ## What changed
 1. **Phone menu keyboard** (`js/ember.js`): opening Menu focuses the first nav link; while open, Tab / Shift+Tab cycle Menu + the 7 nav links; Escape closes and returns focus to Menu. Desktop unchanged (Menu hidden, no trap).
