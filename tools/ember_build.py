@@ -78,6 +78,16 @@ def main():
                 p.write_text(new)
         bad = rules(rel, new)
         if bad: broken.append((rel, bad))
+    # S7: sitemap.xml lists every indexable page by its canonical URL, and nothing else
+    want = set()
+    for rel, p in pages():
+        t = p.read_text()
+        if "noindex" in t: continue
+        m = re.search(r'<link rel="canonical" href="([^"]+)"', t)
+        if m: want.add(m.group(1))
+    have = set(re.findall(r"<loc>([^<]+)</loc>", (ROOT / "sitemap.xml").read_text()))
+    if want != have:
+        broken.append(("sitemap.xml", ["missing " + ", ".join(sorted(want - have)) if want - have else "", "extra " + ", ".join(sorted(have - want)) if have - want else ""]))
     print(("stale: " if check else "updated: ") + (", ".join(stale) or "none"))
     for rel, bad in broken:
         print("RULE %s: %s" % (rel, ", ".join(bad)))

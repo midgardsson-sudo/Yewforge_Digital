@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://yewforge-digital.co.uk/</loc>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/about.html</loc>
+  </url>
+  <url>
     <loc>https://yewforge-digital.co.uk/contact.html</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/support.html</loc>
-  </url>
-  <url>
-    <loc>https://yewforge-digital.co.uk/privacy.html</loc>
-  </url>
-  <url>
     <loc>https://yewforge-digital.co.uk/engineering/</loc>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/</loc>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/nivren/architecture/</loc>
@@ -28,16 +31,13 @@
     <loc>https://yewforge-digital.co.uk/engineering/nivren/glossary/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/nivren/</loc>
-  </url>
-  <url>
     <loc>https://yewforge-digital.co.uk/engineering/nivren/objectives/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/nivren/revisions/data-identity-correction/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/revisions/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/nivren/revisions/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/revisions/data-identity-correction/</loc>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/nivren/revisions/monitoring-integration-limit/</loc>
@@ -52,13 +52,16 @@
     <loc>https://yewforge-digital.co.uk/engineering/nivren/system-map/</loc>
   </url>
   <url>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/</loc>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/activity-timeline/</loc>
+  </url>
+  <url>
     <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/agent-governance/</loc>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/cli-and-recovery/</loc>
-  </url>
-  <url>
-    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/workspace-interface/</loc>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/data-research/</loc>
@@ -67,39 +70,45 @@
     <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/evidence-and-external-memory/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/project-workspace/</loc>
-  </url>
-  <url>
-    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/</loc>
-  </url>
-  <url>
-    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/activity-timeline/</loc>
-  </url>
-  <url>
     <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/factory-research/</loc>
-  </url>
-  <url>
-    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/system-monitoring/</loc>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/local-runtime/</loc>
   </url>
   <url>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/project-workspace/</loc>
+  </url>
+  <url>
     <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/security-and-research/</loc>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/system-monitoring/</loc>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/workspace-field/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/</loc>
+    <loc>https://yewforge-digital.co.uk/engineering/nivren/systems/workspace-interface/</loc>
   </url>
   <url>
     <loc>https://yewforge-digital.co.uk/nivkode/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/updates/</loc>
+    <loc>https://yewforge-digital.co.uk/nivren-updates/archive/</loc>
   </url>
   <url>
-    <loc>https://yewforge-digital.co.uk/nivren-updates/archive/</loc>
+    <loc>https://yewforge-digital.co.uk/nivren.html</loc>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/press/</loc>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/privacy.html</loc>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/support.html</loc>
+  </url>
+  <url>
+    <loc>https://yewforge-digital.co.uk/updates/</loc>
   </url>
 </urlset>
