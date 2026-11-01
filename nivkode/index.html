@@ -27,7 +27,7 @@
       <ul>
         <li><a href="../nivren.html">Nivren</a></li>
         <li><a href="../nivkode/" aria-current="page">NivKode</a></li>
-        <li><a href="#evidence">Earlier previews</a></li>
+        <li><a href="../index.html#evidence">Evidence</a></li>
         <li><a href="../updates/">Updates</a></li>
         <li><a href="../about.html">About</a></li>
         <li><a href="../press/">Press</a></li>
@@ -49,7 +49,7 @@
             <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
             <a class="btn" href="#evidence">Earlier previews</a>
           </div>
-          <p class="assure">Ask for the launch note and we'll email you once, on the day the beta is out.</p>
+          <p class="assure">The launch note button opens your own email app with a message to us. This page stores nothing.<noscript> Without scripts, write to yewforge.partnerships at gmail.com.</noscript></p>
         </div>
 
         <div class="stage stage--control">
@@ -71,10 +71,10 @@
 
     <section class="band--char datebar sec" aria-label="Launch target">
       <div class="wrap">
-        <p class="bigdate">Public beta: Friday 13 November 2026</p>
+        <div><p class="bigdate">Public beta: Friday 13 November 2026</p><p class="muted">The date may move if testing finds a problem.</p></div>
         <div>
-          <p><strong>Current candidate: Linux x86_64.</strong> Signing and publication need owner approval.</p>
-          <p class="muted">AGPL-3.0-only. We plan to make the source available with the public beta.</p>
+          <p><strong>Current candidate: Linux x86_64.</strong> The public beta will be a signed Linux x86_64 build.</p>
+          <p class="muted">AGPL-3.0-only. The source code will be available alongside the public beta download.</p>
         </div>
       </div>
     </section>
@@ -85,8 +85,8 @@
           <h2 class="h2" id="gate-title">Review proposed changes before they happen.</h2>
         </div>
         <figure class="fig">
-          <div class="crop"><img src="../assets/nivkode-beta4-desktop-20261101.png" width="1440" height="1000" alt="NivKode 0.2.0-beta.4 desktop interface."></div>
-          <figcaption>NivKode 0.2.0-beta.4</figcaption>
+          <div class="crop"><img src="../assets/nivkode-beta4-desktop-20261101-crop.png" width="1160" height="325" alt="Cropped view of the NivKode 0.2.0-beta.4 desktop interface."></div>
+          <figcaption>Cropped view of NivKode 0.2.0-beta.4.</figcaption>
         </figure>
       </div>
     </section>
@@ -97,7 +97,7 @@
           <h2 class="h2" id="what-title">How it works.</h2>
         </div>
         <ul class="ring-list prose">
-          <li><strong>Local model.</strong> We can answer questions and read workspace files. We can propose file edits and supported project test and build commands. Changes are shown for review; commands run only after approval.</li>
+          <li><strong>Local model.</strong> A local model can answer questions and read workspace files. We can propose file edits and supported project test and build commands. Changes are shown for review; commands run only after approval.</li>
           <li><strong>Command-line approvals.</strong> Run <code>nivkode approve &lt;conversation&gt; &lt;request&gt;</code> to accept one pending local request by its ID. This command accepts only; it does not prompt or decline requests.</li>
           <li><strong>Local only.</strong> The gateway refuses requests to external AI providers and external second opinions while the switch is on. Turning it on stops active external-provider runs.</li>
         </ul>
@@ -120,7 +120,7 @@
             <li><strong>Ollama — local model provider</strong>: <strong>Tested on earlier builds; live use on beta.4 is Not yet tested</strong>.</li>
             <li><strong>Codex through the Codex CLI</strong>: <strong>Tested on earlier builds (experimental); live use on beta.4 is Not yet tested</strong>.</li>
             <li>Claude has a beta.4 route, but no live run is verified (<strong>Not yet tested</strong>); the beta.4 app labels Claude “in development”. Grok is not supported.</li>
-              </ul>
+            </ul>
         </div>
       </div>
     </section>

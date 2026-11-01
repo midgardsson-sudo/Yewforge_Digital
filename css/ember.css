@@ -209,8 +209,6 @@ table.status td p { margin: 0 0 .4em; }
 .cols { display: grid; gap: clamp(24px, 4vw, 64px); grid-template-columns: minmax(0, 1fr) minmax(0, 1.3fr); }
 @media (max-width: 899px) { .cols { grid-template-columns: 1fr; } }
 .fig { margin: 0; }
-.owner-shot { min-height: 280px; display: grid; place-content: center; gap: 10px; padding: 32px; border: 1px dashed var(--ink-2); background: var(--paper); color: var(--ink); text-align: center; }
-.owner-shot span { color: var(--ink-2); }
 .fig figcaption { margin-top: 14px; font-size: 16px; color: var(--ink-2); max-width: 52em; }
 .fig figcaption strong { color: var(--ink); font-weight: 600; }
 .shots { display: grid; gap: clamp(24px, 3vw, 40px); grid-template-columns: repeat(3, minmax(0, 1fr)); }
