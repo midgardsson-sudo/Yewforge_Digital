@@ -14,6 +14,8 @@
   <link rel="stylesheet" href="../css/ember.css">
   <script>document.documentElement.classList.add("js")</script>
   <meta property="og:url" content="https://yewforge-digital.co.uk/nivkode/"><meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are building a Linux developer environment for local models, external AI providers, reviewing proposed changes and approving command-line requests.">
+  <meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="NivKode public beta target: 13 November 2026; may move if testing finds issues."><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta name="twitter:image:alt" content="NivKode public beta target: 13 November 2026; may move if testing finds issues.">
 </head>
 <body class="ember">
 <!--ember:header-->
@@ -32,7 +34,7 @@
         <li><a href="../contact.html">Contact</a></li>
       </ul>
     </nav>
-    <span class="btn btn--sm btn--primary">[OWNER: download link]</span>
+    <a class="btn btn--sm btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Launch note</a>
     <button class="btn btn--sm menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
   </div>
 </header>
@@ -44,10 +46,10 @@
           <h1 class="display" id="nk-title">NivKode 0.2.0-beta.4</h1>
           <p class="lead">We are building a Linux app for working with local models and external AI providers. A local model can answer questions, read workspace files, and propose file changes and supported commands. You review and approve each change.</p>
           <div class="actions">
-            <span class="btn btn--primary">[OWNER: download link]</span>
+            <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
             <a class="btn" href="#evidence">Earlier previews</a>
           </div>
-          <p class="assure">[OWNER: launch note wording]</p>
+          <p class="assure">Ask for the launch note and we'll email you once, on the day the beta is out.</p>
         </div>
 
         <div class="stage stage--control">
@@ -59,8 +61,8 @@
               <button class="opt" type="button" aria-pressed="false" data-k="ext">An external AI provider (e.g. Codex, Claude)</button>
             </div>
             <div class="outs" aria-live="polite">
-              <p data-out="local"><b>Local model.</b> <strong>Tested on earlier builds; live use on beta.4: Not yet tested</strong>.</p>
-              <p data-out="ext"><b>External AI provider.</b> Codex — <strong>Tested on earlier builds (experimental); live use on beta.4: Not yet tested</strong>. Claude — <strong>Not yet tested</strong> (in development). Grok is not supported.</p>
+              <p data-out="local"><b>Local model.</b> <strong>Tested on earlier builds; live use on beta.4 is Not yet tested</strong>.</p>
+              <p data-out="ext"><b>External AI provider.</b> Codex — <strong>Tested on earlier builds (experimental); live use on beta.4 is Not yet tested</strong>. Claude has a beta.4 route, but no live run is verified (<strong>Not yet tested</strong>); the beta.4 app labels Claude “in development”. Grok is not supported.</p>
             </div>
           </div>
         </div>
@@ -69,10 +71,10 @@
 
     <section class="band--char datebar sec" aria-label="Launch target">
       <div class="wrap">
-        <p class="bigdate">[OWNER: launch date wording]</p>
+        <p class="bigdate">Public beta: Friday 13 November 2026</p>
         <div>
-          <p><strong>Candidate for Linux x86_64.</strong> Signing and publication need owner approval.</p>
-          <p class="muted">AGPL-3.0-only. The source code is not public yet.</p>
+          <p><strong>Current candidate: Linux x86_64.</strong> Signing and publication need owner approval.</p>
+          <p class="muted">AGPL-3.0-only. We plan to make the source available with the public beta.</p>
         </div>
       </div>
     </section>
@@ -83,8 +85,8 @@
           <h2 class="h2" id="gate-title">Review proposed changes before they happen.</h2>
         </div>
         <figure class="fig">
-          <div class="owner-shot" role="note"><strong>[OWNER: beta.4 screenshot]</strong><span>Replace with an approved beta.4 capture before publication.</span></div>
-          <figcaption>Screenshot pending owner review.</figcaption>
+          <div class="crop"><img src="../assets/nivkode-beta4-desktop-20261101.png" width="1440" height="1000" alt="NivKode 0.2.0-beta.4 desktop interface."></div>
+          <figcaption>NivKode 0.2.0-beta.4</figcaption>
         </figure>
       </div>
     </section>
@@ -111,14 +113,13 @@
         <div class="shots">
           <figure class="fig"><div class="crop"><img src="../assets/nivkode/nivkode-desktop-onboarding.png" width="1280" height="900" loading="lazy" alt="Earlier NivKode desktop onboarding interface preview."></div><figcaption><strong>Desktop onboarding.</strong> Earlier interface preview.</figcaption></figure>
           <figure class="fig"><div class="crop"><img src="../assets/nivkode/nivkode-accessibility-themes.png" width="1280" height="961" loading="lazy" alt="Earlier NivKode desktop conversation interface preview."></div><figcaption><strong>Desktop conversation.</strong> Earlier interface preview.</figcaption></figure>
-          <figure class="fig"><div class="crop"><img src="../assets/nivkode/nivkode-terminal-view.png" width="1280" height="680" loading="lazy" alt="NivKode terminal view from a scripted demonstration using a simulated provider; displayed run details are demonstration content."></div><figcaption><strong>Terminal view.</strong> A scripted demo session (simulated provider), from an earlier candidate.</figcaption></figure>
         </div>
         <div class="cols" style="margin-top: clamp(40px, 6vw, 88px)">
           <h3 class="h2" id="limits-title">Provider testing</h3>
           <ul class="ring-list limits" aria-labelledby="limits-title">
-            <li>Ollama — local model provider: <strong>Tested on earlier builds; live use on beta.4: Not yet tested</strong>.</li>
-            <li>Codex: <strong>Tested on earlier builds (experimental); live use on beta.4: Not yet tested</strong>.</li>
-            <li>Claude: <strong>Has a beta.4 route; live run not verified (Not yet tested); app labels it “in development.”</strong> Grok is not supported.</li>
+            <li><strong>Ollama — local model provider</strong>: <strong>Tested on earlier builds; live use on beta.4 is Not yet tested</strong>.</li>
+            <li><strong>Codex through the Codex CLI</strong>: <strong>Tested on earlier builds (experimental); live use on beta.4 is Not yet tested</strong>.</li>
+            <li>Claude has a beta.4 route, but no live run is verified (<strong>Not yet tested</strong>); the beta.4 app labels Claude “in development”. Grok is not supported.</li>
               </ul>
         </div>
       </div>
@@ -126,12 +127,12 @@
 
     <section class="band--char sec" aria-labelledby="follow-title">
       <div class="wrap">
-        <h2 class="h2" id="follow-title">[OWNER: launch date wording]</h2>
-        <p class="lead">[OWNER: launch date wording]</p>
+        <h2 class="h2" id="follow-title">Public beta on Friday 13 November</h2>
+        <p class="lead">That's the plan. If testing finds a problem, the date moves, and we'll say so here.</p>
         <div class="actions">
-          <span class="btn btn--primary">[OWNER: download link]</span>
+          <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
         </div>
-        <p class="muted" style="margin-top:28px">[OWNER: price wording]</p>
+        <p class="muted" style="margin-top:28px">NivKode is free to use during the beta. We haven't set a price for after the beta. You bring your own AI provider account or use a local model.</p>
       </div>
     </section>
   </main>
