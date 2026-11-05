@@ -38,6 +38,7 @@
         <li><a href="about.html">About</a></li>
         <li><a href="press/">Press</a></li>
         <li><a href="contact.html">Contact</a></li>
+        <li><a href="support.html" aria-current="page">Support</a></li>
       </ul>
     </nav>
     <a class="btn btn--sm btn--primary" href="contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Launch note</a>
@@ -67,11 +68,11 @@
 </div></div>
 </div></section>
 <section class="sec band--paper" id="ways" aria-labelledby="ways-h"><div class="wrap">
-<div class="sec-head"><h2 class="h2" id="ways-h">Three ways to help.</h2></div>
+<div class="sec-head"><h2 class="h2" id="ways-h">Ways to help.</h2></div>
 <ul class="items">
 <li><h3>Financial support</h3><p class="state">Available</p><p>One-off support through Ko-fi helps us build development capacity. It is not an investment, a charitable contribution, or a purchase of an unreleased product.</p>
-<p><a class="payment-link" id="kofi-support-link" hidden rel="noopener noreferrer" target="_blank">Support YewForge on Ko-fi</a></p>
-<p id="kofi-support-fallback">The support link is temporarily unavailable.</p></li>
+<p><a class="payment-link btn btn--primary" id="kofi-support-link" href="https://ko-fi.com/yewforge" rel="noopener noreferrer" target="_blank">Support YewForge on Ko-fi</a></p></li>
+<li><h3>Wallpapers and merch</h3><p>KODA wallpaper packs (desktop and phone sizes) on Ko-fi, and tees and a mug printed to order by Teemill.</p><p><a href="https://ko-fi.com/yewforge" rel="noopener noreferrer" target="_blank">Shop wallpapers on Ko-fi</a> · <a href="https://yewforge.teemill.com/collection/all-products/" rel="noopener noreferrer" target="_blank">Shop tees and a mug at Teemill</a></p><p>These are purchases of finished items.</p></li>
 <li><h3>Compute sponsorship</h3><p>Compute credits or access may help with development and testing. Any arrangement would be discussed directly and recorded clearly.</p><p><a href="contact.html">Discuss compute support</a></p></li>
 <li><h3>Hardware donations</h3><p>Hardware offered by arrangement may add equipment for development, repair and testing.</p><p><a href="#hardware-terms">Read the hardware donation terms</a></p></li>
 </ul>
@@ -98,20 +99,6 @@
 <div class="wrap"><p class="reviewed">Last reviewed: <time datetime="2026-10-06">2026-10-06</time></p></div>
 </main>
 
-<script>
-  (function () {
-    const SUPPORT_BUILD_ENABLED = true;
-    const OWNER_KOFI_URL = "https://ko-fi.com/yewforge";
-    const safeUrl = /^https:\/\/ko-fi\.com\/[A-Za-z0-9_-]+\/?$/.test(OWNER_KOFI_URL);
-    if (!safeUrl) throw new Error("Support links must use ko-fi.com.");
-    if (!SUPPORT_BUILD_ENABLED) return;
-    const link = document.getElementById("kofi-support-link");
-    const fallback = document.getElementById("kofi-support-fallback");
-    link.href = OWNER_KOFI_URL;
-    link.hidden = false;
-    fallback.hidden = true;
-  }());
-</script>
 <!--ember:footer-->
 <footer class="site-foot">
   <div class="wrap">
