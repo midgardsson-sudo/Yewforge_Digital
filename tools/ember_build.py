@@ -9,10 +9,11 @@ come from the page path. `--check` exits 1 if any page is stale or breaks a site
 import re, sys, pathlib
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
-KEYS = ["nivren", "nivkode", "updates", "about", "press", "contact"]
+KEYS = ["nivren", "nivkode", "updates", "about", "press", "contact", "support"]
 # page path -> nav key that gets aria-current
 CURRENT = {"nivren.html": "nivren", "nivkode/index.html": "nivkode", "updates/index.html": "updates",
-           "about.html": "about", "press/index.html": "press", "contact.html": "contact"}
+           "about.html": "about", "press/index.html": "press", "contact.html": "contact",
+           "support.html": "support"}
 # Files that are not site pages: the Search Console verification file must stay byte-for-byte as issued.
 SKIP = {"googlec4ba5b48223c809e.html"}
 OLD_ASSETS = ("about-press.css", "yf-kit.css", "campus.css", "campus.js", "NivrenTechnical.ttf",
