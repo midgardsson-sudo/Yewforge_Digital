@@ -45,7 +45,7 @@
       <div class="wrap hero-grid">
         <div>
           <h1 class="display" id="nk-title">NivKode 0.2.0-beta.7</h1>
-          <p class="lead">We are preparing NivKode 0.2.0-beta.7 for Linux x86_64. We will update this page when the release is signed and available.</p>
+          <p class="lead">We are building a Linux app for working with local models and external AI providers. A local model can answer questions, read workspace files, and propose file changes and supported commands. You review and approve each change.</p>
           <div class="actions">
             <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
             <a class="btn" href="#evidence">Earlier previews</a>
@@ -63,7 +63,7 @@
             </div>
             <div class="outs" aria-live="polite">
               <p data-out="local"><b>Local model.</b> Live use on this beta has not been tested.</p>
-              <p data-out="ext"><b>External AI provider.</b> When we choose an external AI provider, e.g. Codex, Claude, Grok, the conversation is sent to that provider.</p>
+              <p data-out="ext"><b>External AI provider.</b> When you choose an external AI provider, e.g. Codex, Claude, Grok, the conversation is sent to that provider. Live use on this beta has not been tested.</p>
             </div>
           </div>
         </div>
@@ -72,7 +72,7 @@
 
     <section class="band--char datebar sec" aria-label="Launch target">
       <div class="wrap">
-        <div><p class="bigdate">Public beta: Friday 13 November 2026</p><p class="muted">The date may move if testing finds a problem.</p></div>
+        <div><p class="bigdate">Public beta: Friday 13 November 2026</p><p class="muted">The public beta target is Friday 13 November 2026; the date may move if testing finds issues.</p></div>
         <div>
           <p><strong>We have not signed or released this beta.</strong> We will update this page after the release checks are complete and the signed release is available.</p>
           <p class="muted">We will share a source link here if and when the source is made public.</p>
@@ -83,7 +83,7 @@
     <section class="sec" aria-labelledby="gate-title">
       <div class="wrap cols cols--shot">
         <div>
-          <h2 class="h2" id="gate-title">Earlier interface preview.</h2>
+          <h2 class="h2" id="gate-title">Review proposed changes before they happen.</h2>
         </div>
         <figure class="fig">
           <div class="crop"><img src="../assets/nivkode-beta4-desktop-20261101-crop.png" width="1160" height="325" alt="Cropped view of the NivKode 0.2.0-beta.4 desktop interface."></div>
@@ -97,7 +97,11 @@
         <div class="sec-head">
           <h2 class="h2" id="what-title">How it works.</h2>
         </div>
-        <p>We are preparing the next NivKode beta.</p>
+        <ul class="ring-list prose">
+          <li><strong>Local model.</strong> A local model can answer questions and read workspace files. We can propose file edits and supported project test and build commands. Changes are shown for review; commands run only after approval.</li>
+          <li><strong>Command-line approvals.</strong> Run <code>nivkode approve &lt;conversation&gt; &lt;request&gt;</code> to accept one pending local request by its ID. This command accepts only; it does not prompt or decline requests.</li>
+          <li><strong>Local only.</strong> The gateway refuses requests to external AI providers and external second opinions while the switch is on. Turning it on stops active external-provider runs.</li>
+        </ul>
       </div>
     </section>
 
@@ -114,7 +118,7 @@
         <div class="cols" style="margin-top: clamp(40px, 6vw, 88px)">
           <h3 class="h2" id="limits-title">Provider testing</h3>
           <ul class="ring-list limits" aria-labelledby="limits-title">
-            <li>Live use with local or external AI providers on this beta has not been tested.</li>
+            <li>Live use on this beta has not been tested.</li>
             </ul>
         </div>
       </div>

@@ -1,49 +1,32 @@
-# NivKode beta.7 launch copy
+# NivKode beta.7 public copy corrections
 
-## What changed
+## Copy changes
 
-Updated the NivKode product page and press kit with the founder-selected public copy. Removed the candidate file-edit and command-execution claims under C4. The copy remains a draft until the founder merges this branch.
+### C1 / C2 — beta status and launch target (A)
 
-### C1 / C2 — beta status and platform (A)
-
-- Before: “NivKode 0.2.0-beta.4 is the current Linux x86_64 candidate.”
-- After: “We are preparing NivKode 0.2.0-beta.7 for Linux x86_64. We will update this page when the release is signed and available.”
+- Before: the NivKode page said “Public beta: Friday 13 November 2026” and “The date may move if testing finds a problem”; the press facts table said “NivKode, Friday 13 November 2026; may move if testing finds issues”.
+- After: on both pages, state “The public beta target is Friday 13 November 2026; the date may move if testing finds issues.” Keep the status sentence, “We have not signed or released this beta. We will update this page after the release checks are complete and the signed release is available.”
 
 ### C3 — external-provider data flow (B)
 
-- Before: the page named external providers but did not describe where the conversation goes.
-- After: “When we choose an external AI provider, e.g. Codex, Claude, Grok, the conversation is sent to that provider.”
+- Before: “When we choose an external AI provider, e.g. Codex, Claude, Grok, the conversation is sent to that provider.”
+- After: “When you choose an external AI provider, e.g. Codex, Claude, Grok, the conversation is sent to that provider.” Both pages say live use on this beta has not been tested.
 
-### C4 — candidate feature claims (C)
+### C4 — existing NivKode feature descriptions (C)
 
-- Before: “We can propose file edits and supported project test and build commands. Changes are shown for review; commands run only after approval.”
-- After: candidate edit and command claims are omitted. The page says: “We are preparing the next NivKode beta.”
-
-### C7 — source-publication timing (A)
-
-- Before: “The source code will be available alongside the public beta download.”
-- After: “We will share a source link here if and when the source is made public.”
-
-### C9 — signing and availability (A)
-
-- Before: “The public beta will be a signed Linux x86_64 build.”
-- After: “We have not signed or released this beta. We will update this page after the release checks are complete and the signed release is available.”
-
-### C14 — free during beta (A)
-
-- Before: “NivKode is free to use during the beta. We haven't set a price for after the beta.”
-- After: “We plan to make NivKode free during the beta period.”
+- Before: the NivKode page's live local-model descriptions were replaced with “We are preparing the next NivKode beta.”
+- After: restore the existing descriptions on the NivKode page: a local model can answer questions and read workspace files; proposed file edits and supported project test/build commands are shown for review, with commands run only after approval; retain the “Review proposed changes before they happen” caption, `nivkode approve <conversation> <request>` command-line approval description, and Local-only switch paragraph. Beta.4 references in testing descriptions are version-neutral. No candidate edit or command claims were added to the press page.
 
 ## Verification
 
 ### Tested
 
-- `python3 tools/ember_build.py --check` — passed (`stale: none`).
-- `git diff --check` — passed.
+- `python3 tools/ember_build.py --check`
+- `git diff --check`
 
 ### Not yet tested
 
-- No browser or live-site review was run.
+- Live browser use and provider use on this beta have not been tested.
 
 ## Files changed
 
@@ -51,4 +34,4 @@ Updated the NivKode product page and press kit with the founder-selected public 
 - `press/index.html`
 - `PR_BODY.md`
 
-Not published until the founder merges.
+Not published; no push, PR, or deployment.
