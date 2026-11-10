@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NivKode | Developer environment by YewForge</title>
-  <meta name="description" content="We are building NivKode, a Linux developer environment for local models, external AI providers, reviewing proposed changes and approving command-line requests.">
+  <meta name="description" content="We are preparing NivKode 0.2.0-beta.7 for Linux x86_64. We will update this page when the release is signed and available.">
   <link rel="canonical" href="https://yewforge-digital.co.uk/nivkode/">
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -13,7 +13,7 @@
   <link rel="preload" href="../fonts/ember/nivren-technical-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/ember.css">
   <script>document.documentElement.classList.add("js")</script>
-  <meta property="og:url" content="https://yewforge-digital.co.uk/nivkode/"><meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are building a Linux developer environment for local models, external AI providers, reviewing proposed changes and approving command-line requests.">
+  <meta property="og:url" content="https://yewforge-digital.co.uk/nivkode/"><meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are preparing NivKode 0.2.0-beta.7 for Linux x86_64. We will update this page when the release is signed and available.">
   <meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="NivKode public beta target: 13 November 2026; may move if testing finds issues."><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta name="twitter:image:alt" content="NivKode public beta target: 13 November 2026; may move if testing finds issues.">
 </head>
@@ -44,8 +44,8 @@
     <section class="hero" aria-labelledby="nk-title">
       <div class="wrap hero-grid">
         <div>
-          <h1 class="display" id="nk-title">NivKode 0.2.0-beta.4</h1>
-          <p class="lead">We are building a Linux app for working with local models and external AI providers. A local model can answer questions, read workspace files, and propose file changes and supported commands. You review and approve each change.</p>
+          <h1 class="display" id="nk-title">NivKode 0.2.0-beta.7</h1>
+          <p class="lead">We are preparing NivKode 0.2.0-beta.7 for Linux x86_64. We will update this page when the release is signed and available.</p>
           <div class="actions">
             <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
             <a class="btn" href="#evidence">Earlier previews</a>
@@ -62,8 +62,8 @@
               <button class="opt" type="button" aria-pressed="false" data-k="ext">An external AI provider (e.g. Codex, Claude)</button>
             </div>
             <div class="outs" aria-live="polite">
-              <p data-out="local"><b>Local model.</b> <strong>Tested on earlier builds; live use on beta.4 is Not yet tested</strong>.</p>
-              <p data-out="ext"><b>External AI provider.</b> Codex — <strong>Tested on earlier builds (experimental); live use on beta.4 is Not yet tested</strong>. Claude has a beta.4 route, but no live run is verified (<strong>Not yet tested</strong>); the beta.4 app labels Claude “in development”. Grok is not supported.</p>
+              <p data-out="local"><b>Local model.</b> Live use on this beta has not been tested.</p>
+              <p data-out="ext"><b>External AI provider.</b> When we choose an external AI provider, e.g. Codex, Claude, Grok, the conversation is sent to that provider.</p>
             </div>
           </div>
         </div>
@@ -74,8 +74,8 @@
       <div class="wrap">
         <div><p class="bigdate">Public beta: Friday 13 November 2026</p><p class="muted">The date may move if testing finds a problem.</p></div>
         <div>
-          <p><strong>Current candidate: Linux x86_64.</strong> The public beta will be a signed Linux x86_64 build.</p>
-          <p class="muted">AGPL-3.0-only. The source code will be available alongside the public beta download.</p>
+          <p><strong>We have not signed or released this beta.</strong> We will update this page after the release checks are complete and the signed release is available.</p>
+          <p class="muted">We will share a source link here if and when the source is made public.</p>
         </div>
       </div>
     </section>
@@ -83,11 +83,11 @@
     <section class="sec" aria-labelledby="gate-title">
       <div class="wrap cols cols--shot">
         <div>
-          <h2 class="h2" id="gate-title">Review proposed changes before they happen.</h2>
+          <h2 class="h2" id="gate-title">Earlier interface preview.</h2>
         </div>
         <figure class="fig">
           <div class="crop"><img src="../assets/nivkode-beta4-desktop-20261101-crop.png" width="1160" height="325" alt="Cropped view of the NivKode 0.2.0-beta.4 desktop interface."></div>
-          <figcaption>Cropped view of NivKode 0.2.0-beta.4.</figcaption>
+          <figcaption>Cropped view from an earlier NivKode candidate.</figcaption>
         </figure>
       </div>
     </section>
@@ -97,11 +97,7 @@
         <div class="sec-head">
           <h2 class="h2" id="what-title">How it works.</h2>
         </div>
-        <ul class="ring-list prose">
-          <li><strong>Local model.</strong> A local model can answer questions and read workspace files. We can propose file edits and supported project test and build commands. Changes are shown for review; commands run only after approval.</li>
-          <li><strong>Command-line approvals.</strong> Run <code>nivkode approve &lt;conversation&gt; &lt;request&gt;</code> to accept one pending local request by its ID. This command accepts only; it does not prompt or decline requests.</li>
-          <li><strong>Local only.</strong> The gateway refuses requests to external AI providers and external second opinions while the switch is on. Turning it on stops active external-provider runs.</li>
-        </ul>
+        <p>We are preparing the next NivKode beta.</p>
       </div>
     </section>
 
@@ -109,7 +105,7 @@
       <div class="wrap">
         <div class="sec-head">
           <h2 class="h2" id="ev-title">Earlier previews</h2>
-          <p class="lead">These images are from earlier candidates. They are interface previews, not beta.4 results.</p>
+          <p class="lead">These images are from earlier candidates.</p>
         </div>
         <div class="shots">
           <figure class="fig"><div class="crop"><img src="../assets/nivkode/nivkode-desktop-onboarding.png" width="1280" height="900" loading="lazy" alt="Earlier NivKode desktop onboarding interface preview."></div><figcaption><strong>Desktop onboarding.</strong> Earlier interface preview.</figcaption></figure>
@@ -118,9 +114,7 @@
         <div class="cols" style="margin-top: clamp(40px, 6vw, 88px)">
           <h3 class="h2" id="limits-title">Provider testing</h3>
           <ul class="ring-list limits" aria-labelledby="limits-title">
-            <li><strong>Ollama — local model provider</strong>: <strong>Tested on earlier builds; live use on beta.4 is Not yet tested</strong>.</li>
-            <li><strong>Codex through the Codex CLI</strong>: <strong>Tested on earlier builds (experimental); live use on beta.4 is Not yet tested</strong>.</li>
-            <li>Claude has a beta.4 route, but no live run is verified (<strong>Not yet tested</strong>); the beta.4 app labels Claude “in development”. Grok is not supported.</li>
+            <li>Live use with local or external AI providers on this beta has not been tested.</li>
             </ul>
         </div>
       </div>
@@ -133,7 +127,7 @@
         <div class="actions">
           <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
         </div>
-        <p class="muted" style="margin-top:28px">NivKode is free to use during the beta. We haven't set a price for after the beta. You bring your own AI provider account or use a local model.</p>
+        <p class="muted" style="margin-top:28px">We plan to make NivKode free during the beta period.</p>
       </div>
     </section>
   </main>
