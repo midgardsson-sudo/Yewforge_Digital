@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>NivKode | Developer environment by YewForge</title>
-  <meta name="description" content="We are preparing NivKode 0.2.0-beta.7 for Linux x86_64. We will update this page when the release is signed and available.">
+  <meta name="description" content="We are building NivKode, a Linux developer environment for local models, external AI providers, reviewing proposed changes and approving command-line requests.">
   <link rel="canonical" href="https://yewforge-digital.co.uk/nivkode/">
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -13,7 +13,7 @@
   <link rel="preload" href="../fonts/ember/nivren-technical-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/ember.css">
   <script>document.documentElement.classList.add("js")</script>
-  <meta property="og:url" content="https://yewforge-digital.co.uk/nivkode/"><meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are preparing NivKode 0.2.0-beta.7 for Linux x86_64. We will update this page when the release is signed and available.">
+  <meta property="og:url" content="https://yewforge-digital.co.uk/nivkode/"><meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are building a Linux developer environment for local models, external AI providers, reviewing proposed changes and approving command-line requests.">
   <meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="NivKode public beta target: 13 November 2026; may move if testing finds issues."><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta name="twitter:image:alt" content="NivKode public beta target: 13 November 2026; may move if testing finds issues.">
 </head>
@@ -59,11 +59,11 @@
             <h2>Choose a local model or an external AI provider</h2>
             <div class="opts" role="group" aria-label="Provider for a desktop app conversation" hidden>
               <button class="opt" type="button" aria-pressed="true" data-k="local">Local model</button>
-              <button class="opt" type="button" aria-pressed="false" data-k="ext">An external AI provider (e.g. Codex, Claude)</button>
+              <button class="opt" type="button" aria-pressed="false" data-k="ext">External AI provider (e.g. Codex, Claude, Grok)</button>
             </div>
             <div class="outs" aria-live="polite">
-              <p data-out="local"><b>Local model.</b> Live use on this beta has not been tested.</p>
-              <p data-out="ext"><b>External AI provider.</b> When you choose an external AI provider, e.g. Codex, Claude, Grok, the conversation is sent to that provider. Live use on this beta has not been tested.</p>
+              <p data-out="local"><b>Local model.</b> Not yet tested on this beta.</p>
+              <p data-out="ext"><b>External AI provider (e.g. Codex, Claude, Grok).</b> When you choose an external AI provider, the conversation is sent to that provider. Not yet tested on this beta.</p>
             </div>
           </div>
         </div>
@@ -72,10 +72,10 @@
 
     <section class="band--char datebar sec" aria-label="Launch target">
       <div class="wrap">
-        <div><p class="bigdate">Public beta: Friday 13 November 2026</p><p class="muted">The public beta target is Friday 13 November 2026; the date may move if testing finds issues.</p></div>
+        <div><p class="bigdate">Public beta target: Friday 13 November 2026</p><p class="muted">The date may move if testing finds a problem.</p></div>
         <div>
           <p><strong>We have not signed or released this beta.</strong> We will update this page after the release checks are complete and the signed release is available.</p>
-          <p class="muted">We will share a source link here if and when the source is made public.</p>
+          <p class="muted">AGPL-3.0-only. We will share a source link here if and when the source is made public.</p>
         </div>
       </div>
     </section>
@@ -86,7 +86,7 @@
           <h2 class="h2" id="gate-title">Review proposed changes before they happen.</h2>
         </div>
         <figure class="fig">
-          <div class="crop"><img src="../assets/nivkode-beta4-desktop-20261101-crop.png" width="1160" height="325" alt="Cropped view of the NivKode 0.2.0-beta.4 desktop interface."></div>
+          <div class="crop"><img src="../assets/nivkode-beta4-desktop-20261101-crop.png" width="1160" height="325" alt="Cropped view of an earlier NivKode desktop interface."></div>
           <figcaption>Cropped view from an earlier NivKode candidate.</figcaption>
         </figure>
       </div>
@@ -118,7 +118,8 @@
         <div class="cols" style="margin-top: clamp(40px, 6vw, 88px)">
           <h3 class="h2" id="limits-title">Provider testing</h3>
           <ul class="ring-list limits" aria-labelledby="limits-title">
-            <li>Live use on this beta has not been tested.</li>
+            <li><strong>Local model</strong>: Not yet tested on this beta.</li>
+            <li><strong>External AI provider (e.g. Codex, Claude, Grok)</strong>: Not yet tested on this beta.</li>
             </ul>
         </div>
       </div>
