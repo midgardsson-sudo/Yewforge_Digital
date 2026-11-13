@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>NivKode | Developer environment by YewForge</title>
-  <meta name="description" content="We are building NivKode, a Linux developer environment for local models, external AI providers, reviewing proposed changes and approving command-line requests.">
+  <title>NivKode 0.2 beta | Developer environment by YewForge</title>
+  <meta name="description" content="NivKode 0.2 beta (version 0.2.0-beta.7), released Friday 13 November 2026. We plan to make NivKode free during the beta period.">
   <link rel="canonical" href="https://yewforge-digital.co.uk/nivkode/">
   <link rel="icon" href="../favicon.ico" sizes="32x32">
   <link rel="icon" type="image/svg+xml" href="../favicon.svg">
@@ -13,9 +13,9 @@
   <link rel="preload" href="../fonts/ember/nivren-technical-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="../css/ember.css">
   <script>document.documentElement.classList.add("js")</script>
-  <meta property="og:url" content="https://yewforge-digital.co.uk/nivkode/"><meta property="og:title" content="NivKode | Developer environment by YewForge"><meta property="og:description" content="We are building a Linux developer environment for local models, external AI providers, reviewing proposed changes and approving command-line requests.">
-  <meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="NivKode public beta target: 13 November 2026; may move if testing finds issues."><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
-  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta name="twitter:image:alt" content="NivKode public beta target: 13 November 2026; may move if testing finds issues.">
+  <meta property="og:url" content="https://yewforge-digital.co.uk/nivkode/"><meta property="og:title" content="NivKode 0.2 beta | YewForge"><meta property="og:description" content="NivKode 0.2 beta (version 0.2.0-beta.7), released Friday 13 November 2026. We plan to make NivKode free during the beta period.">
+  <meta property="og:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta property="og:image:alt" content="NivKode 0.2 beta, version 0.2.0-beta.7, released Friday 13 November 2026."><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://yewforge-digital.co.uk/assets/yewforge-og-20261023.png"><meta name="twitter:image:alt" content="NivKode 0.2 beta, version 0.2.0-beta.7, released Friday 13 November 2026.">
 </head>
 <body class="ember">
 <!--ember:header-->
@@ -45,10 +45,9 @@
       <div class="wrap hero-grid">
         <div>
           <h1 class="display" id="nk-title">NivKode 0.2.0-beta.7</h1>
-          <p class="lead">We are building a Linux app for working with local models and external AI providers. A local model can answer questions, read workspace files, and propose file changes and supported commands. You review and approve each change.</p>
+          <p class="lead">NivKode is a Linux app for working with local models and external AI providers. A local model can answer questions, read workspace files, and propose file changes and supported commands. You review and approve each change.</p>
           <div class="actions">
-            <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
-            <a class="btn" href="#evidence">Earlier previews</a>
+            <a class="btn btn--primary" href="#download">Download NivKode 0.2 beta</a>
           </div>
           <p class="assure">The launch note button opens your own email app with a message to us. This page stores nothing.<noscript> Without scripts, write to yewforge.partnerships at gmail.com.</noscript></p>
         </div>
@@ -62,21 +61,32 @@
               <button class="opt" type="button" aria-pressed="false" data-k="ext">External AI provider (e.g. Codex, Claude, Grok)</button>
             </div>
             <div class="outs" aria-live="polite">
-              <p data-out="local"><b>Local model.</b> Not yet tested on this beta.</p>
-              <p data-out="ext"><b>External AI provider (e.g. Codex, Claude, Grok).</b> When you choose an external AI provider, the conversation is sent to that provider. Not yet tested on this beta.</p>
+              <p data-out="local"><b>Local model.</b> Tested on beta.7 (12 November 2026) for questions and reading workspace files. Test commands and fixes on beta.7: Not yet tested.</p>
+              <p data-out="ext"><b>External AI provider (e.g. Codex, Claude, Grok).</b> When you choose an external AI provider, the conversation is sent to that provider. Tested on earlier builds; beta.7 live use: Not yet tested.</p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="band--char datebar sec" aria-label="Launch target">
+    <section class="band--char datebar sec" aria-label="Beta status">
       <div class="wrap">
-        <div><p class="bigdate">Public beta target: Friday 13 November 2026</p><p class="muted">The date may move if testing finds a problem.</p></div>
+        <div><p class="bigdate">NivKode 0.2 beta</p><p class="muted">Version 0.2.0-beta.7 · Released Friday 13 November 2026</p></div>
         <div>
-          <p><strong>We have not signed or released this beta.</strong> We will update this page after the release checks are complete and the signed release is available.</p>
-          <p class="muted">AGPL-3.0-only. We will share a source link here if and when the source is made public.</p>
+          <p><strong>Linux x86_64. Local model tested on beta.7 for questions and reading files; other features tested on earlier builds. Android is a source preview, not in this download.</strong></p>
+          <p class="muted">We plan to make NivKode free during the beta period.</p>
         </div>
+      </div>
+    </section>
+
+    <section class="sec" id="download" aria-labelledby="download-title">
+      <div class="wrap">
+        <div class="sec-head"><h2 class="h2" id="download-title">Download NivKode 0.2 beta</h2></div>
+        <p>Linux x86_64 archive: <a href="../downloads/nivkode/0.2.0-beta.7/nivkode-gateway-0.2.0-beta.7-g36aae7fbf4f0-linux-x86_64.tar.gz">nivkode-gateway-0.2.0-beta.7-g36aae7fbf4f0-linux-x86_64.tar.gz</a></p>
+        <p>SHA-256: <code>a9e0ab91eba90ba78ee3fb993076c0447cb6c8ea867f28ae4b01c0de6545e7cc</code></p>
+        <p>Files: <a href="../downloads/nivkode/0.2.0-beta.7/SHA256SUMS">SHA256SUMS</a> · <a href="../downloads/nivkode/0.2.0-beta.7/SHA256SUMS.minisig">SHA256SUMS.minisig</a></p>
+        <p>Verify the signed checksum file with minisign and the pinned public key:<br><code>minisign -Vm SHA256SUMS -P RWSTLdUN4lyCUF75ANlaa4La4nvfZC8wvtuEeYLx0AxjR2sibpTjQmee</code></p>
+        <p>We will share a source link here if and when the source is made public.</p>
       </div>
     </section>
 
@@ -118,8 +128,8 @@
         <div class="cols" style="margin-top: clamp(40px, 6vw, 88px)">
           <h3 class="h2" id="limits-title">Provider testing</h3>
           <ul class="ring-list limits" aria-labelledby="limits-title">
-            <li><strong>Local model</strong>: Not yet tested on this beta.</li>
-            <li><strong>External AI provider (e.g. Codex, Claude, Grok)</strong>: Not yet tested on this beta.</li>
+            <li><strong>Local model</strong>: Tested on beta.7 (12 November 2026) for questions and reading workspace files. Test commands and fixes on beta.7: Not yet tested.</li>
+            <li><strong>External AI provider (e.g. Codex, Claude, Grok)</strong>: Tested on earlier builds; beta.7 live use: Not yet tested.</li>
             </ul>
         </div>
       </div>
@@ -127,12 +137,9 @@
 
     <section class="band--char sec" aria-labelledby="follow-title">
       <div class="wrap">
-        <h2 class="h2" id="follow-title">Public beta on Friday 13 November</h2>
-        <p class="lead">That's the plan. If testing finds a problem, the date moves, and we'll say so here.</p>
-        <div class="actions">
-          <a class="btn btn--primary" href="../contact.html" data-mail data-subject="NivKode launch note" data-body="Hello, please send me the NivKode launch note.">Get the launch note</a>
-        </div>
-        <p class="muted" style="margin-top:28px">We plan to make NivKode free during the beta period.</p>
+        <h2 class="h2" id="follow-title">NivKode 0.2 beta</h2>
+        <p class="lead">Released Friday 13 November 2026. We plan to make NivKode free during the beta period.</p>
+        <a class="btn btn--primary" href="#download">Download NivKode 0.2 beta</a>
       </div>
     </section>
   </main>
@@ -152,7 +159,7 @@
       <li><a href="https://uk.linkedin.com/in/yewforgedigital" rel="noopener">LinkedIn</a></li>
     </ul>
     <p class="foot-mail">Write to us: <a data-mail><span data-mail-text>yewforge.partnerships at gmail.com</span></a></p>
-    <p class="foot-meta">&copy; <span data-year>2026</span> YewForge. NivKode is licensed AGPL-3.0-only; the source code is not public yet.</p>
+    <p class="foot-meta">&copy; <span data-year>2026</span> YewForge. NivKode is licensed AGPL-3.0-only.</p>
     <div class="foot-word" aria-hidden="true">
       <span>YewForge</span>
       <svg viewBox="50 50 710 800" focusable="false"><g fill="#E9F0F5"><polygon points="50,50 250,250 250,850 150,750 150,250 50,150"/><polygon points="150,50 250,50 250,150"/><polygon points="310,250 510,50 510,150 410,250 410,350 510,250 510,350 410,450 410,750 310,850"/><polygon points="310,50 410,50 310,150"/></g><path fill="#FF7A2A" d="M510,150 A250,250 0 0 1 510,650 L510,550 A150,150 0 0 0 510,250 Z"/></svg>
