@@ -1,5 +1,13 @@
 [
   {
+    "date": "2026-11-13",
+    "title": "NivKode 0.2 beta is out: 13 November update",
+    "link": "/nivkode/",
+    "kind": "Product update",
+    "approved": true,
+    "text": "NivKode 0.2.0-beta.7 was released on Friday 13 November 2026, as planned. It is a Linux x86_64 app for working with local models and external AI providers, and you review and approve each change before it happens. The download comes with a SHA-256 checksum file signed with minisign. We plan to make NivKode free during the beta period."
+  },
+  {
     "approved": true,
     "date": "2026-10-21",
     "kind": "Product update",
