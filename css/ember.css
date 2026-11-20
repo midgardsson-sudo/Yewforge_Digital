@@ -249,6 +249,10 @@ body.ember .site-foot a:hover { text-decoration: underline; text-decoration-colo
   body.ember .brand { font-size: 19px; gap: 8px; }
   body.ember .btn--sm { padding: 0 16px 0 14px; }
 }
+/* Narrow phones: the header download button reads "Download" so it fits beside Menu; "NivKode" stays for screen readers. */
+@media (max-width: 479px) {
+  .site-head .head-cta-long { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
 
 /* ======================================================================
    Rollout layer: inner pages, the engineering journal (charcoal band as ground), reading pages
@@ -476,3 +480,6 @@ body.ember .addr a, body.ember .updates .yf-ticker-item a { display: inline-flex
 }
 
 .reading .display { font-size: clamp(2.2rem, 1.2rem + 3.6vw, 4.4rem); margin-bottom: .45em; }
+
+/* Long checksums and commands wrap instead of pushing the page sideways on phones. */
+main code { overflow-wrap: anywhere; }
